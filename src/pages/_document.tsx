@@ -1,3 +1,4 @@
+import React from "react";
 import Document, {
   Html,
   Head,
@@ -6,20 +7,24 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from "next/document";
-import { ServerStyleSheet } from "styled-components";
+import { ServerStyleSheet as StyledServerStyleSheet } from "styled-components";
+
+import { ServerStyleSheets as MuiServerStyleSheets } from "@material-ui/core/styles";
 
 class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
-    const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
-
+    const styledComponentsSheet = new StyledServerStyleSheet();
+    const materialSheets = new MuiServerStyleSheets();
     try {
       ctx.renderPage = () =>
         originalRenderPage({
           enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
+            styledComponentsSheet.collectStyles(
+              materialSheets.collect(<App {...props} />)
+            ),
         });
 
       const initialProps = await Document.getInitialProps(ctx);
@@ -27,15 +32,14 @@ class MyDocument extends Document {
       return {
         ...initialProps,
 
-        styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
-        ),
+        styles: [
+          ...React.Children.toArray(initialProps.styles),
+          styledComponentsSheet.getStyleElement(),
+          materialSheets.getStyleElement(),
+        ],
       };
     } finally {
-      sheet.seal();
+      styledComponentsSheet.seal();
     }
   }
 
