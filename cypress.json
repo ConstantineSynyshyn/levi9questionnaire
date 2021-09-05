@@ -1,0 +1,6 @@
+{
+  "component": {
+    "componentFolder": "cypress/pages"
+  },
+  "integrationFolder": "cypress/integration"
+}
