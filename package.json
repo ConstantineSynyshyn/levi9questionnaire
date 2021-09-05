@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "integration": "cypress open",
+    "integration:headless": "cypress run",
+    "cypress:component": "cypress open-ct",
+    "cypress:component:headless": "cypress run-ct"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -19,6 +23,8 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@cypress/react": "^5.9.4",
+    "@cypress/webpack-dev-server": "^1.5.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/react": "17.0.18",
@@ -26,10 +32,14 @@
     "@types/uuid": "^8.3.1",
     "babel-jest": "^27.1.0",
     "babel-plugin-styled-components": "^1.13.2",
+    "cypress": "^8.3.1",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0",
+    "html-webpack-plugin": "5",
     "jest": "^27.1.0",
     "react-test-renderer": "^17.0.2",
-    "typescript": "4.3.5"
+    "typescript": "4.3.5",
+    "webpack": "5",
+    "webpack-dev-server": "3"
   }
 }
