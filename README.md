@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Levi9 Questionnaire
 
-## Getting Started
+## Description
 
-First, run the development server:
+Levi9 questionnaire is an application bootstrapped with `create-next-app` and is intended to use for cantidate testing.
 
-```bash
-npm run dev
-# or
-yarn dev
+## Stack / main tech
+
+- next
+- react
+- react-dom
+- material/ui
+- styled-components
+- mongoDB
+
+## Installation and run
+
+Running application for development purposes doesn't require any additional setup, so it is easy as:
+
+```shell
+$ yarn
+
+$ yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Testing strategy
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+`React testing library` was choosen due to it's very light-weight and since it emphasizes testing without all the implementation details.
+`Jest` was choosen as a testing environment since it is extremely fast and efficient.
+Running your tests is as easy as:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```shell
+$ yarn test
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+For more info see `package.json` scripts.
 
-## Learn More
+## NextJS
 
-To learn more about Next.js, take a look at the following resources:
+Being a fullstack framework NextJs dictates its own structure.
+By default, Next.js [pre-renders every page](https://nextjs.org/docs/basic-features/pages#pre-rendering).
+We chose the hybrid model. We are obliged to use the BFF in order to pre-fetch the data required for meaningful render.
+Then the document gets loaded to the client's device and application will act as a SPA, allowing for client-side navigation. (i.e. Universal Web App)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Code structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Currently every single page lives within `src/pages` folder. If new page has to be created - it should be done within `pages` folder with the following structure (default export is obligatory):
 
-## Deploy on Vercel
+```shell
+function Example() {
+  return <SampleComponent>Sample page</SampleComponent>
+}
+export default Example;
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Styling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Despite the fact NextJs supports css modules out of the box we are sticking to `css in js`.
