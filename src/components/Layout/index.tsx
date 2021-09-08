@@ -1,22 +1,25 @@
 import React from "react";
-import { AppBar, Toolbar, Container } from "@material-ui/core";
+
 import Image from "next/image";
 
-import { StyledImageContainer } from "./styles";
+import { AppBar, Toolbar, Container } from "@material-ui/core";
 
-function Layout({ children }) {
-  return (
-    <>
-      <AppBar position="static">
-        <Toolbar>
-          <StyledImageContainer>
-            <Image src="/levi9-logo.jpg" alt="Levi9-logo" layout="fill" />
-          </StyledImageContainer>
-        </Toolbar>
-      </AppBar>
-      <Container maxWidth="sm">{children}</Container>
-    </>
-  );
-}
+const Layout: React.FC<{ children: React.ReactChildren }> = ({ children }) => (
+  <>
+    <AppBar position="static">
+      <Toolbar>
+        <Image
+          src="/levi9-logo.jpg"
+          alt="Levi9-logo"
+          width="64px"
+          height="64px"
+        />
+      </Toolbar>
+    </AppBar>
+    <Container maxWidth="md" disableGutters>
+      {children}
+    </Container>
+  </>
+);
 
 export default Layout;

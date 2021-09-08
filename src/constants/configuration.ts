@@ -1,0 +1,1 @@
+export const DEFAULT_TIME_TO_RESPOND = 15;
