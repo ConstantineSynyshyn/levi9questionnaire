@@ -1,8 +1,13 @@
 import React from "react";
-import type { NextPage } from "next";
 
-const Home: NextPage = () => {
-  return <div>Home Page</div>;
+import { questionsData } from "../../__mocks__/questionsMock";
+
+import type { Page } from "../types/page";
+
+import Quiz from "../components/Quiz";
+
+const QuizPage: Page = () => {
+  return <Quiz questionsData={questionsData} />;
 };
 
-export default Home;
+export default QuizPage;
