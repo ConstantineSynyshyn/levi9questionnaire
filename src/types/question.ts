@@ -5,8 +5,9 @@ interface Answer {
 
 export interface Question {
   questionText: string;
-  options: Answer[];
   id?: string;
 }
 
-export type Questions = Question[];
+export interface QuestionWithOptions extends Question {
+  options: Answer[];
+}
