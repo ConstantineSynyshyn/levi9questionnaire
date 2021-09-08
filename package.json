@@ -11,7 +11,8 @@
     "integration": "cypress open",
     "integration:headless": "cypress run",
     "cypress:component": "cypress open-ct",
-    "cypress:component:headless": "cypress run-ct"
+    "cypress:component:headless": "cypress run-ct",
+    "docker:build": "docker build . -t levi9questionnaire"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
