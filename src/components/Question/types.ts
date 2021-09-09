@@ -1,5 +1,5 @@
-import { Question } from "../../types/question";
+import { Question, QuestionWithOptions } from "../../types/question";
 export interface Props {
-  question: Question;
+  question: QuestionWithOptions | Question;
   onAnswerSet: (id: string) => void;
 }
