@@ -5,17 +5,24 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 import theme from "../styles/theme";
-import Layout from "../components/Layout";
+import AppLayout from "../layouts/AppLayout";
+import { Page } from "../types/page";
 
-function MyApp(props: AppProps) {
+type Props = AppProps & {
+  Component: Page;
+};
+
+const MyApp: React.FC<Props> = (props) => {
   const { Component, pageProps } = props;
 
   React.useEffect(() => {
     const jssStyles = document.querySelector("#jss-server-side");
     if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles);
+      jssStyles.parentElement?.removeChild(jssStyles);
     }
   }, []);
+
+  const getLayout = Component.getLayout || ((page) => page);
 
   return (
     <React.Fragment>
@@ -28,12 +35,10 @@ function MyApp(props: AppProps) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <AppLayout>{getLayout(<Component {...pageProps} />)}</AppLayout>
       </ThemeProvider>
     </React.Fragment>
   );
-}
+};
 
 export default MyApp;
