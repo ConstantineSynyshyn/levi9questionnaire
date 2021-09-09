@@ -5,7 +5,7 @@ interface Answer {
 
 export interface Question {
   questionText: string;
-  id?: string;
+  id: string;
 }
 
 export interface QuestionWithOptions extends Question {
