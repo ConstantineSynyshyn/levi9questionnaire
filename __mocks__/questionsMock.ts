@@ -33,6 +33,6 @@ export const questionsWithOptionsData: QuestionWithOptions[] = [
   },
 ];
 
-export const openQuestionData: Question[] = [
+export const questionData: Question[] = [
   { id: "1", questionText: "Who do you think will win Best Actress?" },
 ];
