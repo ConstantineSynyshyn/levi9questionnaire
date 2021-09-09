@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { AppBar, Toolbar, Container } from "@material-ui/core";
 
-const Layout: React.FC<{ children: React.ReactChildren }> = ({ children }) => (
+const AppLayout: React.FC = ({ children }) => (
   <>
     <AppBar position="static">
       <Toolbar>
@@ -16,10 +16,8 @@ const Layout: React.FC<{ children: React.ReactChildren }> = ({ children }) => (
         />
       </Toolbar>
     </AppBar>
-    <Container maxWidth="md" disableGutters>
-      {children}
-    </Container>
+    {children}
   </>
 );
 
-export default Layout;
+export default AppLayout;

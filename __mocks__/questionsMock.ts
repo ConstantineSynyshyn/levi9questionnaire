@@ -1,6 +1,6 @@
-import { Questions } from "../src/types/question";
+import { Question, QuestionWithOptions } from "../src/types/question";
 
-export const questionsData: Questions = [
+export const questionsWithOptionsData: QuestionWithOptions[] = [
   {
     questionText: "Who do you think will win Best Actress?",
     options: [
@@ -31,4 +31,8 @@ export const questionsData: Questions = [
     ],
     id: "113",
   },
+];
+
+export const questionData: Question[] = [
+  { id: "1", questionText: "Who do you think will win Best Actress?" },
 ];

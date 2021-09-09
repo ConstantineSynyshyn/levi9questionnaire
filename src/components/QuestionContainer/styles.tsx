@@ -10,19 +10,20 @@ export const StyledPaper = styled(Paper)`
   padding: 30px;
 `;
 
-export const StyledQuizBox = styled(Box)`
+export const StyledQuestionBox = styled(Box)`
   width: 650px;
   display: flex;
   flex-direction: column;
+  margin: 150px auto;
 `;
 
-export const StyledQuizHeader = styled.div`
+export const StyledQuestionHeader = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 `;
 
-export const StyledQuizFooter = styled.div`
+export const StyledQuestionFooter = styled.div`
   display: flex;
   justify-content: flex-end;
   margin-top: 30px;
@@ -35,7 +36,4 @@ export const StyledTimerContainer = styled.div`
   align-items: center;
 `;
 
-export const StyledQuizContainer = styled.div`
-  width: 100%;
-  height: 100%;
-`;
+export const StyledQuestionContainer = styled.div``;
