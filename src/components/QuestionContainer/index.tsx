@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Router from "next/router";
 
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
@@ -9,23 +10,27 @@ import Question from "../Question";
 import { DEFAULT_TIME_TO_RESPOND } from "../../constants/configuration";
 
 import {
-  StyledQuizBox,
-  StyledQuizFooter,
-  StyledQuizHeader,
+  StyledQuestionBox,
+  StyledQuestionFooter,
+  StyledQuestionHeader,
   StyledTimerContainer,
-  StyledQuizContainer,
+  StyledQuestionContainer,
 } from "./styles";
 
 import { Props } from "./types";
+import { ROUTES } from "../../constants/routes";
 
-const Quiz: React.FC<Props> = ({
+const QuestionContainer: React.FC<Props> = ({
   questionsData,
   timeForResponse = DEFAULT_TIME_TO_RESPOND,
 }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [isTestFinished, setIsTestFinished] = useState(false);
   const [timer, setTimer] = useState(timeForResponse);
   const [answers, setAnswers] = useState({});
   const [currentSelection, setCurrentSelection] = useState("");
+
+  const questionsAmount = questionsData.length;
 
   const handleAnswerSet = (answer: string) => {
     setCurrentSelection(answer);
@@ -36,14 +41,19 @@ const Quiz: React.FC<Props> = ({
 
     const nextQuestionIndex = currentQuestionIndex + 1;
     const answerIndex = questionsData[currentQuestionIndex].id;
+    const hasNextQuestion = nextQuestionIndex < questionsAmount;
 
     setAnswers((previousAnswers) => ({
       ...previousAnswers,
       [answerIndex]: currentSelection,
     }));
 
-    if (nextQuestionIndex < questionsData.length) {
+    if (hasNextQuestion) {
       setCurrentQuestionIndex(nextQuestionIndex);
+    }
+
+    if (!hasNextQuestion) {
+      setIsTestFinished(true);
     }
   };
 
@@ -54,38 +64,43 @@ const Quiz: React.FC<Props> = ({
 
   useEffect(() => {
     const nextQuestionIndex = currentQuestionIndex + 1;
-    const questionsAmount = questionsData.length;
 
     if (timer === 0 && nextQuestionIndex < questionsAmount) {
       setCurrentQuestionIndex(nextQuestionIndex);
       setTimer(15);
     }
-  }, [timer, currentQuestionIndex]);
+  }, [timer, currentQuestionIndex, questionsAmount]);
+
+  useEffect(() => {
+    if (isTestFinished) {
+      Router.push(ROUTES.OPEN_QUESSTION);
+    }
+  }, [isTestFinished]);
 
   return (
-    <StyledQuizContainer>
-      <StyledQuizBox>
-        <StyledQuizHeader>
+    <StyledQuestionContainer>
+      <StyledQuestionBox>
+        <StyledQuestionHeader>
           <Typography>
-            {currentQuestionIndex + 1}/{questionsData.length}
+            {currentQuestionIndex + 1}/{questionsAmount}
           </Typography>
           <StyledTimerContainer>
             <AccessTimeIcon />
             <Typography>{timer}</Typography>
           </StyledTimerContainer>
-        </StyledQuizHeader>
+        </StyledQuestionHeader>
         <Question
           question={questionsData[currentQuestionIndex]}
           onAnswerSet={handleAnswerSet}
         />
-        <StyledQuizFooter>
+        <StyledQuestionFooter>
           <Button variant="contained" color="primary" onClick={handleSubmit}>
             SUBMIT
           </Button>
-        </StyledQuizFooter>
-      </StyledQuizBox>
-    </StyledQuizContainer>
+        </StyledQuestionFooter>
+      </StyledQuestionBox>
+    </StyledQuestionContainer>
   );
 };
 
-export default Quiz;
+export default QuestionContainer;
