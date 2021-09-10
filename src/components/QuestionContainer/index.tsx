@@ -20,6 +20,7 @@ import {
 import { Props } from "./types";
 import { ROUTES } from "../../constants/routes";
 
+// @TODO have to be refactored
 const QuestionContainer: React.FC<Props> = ({
   questionsData,
   timeForResponse = DEFAULT_TIME_TO_RESPOND,

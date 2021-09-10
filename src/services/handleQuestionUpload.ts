@@ -1,0 +1,30 @@
+import formidable from 'formidable';
+import fs from "fs";
+import { NextApiRequest, NextApiResponse } from 'next'
+import * as path from "path";
+
+import { createQuestionsByInputFile } from '../db/entities/Question'
+
+const handleQuestionUpload = async (req: NextApiRequest, res: NextApiResponse) => {
+  const form = new formidable.IncomingForm();
+  form.parse(req, async (err: any, fields: any, files: any) => {
+    if (files?.file) {
+      try {
+        const buffer = fs.readFileSync(files.file.path);
+        const result = await createQuestionsByInputFile(JSON.parse(buffer.toString()));
+        return res.status(201).json(result);
+      } catch {
+        return res.status(400).json({
+          status: "Fail",
+          message: "Invalid json",
+        });
+      }
+    }
+    return res.status(400).json({
+      status: "Fail",
+      message: "There was an error parsing the files",
+    });
+  });
+};
+
+export default handleQuestionUpload
