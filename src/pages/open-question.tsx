@@ -6,8 +6,10 @@ import type { Page } from "../types/page";
 
 import QuestionContainer from "../components/QuestionContainer";
 import Container from "@material-ui/core/Container";
+import useOnWindowLeave from "../hooks/useOnWindowLeave";
 
 const OpenQuestionPage: Page = () => {
+  useOnWindowLeave();
   return (
     <QuestionContainer questionsData={questionData} timeForResponse={180} />
   );
