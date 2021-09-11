@@ -4,6 +4,8 @@ import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
+import { Provider } from "next-auth/client";
+
 import theme from "../styles/theme";
 import AppLayout from "../layouts/AppLayout";
 import { Page } from "../types/page";
@@ -25,7 +27,13 @@ const MyApp: React.FC<Props> = (props) => {
   const getLayout = Component.getLayout || ((page) => page);
 
   return (
-    <React.Fragment>
+    <Provider
+      options={{
+        clientMaxAge: 0,
+        keepAlive: 0,
+      }}
+      session={pageProps.session}
+    >
       <Head>
         <title>Levi9 questionnaire</title>
         <meta
@@ -37,7 +45,7 @@ const MyApp: React.FC<Props> = (props) => {
         <CssBaseline />
         <AppLayout>{getLayout(<Component {...pageProps} />)}</AppLayout>
       </ThemeProvider>
-    </React.Fragment>
+    </Provider>
   );
 };
 
