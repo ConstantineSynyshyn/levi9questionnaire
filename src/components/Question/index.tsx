@@ -9,7 +9,7 @@ import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import TextField from "@material-ui/core/TextField";
 
-import { StyledPaper, StyledTextContainer } from "./styles";
+import { StyledPaper, StyledTextContainer, StyledCodeContainer } from "./styles";
 import { Props } from "./types";
 import {
   Question as QuestionType,
@@ -74,6 +74,7 @@ const Question: React.FC<Props> = ({ question, onAnswerSet }) => {
         <Typography variant="h4" align="center">
           {question.questionText}
         </Typography>
+        {question.data ? (<StyledCodeContainer>{question.data}</StyledCodeContainer>) : null}
       </StyledTextContainer>
       <Grid container spacing={2}>
         {input}

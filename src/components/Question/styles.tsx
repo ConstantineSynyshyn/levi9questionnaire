@@ -12,3 +12,12 @@ export const StyledPaper = styled(Paper)`
 export const StyledTextContainer = styled.div`
   margin-bottom: 30px;
 `;
+
+export const StyledCodeContainer = styled.pre`
+  padding: 1rem;
+  background-color: lightgray;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  user-select: none;
+  tab-size: 2;
+`;
