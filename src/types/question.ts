@@ -6,6 +6,7 @@ interface Answer {
 export interface Question {
   questionText: string;
   id: string;
+  data?: string;
 }
 
 export interface QuestionWithOptions extends Question {

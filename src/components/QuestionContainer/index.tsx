@@ -4,10 +4,10 @@ import Router from "next/router";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import AccessTimeIcon from "@material-ui/icons/AccessTime";
-import Question from "../Question";
+import Question from "@components/Question";
 
-import { DEFAULT_TIME_TO_RESPOND } from "../../constants/configuration";
+import { DEFAULT_TIME_TO_RESPOND } from "@constants/configuration";
+import Timer from '@components/Timer';
 
 import {
   StyledQuestionBox,
@@ -67,7 +67,7 @@ const QuestionContainer: React.FC<Props> = ({
 
     if (timer === 0 && nextQuestionIndex < questionsAmount) {
       setCurrentQuestionIndex(nextQuestionIndex);
-      setTimer(15);
+      setTimer(DEFAULT_TIME_TO_RESPOND);
     }
   }, [timer, currentQuestionIndex, questionsAmount]);
 
@@ -85,8 +85,7 @@ const QuestionContainer: React.FC<Props> = ({
             {currentQuestionIndex + 1}/{questionsAmount}
           </Typography>
           <StyledTimerContainer>
-            <AccessTimeIcon />
-            <Typography>{timer}</Typography>
+            <Timer timeLeft={timer} timeForResponse={timeForResponse}></Timer>
           </StyledTimerContainer>
         </StyledQuestionHeader>
         <Question

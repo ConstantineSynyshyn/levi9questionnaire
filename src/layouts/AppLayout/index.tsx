@@ -2,17 +2,17 @@ import React from "react";
 
 import Image from "next/image";
 
-import { AppBar, Toolbar, Container } from "@material-ui/core";
+import { AppBar, Toolbar } from "@material-ui/core";
 
 const AppLayout: React.FC = ({ children }) => (
   <>
     <AppBar position="static">
       <Toolbar>
         <Image
-          src="/levi9-logo.jpg"
+          src="/logo-full-white.png"
           alt="Levi9-logo"
-          width="64px"
-          height="64px"
+          width="72px"
+          height="36px"
         />
       </Toolbar>
     </AppBar>
