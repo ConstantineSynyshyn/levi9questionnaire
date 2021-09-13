@@ -31,7 +31,6 @@ class MyDocument extends Document {
 
       return {
         ...initialProps,
-
         styles: [
           ...React.Children.toArray(initialProps.styles),
           styledComponentsSheet.getStyleElement(),

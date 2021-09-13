@@ -2,16 +2,15 @@ import React from "react";
 
 import Container from "@material-ui/core/Container";
 
-import { questionsWithOptionsData } from "../../__mocks__/questionsMock";
+// import { questionsWithOptionsData } from "../../__mocks__/questionsMock";
 
 import type { Page } from "../types/page";
 
 import QuestionContainer from "../components/QuestionContainer";
-import useOnWindowLeave from "../hooks/useOnWindowLeave";
+import { loadQuizQuestions } from "../db/entities/Question";
 
-const QuizPage: Page = () => {
-  useOnWindowLeave();
-  return <QuestionContainer questionsData={questionsWithOptionsData} />;
+const QuizPage: Page = ({ data }) => {
+  return <QuestionContainer questionsData={data} />;
 };
 
 QuizPage.getLayout = (page) => (
@@ -19,5 +18,14 @@ QuizPage.getLayout = (page) => (
     {page}
   </Container>
 );
+
+export const getServerSideProps = async () => {
+  const questions = await loadQuizQuestions();
+  return {
+    props: {
+      data: JSON.parse(JSON.stringify(questions)),
+    },
+  };
+}
 
 export default QuizPage;
