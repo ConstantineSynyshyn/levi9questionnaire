@@ -1,7 +1,7 @@
 import React, { SyntheticEvent } from "react";
 import { useRouter } from "next/router";
 
-import { signIn } from "next-auth/client";
+import { signIn, useSession } from "next-auth/client";
 import {
   Container,
   CssBaseline,
@@ -57,6 +57,8 @@ async function createUser(email: string, password: string) {
 const AuthForm = () => {
   const [hasAnAccount, setHasAnAccount] = React.useState(false);
   const router = useRouter();
+  const session = useSession();
+  console.log('session', session);
 
   const classes = useStyles();
   const [emailValue, setEmailValue] = React.useState("");
