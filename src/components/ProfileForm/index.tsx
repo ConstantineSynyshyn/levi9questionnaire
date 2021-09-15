@@ -10,18 +10,23 @@ import {
   Paper,
   Box,
 } from "@material-ui/core";
+import { useForm, Controller } from "react-hook-form";
+import { Profile } from '@lq-types/profile';
 
-const ProfileForm: React.FC<Props> = ({ profile = {}, onSubmit }) => {
+
+const ProfileForm: React.FC<Props> = ({ profile, onSubmit }) => {
 
   const [userProfile, setUserProfile] = useState(profile);
+
+  const { control, handleSubmit, formState: { errors } } = useForm<Partial<Profile>>();
 
   const handleInputChange = (event: SyntheticEvent) => {
     const { name, value } = (event.target as HTMLInputElement);
     setUserProfile({ ...userProfile, ...(name ? { [name]: value } : false) });
   }
 
-  const handleSubmit = () => {
-    onSubmit(userProfile);
+  const handleFormSubmit = (data: Partial<Profile>) => {
+    onSubmit(data);
   }
 
   return (
@@ -30,67 +35,105 @@ const ProfileForm: React.FC<Props> = ({ profile = {}, onSubmit }) => {
         <Paper elevation={3}>
           <Box p={3}>
             <Typography variant="h5" component="h1" gutterBottom>
-              Tell us more about yourself
-            </Typography>
-            <form noValidate>
+              {profile ? 'Edit profile' : 'Tell us more about yourself'}
+            </Typography><br />
+            <form noValidate onSubmit={handleSubmit(handleFormSubmit)}>
               <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
-                  <TextField
-                    value={userProfile?.firstName}
-                    onChange={handleInputChange}
-                    variant="outlined"
-                    required
-                    fullWidth
-                    id="firstName"
-                    label="First Name"
+                  <Controller
                     name="firstName"
-                    autoComplete="given-name"
-                    aria-label="given-name"
+                    control={control}
+                    defaultValue={userProfile?.firstName}
+                    rules={{ required: { value: true, message: 'Required field' }, maxLength: { value: 50, message: "Max length is 50" } }}
+                    render={({ field }) => {
+                      return <div>
+                        <TextField
+                          variant="outlined"
+                          required
+                          fullWidth
+                          id="firstName"
+                          label="First Name"
+                          autoComplete="given-name"
+                          aria-label="first name"
+                          helperText={errors.firstName?.message}
+                          error={!!(errors?.firstName)}
+                          {...field}
+                        />
+                      </div>
+                    }}
                   />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <TextField
-                    value={userProfile?.lastName}
-                    onChange={handleInputChange}
-                    variant="outlined"
-                    required
-                    fullWidth
-                    id="lastName"
-                    label="Last Name"
+                  <Controller
                     name="lastName"
-                    autoComplete="family-name"
-                    aria-label="family-name"
+                    control={control}
+                    defaultValue={userProfile?.lastName}
+                    rules={{ required: { value: true, message: 'Required field' }, maxLength: { value: 50, message: "Max length is 50" } }}
+                    render={({ field }) => {
+                      return <div>
+                        <TextField
+                          variant="outlined"
+                          required
+                          fullWidth
+                          id="lastName"
+                          label="Last Name"
+                          autoComplete="family-name"
+                          aria-label="last name"
+                          helperText={errors.lastName?.message}
+                          error={!!(errors?.lastName)}
+                          {...field}
+                        />
+                      </div>
+                    }}
                   />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <TextField
-                    value={userProfile?.age}
-                    onChange={handleInputChange}
-                    variant="outlined"
-                    required
-                    fullWidth
-                    id="age"
-                    label="Age"
+                  <Controller
                     name="age"
-                    autoComplete="off"
-                    aria-label="age"
-                    type="number"
+                    control={control}
+                    defaultValue={userProfile?.age}
+                    rules={{ required: { value: true, message: 'Required field' }, pattern: { value: /^(1[89]|[2-9][0-9])$/, message: "Age in range 18-99" } }}
+                    render={({ field }) => {
+                      return <div>
+                        <TextField
+                          variant="outlined"
+                          required
+                          fullWidth
+                          id="age"
+                          label="Age"
+                          type="number"
+                          autoComplete="off"
+                          aria-label="age"
+                          helperText={errors.age?.message}
+                          error={!!(errors?.age)}
+                          {...field}
+                        />
+                      </div>
+                    }}
                   />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <TextField
-                    value={userProfile?.phone}
-                    onChange={handleInputChange}
-                    variant="outlined"
-                    required
-                    fullWidth
-                    id="phone"
-                    label="Phone"
+                  <Controller
                     name="phone"
-                    placeholder="30509834589"
-                    autoComplete="tel"
-                    aria-label="phone"
-                    type="number"
+                    control={control}
+                    defaultValue={userProfile?.phone}
+                    rules={{ required: { value: true, message: 'Required field' }, pattern: { value: /^(380\d{9})$/, message: "Phone number format 380501234567" } }}
+                    render={({ field }) => {
+                      return <div>
+                        <TextField
+                          variant="outlined"
+                          required
+                          fullWidth
+                          id="phone"
+                          label="Phone"
+                          autoComplete="tel"
+                          aria-label="phone"
+                          helperText={errors.phone?.message}
+                          error={!!(errors?.phone)}
+                          {...field}
+                        />
+                      </div>
+                    }}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -113,9 +156,9 @@ const ProfileForm: React.FC<Props> = ({ profile = {}, onSubmit }) => {
                     <Button
                       variant="contained"
                       color="primary"
-                      onClick={handleSubmit}
+                      type="submit"
                     >
-                      Submit
+                      {profile ? 'Save' : 'Submit'}
                     </Button>
                   </Box>
                 </Grid>
