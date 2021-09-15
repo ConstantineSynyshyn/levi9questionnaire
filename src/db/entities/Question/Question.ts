@@ -1,3 +1,4 @@
+import { QuestionCategory } from "../../../constants/configuration";
 import { QuestionWithOptionsList } from "../../../types/question";
 import { ImportQuestionTypeFile } from "./types";
 import { mapImportFileWithQuestionScheme } from "./utils";
@@ -24,7 +25,31 @@ const loadQuizQuestions = async (size: number = 20) => {
     .sort({ metacritic: -1 })
     .limit(size)
     .toArray();
-  return Promise.resolve(data);
+  return Promise.resolve(JSON.parse(JSON.stringify(data)));
 };
 
-export { createQuestionsByInputFile, loadQuizQuestions };
+const loadRandomQuestionByCategory = async (
+  category: QuestionCategory,
+  size = 0
+): Promise<QuestionWithOptionsList> => {
+  const { db } = await connectToDatabase();
+  const data = await db
+    .collection("questions")
+    .aggregate([{ $match: { category } }, { $sample: { size } }])
+    .project({
+      questionText: 1,
+      id: 1,
+      data: 1,
+      options: 1,
+      category: 1,
+      difficultyLevel: 1,
+    })
+    .toArray();
+  return Promise.resolve(JSON.parse(JSON.stringify(data)));
+};
+
+export {
+  createQuestionsByInputFile,
+  loadQuizQuestions,
+  loadRandomQuestionByCategory,
+};

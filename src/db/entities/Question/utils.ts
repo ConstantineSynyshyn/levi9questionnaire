@@ -1,9 +1,13 @@
 import { v4 } from "uuid";
+
 import {
   QuestionCategory,
+  TaskCategory,
+} from "@constants/configuration";
+import {
   QuestionWithOptions,
   QuestionWithOptionsList,
-} from "../../../types/question";
+} from "@types/question";
 import { ImportQuestionType, ImportQuestionTypeFile } from "./types";
 
 export const mapImportFileWithQuestionScheme = (
@@ -16,6 +20,7 @@ export const mapImportFileWithQuestionScheme = (
       category = QuestionCategory.JAVASCRIPT,
       difficultyLevel = 0,
       data = "",
+      taskType = TaskCategory.QUIZ,
     } = initialQuestion;
     let questionRelatedProps = {
       questionText: text,
@@ -32,6 +37,7 @@ export const mapImportFileWithQuestionScheme = (
       category,
       difficultyLevel,
       id: v4(),
+      taskType,
       options: convertPlainOptionsToObject(options),
       ...questionRelatedProps,
     };

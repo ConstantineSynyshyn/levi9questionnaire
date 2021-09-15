@@ -1,1 +1,5 @@
-export { createQuestionsByInputFile, loadQuizQuestions } from "./Question";
+export {
+  createQuestionsByInputFile,
+  loadQuizQuestions,
+  loadRandomQuestionByCategory,
+} from "./Question";

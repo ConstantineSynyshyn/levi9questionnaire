@@ -1,17 +1,22 @@
-import formidable from 'formidable';
+import formidable from "formidable";
 import fs from "fs";
-import { NextApiRequest, NextApiResponse } from 'next'
+import { NextApiRequest, NextApiResponse } from "next";
 import * as path from "path";
 
-import { createQuestionsByInputFile } from '../db/entities/Question'
+import { createQuestionsByInputFile } from "../../db/entities/Question";
 
-const handleQuestionUpload = async (req: NextApiRequest, res: NextApiResponse) => {
+const handleQuestionUpload = async (
+  req: NextApiRequest,
+  res: NextApiResponse
+) => {
   const form = new formidable.IncomingForm();
   form.parse(req, async (err: any, fields: any, files: any) => {
     if (files?.file) {
       try {
         const buffer = fs.readFileSync(files.file.path);
-        const result = await createQuestionsByInputFile(JSON.parse(buffer.toString()));
+        const result = await createQuestionsByInputFile(
+          JSON.parse(buffer.toString())
+        );
         return res.status(201).json(result);
       } catch {
         return res.status(400).json({
@@ -27,4 +32,4 @@ const handleQuestionUpload = async (req: NextApiRequest, res: NextApiResponse) =
   });
 };
 
-export default handleQuestionUpload
+export default handleQuestionUpload;

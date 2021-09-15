@@ -2,15 +2,15 @@ import React from "react";
 
 import Container from "@material-ui/core/Container";
 
-// import { questionsWithOptionsData } from "../../__mocks__/questionsMock";
+import QuestionContainer from "@components/QuestionContainer/QuestionContainer";
+import initializeQuiz, { getQuizQuestionInfo } from '@services/QuestionManager/manageQuiz';
+import { Page } from "@types/page";
+import { QuizQuestionInfoType } from "@types/question";
 
-import type { Page } from "../types/page";
+interface Props extends QuizQuestionInfoType {}
 
-import QuestionContainer from "../components/QuestionContainer";
-import { loadQuizQuestions } from "../db/entities/Question";
-
-const QuizPage: Page = ({ data }) => {
-  return <QuestionContainer questionsData={data} />;
+const QuizPage: Page<Props> = (props) => {
+  return <QuestionContainer {...props} />;
 };
 
 QuizPage.getLayout = (page) => (
@@ -20,12 +20,14 @@ QuizPage.getLayout = (page) => (
 );
 
 export const getServerSideProps = async () => {
-  const questions = await loadQuizQuestions();
+  // @TODO in case quiz finalized redirect to home page
+  await initializeQuiz();
+  const quizQuestionInfo = await getQuizQuestionInfo();
+  console.log('quizQuestionInfo', quizQuestionInfo);
+  // @TODO in case (startedAt + total * timePerQuestion) < Date.now() we should finalize quiz and go to thank you page
   return {
-    props: {
-      data: JSON.parse(JSON.stringify(questions)),
-    },
+    props: quizQuestionInfo,
   };
-}
+};
 
 export default QuizPage;
