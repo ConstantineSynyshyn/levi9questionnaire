@@ -1,4 +1,4 @@
-import { Profile } from '@lq-types/profile';
+import { Profile } from '@types/profile';
 
 export interface Props {
   profile?: Partial<Profile>;

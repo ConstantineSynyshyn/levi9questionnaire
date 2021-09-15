@@ -1,10 +1,9 @@
 import React from "react";
 
 import Container from "@material-ui/core/Container";
-import { Page } from "@lq-types/page";
+import { Page, Profile } from "@types";
 import ProfileForm from "@components/ProfileForm";
 import useOnWindowLeave from "@hooks/useOnWindowLeave";
-import { Profile } from "@lq-types/profile";
 
 const ProfilePage: Page = () => {
     useOnWindowLeave();

@@ -16,6 +16,7 @@ import {
 } from "@material-ui/core";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import { SIGN_UP_API } from "../../constants/apiRoutes";
+import AuthContainer from '@components/AuthContainer';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -100,7 +101,7 @@ const AuthForm = () => {
     }
   }
 
-  return (
+  return (<>
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
@@ -166,6 +167,8 @@ const AuthForm = () => {
         </form>
       </div>
     </Container>
+    <AuthContainer></AuthContainer>
+    </>
   );
 };
 
