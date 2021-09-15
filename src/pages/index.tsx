@@ -1,6 +1,6 @@
 import React from "react";
 import Router from "next/router";
-
+import { useSession } from "next-auth/client";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
@@ -21,6 +21,7 @@ interface Props {
 
 const IndexPage: Page<Props> = (props) => {
   const { isQuizStarted } = props;
+  const [session] = useSession();
   const quizInfoBlock = React.useMemo(() => {
     if (isQuizStarted) {
       return (
@@ -48,7 +49,7 @@ const IndexPage: Page<Props> = (props) => {
   return (
     <Box component="div" p={2}>
       <Typography variant="h3" color="textPrimary" gutterBottom>
-        Welcome!
+        Welcome {session?.user?.name}!
       </Typography>
       <Typography variant="body1" color="textPrimary" gutterBottom>
         You have only one attempt.
