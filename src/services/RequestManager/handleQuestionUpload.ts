@@ -17,7 +17,7 @@ const handleQuestionUpload = async (
         const result = await createQuestionsByInputFile(
           JSON.parse(buffer.toString())
         );
-        return res.status(201).json(result);
+        return res.status(201).json({ size: result?.length });
       } catch {
         return res.status(400).json({
           status: "Fail",

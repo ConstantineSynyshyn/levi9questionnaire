@@ -22,3 +22,5 @@ export interface User {
   userAnswers: UserAnswers;
   isConfirmed: boolean;
 }
+
+export type Users = ReadonlyArray<User>;

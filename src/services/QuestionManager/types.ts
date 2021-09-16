@@ -6,3 +6,8 @@ export interface QuizQuestionInfoType {
   passed: number,
   startedAt: number,
 }
+
+export interface QuizAnaliseInfo {
+  value: number;
+  answerMap: { [key: string]: boolean };
+}

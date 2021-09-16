@@ -51,7 +51,7 @@ const QuestionComponent: React.FC<Props> = (props) => {
             <FormLabel component="legend">Options:</FormLabel>
             <RadioGroup aria-label="question" name="question" value={currentValue} onChange={onChange}>
               {options.map((text) => (
-                <Grid item xs={6} key={text}>
+                <Grid item key={text}>
                   <FormControlLabel
                     value={text}
                     control={<Radio color="primary" />}

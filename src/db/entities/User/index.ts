@@ -1,1 +1,1 @@
-export { getCurrentUser, findQuizByUserEmail, storeAnswers, storeUserQuestions } from './User';
+export { getUserByEmail, storeAnswers, storeUserQuestions, getUserList } from './User';
