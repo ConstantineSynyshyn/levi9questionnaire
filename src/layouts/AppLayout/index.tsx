@@ -1,6 +1,5 @@
 import {
   AppBar,
-  createStyles,
   IconButton,
   makeStyles,
   Theme,

@@ -1,22 +1,20 @@
 import {
   Container,
-  createStyles,
-  makeStyles, Theme
+  makeStyles
 } from "@material-ui/core";
 import { Props, SignInProviderProps } from "./types";
 import GitHubAuthButton from '@components/AuthContainer/GitHubAuthButton';
 import { signIn, SignInResponse } from "next-auth/client";
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    container: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center'
-    }
-  }),
-);
+const useStyles = makeStyles({
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+});
+
 const AuthContainer: React.FC<Props> = () => {
 
   const classes = useStyles();
