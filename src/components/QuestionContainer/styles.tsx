@@ -14,7 +14,7 @@ export const StyledQuestionBox = styled(Box)`
   width: 650px;
   display: flex;
   flex-direction: column;
-  margin: 150px auto;
+  margin: 50px auto;
 `;
 
 export const StyledQuestionHeader = styled.div`

@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 
 interface UploadInfoType {
   result?: ReadonlyArray<any>;
+  amount?: number;
   isLoading: boolean;
   isSuccess?: boolean;
   error?: any;
@@ -19,9 +20,9 @@ const usePostFile = (): [UploadInfoType, (formData: FormData) => void] => {
       method: "POST",
       body: formData,
     })
-      .then((response) => response.body)
+      .then((response) => response.json())
       .then((body) => {
-        setUploadInfo({ isLoading: false, isSuccess: true });
+        setUploadInfo({ amount: body.size, isLoading: false, isSuccess: true });
       })
       .catch((error) => {
         setUploadInfo({ error, isLoading: false, isSuccess: false });

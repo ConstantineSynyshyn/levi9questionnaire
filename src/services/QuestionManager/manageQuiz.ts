@@ -4,7 +4,7 @@ import {
   TaskCategory,
 } from "@constants/configuration";
 import { loadRandomQuestionByCategory } from "@db/entities/Question";
-import { getCurrentUser, storeUserQuestions } from "@db/entities/User";
+import { getUserByEmail, storeUserQuestions } from "@db/entities/User";
 import { InitialUseQuestion } from "@db/entities/User/types";
 import {
   UserQuestionView,
@@ -14,7 +14,7 @@ import {
 } from "@types/question";
 
 export const initializeQuiz = async () => {
-  const user = await getCurrentUser("");
+  const user = await getUserByEmail("");
   if (user.quizStartTime && user.initialQuestions) {
     return;
   }
@@ -59,7 +59,7 @@ export const getCurrentQuestion = async (): Promise<{
   currentQuestion: InitialUseQuestion | undefined
   total: number
 }> => {
-  const user = await getCurrentUser("");
+  const user = await getUserByEmail("");
   const passedQuestionsAmount = user.userAnswers?.length || 0;
   return Promise.resolve({
     currentQuestion: user.initialQuestions[passedQuestionsAmount],
@@ -68,7 +68,7 @@ export const getCurrentQuestion = async (): Promise<{
 };
 
 export const getQuizQuestionInfo = async (): Promise<QuizQuestionInfoType> => {
-  const user = await getCurrentUser("");
+  const user = await getUserByEmail("");
   const passedQuestionsAmount = user.userAnswers?.length || 0;
   const nextQuestion = user.initialQuestions[passedQuestionsAmount];
   if (!nextQuestion) {

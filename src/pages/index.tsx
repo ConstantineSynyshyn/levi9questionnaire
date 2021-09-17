@@ -13,7 +13,7 @@ import {
   DEFAULT_OPEN_QUESTION_TIME_TO_RESPOND,
   DEFAULT_TIME_TO_RESPOND,
 } from "@constants/configuration";
-import { getCurrentUser } from "@db/entities/User";
+import { getUserByEmail } from "@db/entities/User";
 
 interface Props {
   isQuizStarted: boolean;
@@ -73,18 +73,18 @@ const IndexPage: Page<Props> = (props) => {
   );
 };
 export const getServerSideProps = async (context) => {
-  const session = await getSession({ req: context.req });
+  // const session = await getSession({ req: context.req });
 
-  if (!session) {
+  /*if (!session) {
     return {
       redirect: {
         destination: "/auth",
         permanent: false,
       },
     };
-  }
+  }*/
 
-  const currentUser = await getCurrentUser("");
+  const currentUser = await getUserByEmail("");
   return {
     props: {
       session: null,

@@ -23,7 +23,6 @@ export const getServerSideProps = async () => {
   // @TODO in case quiz finalized redirect to home page
   await initializeQuiz();
   const quizQuestionInfo = await getQuizQuestionInfo();
-  console.log('quizQuestionInfo', quizQuestionInfo);
   // @TODO in case (startedAt + total * timePerQuestion) < Date.now() we should finalize quiz and go to thank you page
   return {
     props: quizQuestionInfo,
