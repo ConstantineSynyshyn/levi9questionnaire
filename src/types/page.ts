@@ -5,3 +5,9 @@ export type Page<T = {}> = NextPage<T> & {
   getLayout?: (page: ReactElement) => ReactNode;
   layout?: ComponentType;
 };
+
+export interface LeftTimeType {
+  hours?: number;
+  minutes?: number;
+  seconds?: number;
+}

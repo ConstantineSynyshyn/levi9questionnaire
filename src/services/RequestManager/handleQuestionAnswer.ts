@@ -25,7 +25,6 @@ const handleQuestionAnswer = async (
         internalQuestionId: currentQuestion?.internalQuestionId!,
         answer: JSON.parse(fields?.answer),
       };
-      console.log('answers', answers);
       await storeAnswers(
         [answers],
         total === currentQuestion?.internalQuestionId

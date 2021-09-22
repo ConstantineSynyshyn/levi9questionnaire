@@ -54,6 +54,16 @@ export const storeAnswers = async (
   );
 };
 
+export const finalizeQuiz = async (
+) => {
+  const email = "i.tananika@levi9.com";
+  const { db } = await connectToDatabase();
+  await db.collection("users").updateOne(
+    { email },
+    { $set: { quizEndTime: Date.now() } }
+  );
+};
+
 export const getUserList = async (): Promise<Users> => {
   const { db } = await connectToDatabase();
   const list = await db

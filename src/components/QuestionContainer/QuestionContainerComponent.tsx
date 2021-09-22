@@ -3,6 +3,7 @@ import React, { ChangeEvent } from "react";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
+import QuizTimer from '@components/Timer/QuizTimer';
 import { UserQuestionView } from '@types/question';
 import QuestionComponent from "./QuestionComponent";
 
@@ -16,8 +17,10 @@ import {
 
 interface Props {
   question?: UserQuestionView;
+  startedAt: number;
   totalAmount: number;
   currentQuestionNumber: number;
+  passedAt?: number;
   onChange: (e: ChangeEvent<any>) => void;
   onSubmit: () => void;
   currentValue?: string | ReadonlyArray<string>
@@ -25,12 +28,14 @@ interface Props {
 
 const QuestionContainerComponent: React.FC<Props> = (props) => {
   const {
+    startedAt,
     question,
     totalAmount,
     currentQuestionNumber,
     onSubmit,
     onChange,
     currentValue,
+    passedAt,
   } = props;
   return (
     <StyledQuestionContainer>
@@ -40,7 +45,7 @@ const QuestionContainerComponent: React.FC<Props> = (props) => {
             {currentQuestionNumber}/{totalAmount}
           </Typography>
           <StyledTimerContainer>
-            {/* <Timer timeLeft={timer} timeForResponse={timeForResponse}></Timer>*/ }
+            <QuizTimer startTime={startedAt} quizSize={totalAmount} passedAt={passedAt} />
           </StyledTimerContainer>
         </StyledQuestionHeader>
         {Boolean(question) && (
