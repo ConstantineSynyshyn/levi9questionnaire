@@ -17,16 +17,26 @@ import { getUserByEmail } from "@db/entities/User";
 
 interface Props {
   isQuizStarted: boolean;
+  isQuizEnded: boolean;
 }
 
 const IndexPage: Page<Props> = (props) => {
-  const { isQuizStarted } = props;
+  const { isQuizStarted, isQuizEnded = false } = props;
   const [session] = useSession();
   const quizInfoBlock = React.useMemo(() => {
+    if (isQuizEnded) {
+      return (
+        <Box display="flex" justifyContent="center" component="div" m={2}>
+          <Typography variant="h5" color="textPrimary" gutterBottom>
+            Quiz is already ended
+          </Typography>
+        </Box>
+      )
+    }
     if (isQuizStarted) {
       return (
         <Box display="flex" justifyContent="center" component="div" m={2}>
-          <Typography variant="h5" color="colorTextPrimary" gutterBottom>
+          <Typography variant="h5" color="textPrimary" gutterBottom>
             Quiz is already started
           </Typography>
         </Box>
@@ -45,7 +55,7 @@ const IndexPage: Page<Props> = (props) => {
         </Button>
       </Box>
     );
-  }, [isQuizStarted]);
+  }, [isQuizStarted, isQuizEnded]);
   return (
     <Box component="div" p={2}>
       <Typography variant="h3" color="textPrimary" gutterBottom>
@@ -91,6 +101,7 @@ export const getServerSideProps = async (context) => {
       isQuizStarted:
         Boolean(currentUser?.quizStartTime) &&
         Boolean(currentUser?.initialQuestions),
+      isQuizEnded: Boolean(currentUser?.quizEndTime),
     },
   };
 };

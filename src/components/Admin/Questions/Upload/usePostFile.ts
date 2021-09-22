@@ -1,5 +1,7 @@
 import { useCallback, useState } from "react";
 
+import { UPLOAD_QUESTION_URL } from '@constants/apiRoutes';
+
 interface UploadInfoType {
   result?: ReadonlyArray<any>;
   amount?: number;
@@ -7,8 +9,6 @@ interface UploadInfoType {
   isSuccess?: boolean;
   error?: any;
 }
-
-const UPLOAD_QUESTION_URL = "/api/upload-questions";
 
 const initialState = { isLoading: false };
 

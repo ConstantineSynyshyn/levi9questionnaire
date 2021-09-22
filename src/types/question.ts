@@ -30,7 +30,7 @@ export interface UserQuestionView
 export interface QuizQuestionInfoType {
   nextQuestion?: UserQuestionView;
   total: number;
-  passed: number;
+  passed?: number;
   startedAt: number;
   passedAt?: number;
 }

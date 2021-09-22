@@ -1,5 +1,5 @@
 import React from "react";
-import type { AppProps } from "next/app";
+import { AppProps } from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -10,6 +10,7 @@ import theme from "../styles/theme";
 import AppLayout from "../layouts/AppLayout";
 import { Page } from "../types/page";
 
+// @TODO typing not really  correct, there is dependency on some props from server which aren't described
 type Props = AppProps & {
   Component: Page;
 };
@@ -43,7 +44,9 @@ const MyApp: React.FC<Props> = (props) => {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <AppLayout>{getLayout(<Component {...pageProps} />)}</AppLayout>
+        <AppLayout isTimerVisible={pageProps.isTimerVisible}>
+          {getLayout(<Component {...pageProps} />)}
+        </AppLayout>
       </ThemeProvider>
     </Provider>
   );

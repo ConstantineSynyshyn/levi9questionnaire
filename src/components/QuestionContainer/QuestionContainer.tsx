@@ -38,6 +38,7 @@ const QuestionContainer: React.FC<Props> = (props) => {
     <QuestionContainerComponent
       question={nextQuestion}
       totalAmount={total}
+      startedAt={startedAt}
       currentQuestionNumber={passed + 1}
       onChange={handleChange}
       onSubmit={handleSubmit}

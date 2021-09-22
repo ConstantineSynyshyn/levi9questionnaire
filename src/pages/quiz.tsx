@@ -25,7 +25,10 @@ export const getServerSideProps = async () => {
   const quizQuestionInfo = await getQuizQuestionInfo();
   // @TODO in case (startedAt + total * timePerQuestion) < Date.now() we should finalize quiz and go to thank you page
   return {
-    props: quizQuestionInfo,
+    props: {
+      ...quizQuestionInfo,
+      isTimerVisible: false,
+    },
   };
 };
 

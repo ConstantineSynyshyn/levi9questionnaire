@@ -1,9 +1,8 @@
 import { useCallback, useState } from "react";
 
+import { SUBMIT_QUESTION_URL } from '@constants/apiRoutes';
 import { QuizQuestionInfoType } from "@types/question";
 import { HandleChange, HandleSubmit } from "../types";
-
-const SUBMIT_QUESTION_URL = "/api/submit-question";
 
 interface State extends QuizQuestionInfoType {
   isLoading: boolean;
