@@ -56,6 +56,7 @@ async function createUser(email: string, password: string) {
 }
 
 const AuthForm = () => {
+<<<<<<< Updated upstream
   const [hasAnAccount, setHasAnAccount] = React.useState(false);
   const router = useRouter();
   const session = useSession();
@@ -64,6 +65,16 @@ const AuthForm = () => {
   const classes = useStyles();
   const [emailValue, setEmailValue] = React.useState("");
   const [passwordValue, setPasswordValue] = React.useState("");
+=======
+  const [hasAnAccount, setHasAnAccount] = React.useState(false)
+  const router = useRouter()
+  const session = useSession()
+
+  const classes = useStyles()
+  const [emailValue, setEmailValue] = React.useState("")
+  const [passwordValue, setPasswordValue] = React.useState("")
+  const [errorMessage, setErrorMessage] = React.useState(null)
+>>>>>>> Stashed changes
   const toogleModeHandler = () => {
     setHasAnAccount((prevState) => !prevState);
   };
@@ -84,6 +95,7 @@ const AuthForm = () => {
         redirect: false,
         email: emailValue,
         password: passwordValue,
+<<<<<<< Updated upstream
       });
 
       if (!result?.error) {
@@ -91,12 +103,22 @@ const AuthForm = () => {
       }
 
       return;
+=======
+      })
+      if (!result?.error) {
+        router.replace("/")
+        return
+      }
+      setErrorMessage(result?.error)
+      return
+>>>>>>> Stashed changes
     }
 
     try {
       const result = await createUser(emailValue, passwordValue);
       console.log(result);
     } catch (error) {
+<<<<<<< Updated upstream
       console.log(error);
     }
   }
@@ -126,6 +148,70 @@ const AuthForm = () => {
                 autoComplete="email"
                 aria-label="email"
               />
+=======
+      setErrorMessage(error.message)
+      console.log(error)
+    }
+  }
+
+  return (
+    <>
+      <Container component="main" maxWidth="xs">
+        <CssBaseline />
+        <div className={classes.paper}>
+          <Avatar className={classes.avatar}>
+            <LockOutlinedIcon />
+          </Avatar>
+          <Typography component="h1" variant="h5">
+            Sign up
+          </Typography>
+          <form className={classes.form} noValidate>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <TextField
+                  value={emailValue}
+                  onChange={emailChangeHandler}
+                  variant="outlined"
+                  required
+                  fullWidth
+                  id="email"
+                  label="Email Address"
+                  name="email"
+                  autoComplete="email"
+                  aria-label="email"
+                  error={Boolean(errorMessage)}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  value={passwordValue}
+                  onChange={passwordChangeHandler}
+                  variant="outlined"
+                  required
+                  fullWidth
+                  name="password"
+                  label="Password"
+                  type="password"
+                  id="password"
+                  autoComplete="current-password"
+                  aria-label="password"
+                  helperText={errorMessage}
+                  error={Boolean(errorMessage)}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      value={hasAnAccount}
+                      color="primary"
+                      onClick={toogleModeHandler}
+                    />
+                  }
+                  label="I already have an account"
+                />
+              </Grid>
+>>>>>>> Stashed changes
             </Grid>
             <Grid item xs={12}>
               <TextField
