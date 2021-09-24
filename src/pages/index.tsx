@@ -15,7 +15,6 @@ import {
   DEFAULT_TIME_TO_RESPOND,
 } from "@constants/configuration"
 import { getUserByEmail } from "@db/entities/User"
-import { withPageAuthRequired } from "@utils/withPageAuthRequired"
 
 interface Props {
   isQuizStarted: boolean
@@ -85,24 +84,24 @@ const IndexPage: Page<Props> = (props) => {
     </Box>
   )
 }
-export const getServerSideProps: GetServerSideProps = withPageAuthRequired(
-  async (context) => {
-    const currentUser = await getUserByEmail("")
-    return {
-      props: {
-        isQuizStarted:
-          Boolean(currentUser?.quizStartTime) &&
-          Boolean(currentUser?.initialQuestions),
-        isQuizEnded: Boolean(currentUser?.quizEndTime),
-      },
-    }
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const currentUser = await getUserByEmail("")
+  return {
+    props: {
+      isQuizStarted:
+        Boolean(currentUser?.quizStartTime) &&
+        Boolean(currentUser?.initialQuestions),
+      isQuizEnded: Boolean(currentUser?.quizEndTime),
+    },
   }
-)
+}
 
 IndexPage.getLayout = (page) => (
   <Container maxWidth="md" disableGutters>
     {page}
   </Container>
 )
+
+IndexPage.requireAuth = true
 
 export default IndexPage
