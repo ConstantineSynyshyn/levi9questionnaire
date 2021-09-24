@@ -5,7 +5,6 @@ import Box from "@material-ui/core/Box"
 import Typography from "@material-ui/core/Typography"
 
 import { Page } from "@types/page"
-import { withPageAuthRequired } from "@utils/withPageAuthRequired"
 
 const CongratulationPage: Page<Props> = () => {
   return (
@@ -26,6 +25,6 @@ CongratulationPage.getLayout = (page) => (
   </Container>
 )
 
-export const getServerSideProps = withPageAuthRequired()
+CongratulationPage.requireAuth = true
 
 export default CongratulationPage

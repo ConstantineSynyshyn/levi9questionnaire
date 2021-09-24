@@ -1,40 +1,34 @@
-import React from "react";
-import { AppProps } from "next/app";
-import Head from "next/head";
-import { ThemeProvider } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
+import React from "react"
+import { AppProps } from "next/app"
+import Head from "next/head"
+import { ThemeProvider } from "@material-ui/core/styles"
+import CssBaseline from "@material-ui/core/CssBaseline"
 
-import { Provider } from "next-auth/client";
+import { Provider } from "next-auth/client"
 
-import theme from "../styles/theme";
-import AppLayout from "../layouts/AppLayout";
-import { Page } from "../types/page";
+import theme from "../styles/theme"
+import AppLayout from "../layouts/AppLayout"
+import { Page } from "../types/page"
+import AuthGuard from "@components/AuthGuard"
 
 // @TODO typing not really  correct, there is dependency on some props from server which aren't described
 type Props = AppProps & {
-  Component: Page;
-};
+  Component: Page
+}
 
 const MyApp: React.FC<Props> = (props) => {
-  const { Component, pageProps } = props;
+  const { Component, pageProps } = props
 
   React.useEffect(() => {
-    const jssStyles = document.querySelector("#jss-server-side");
+    const jssStyles = document.querySelector("#jss-server-side")
     if (jssStyles) {
-      jssStyles.parentElement?.removeChild(jssStyles);
+      jssStyles.parentElement?.removeChild(jssStyles)
     }
-  }, []);
+  }, [])
 
-  const getLayout = Component.getLayout || ((page) => page);
-
+  const getLayout = Component.getLayout || ((page) => page)
   return (
-    <Provider
-      options={{
-        clientMaxAge: 0,
-        keepAlive: 0,
-      }}
-      session={pageProps.session}
-    >
+    <>
       <Head>
         <title>Levi9 questionnaire</title>
         <meta
@@ -44,12 +38,24 @@ const MyApp: React.FC<Props> = (props) => {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <AppLayout isTimerVisible={pageProps.isTimerVisible}>
-          {getLayout(<Component {...pageProps} />)}
-        </AppLayout>
+        <Provider
+          options={{
+            clientMaxAge: 0,
+            keepAlive: 0,
+          }}
+          session={pageProps.session}
+        >
+          <AppLayout isTimerVisible={pageProps.isTimerVisible}>
+            {Component.requireAuth ? (
+              <AuthGuard>{getLayout(<Component {...pageProps} />)}</AuthGuard>
+            ) : (
+              getLayout(<Component {...pageProps} />)
+            )}
+          </AppLayout>
+        </Provider>
       </ThemeProvider>
-    </Provider>
-  );
-};
+    </>
+  )
+}
 
-export default MyApp;
+export default MyApp

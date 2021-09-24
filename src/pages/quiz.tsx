@@ -8,7 +8,6 @@ import initializeQuiz, {
 } from "@services/QuestionManager/manageQuiz"
 import { Page } from "@types/page"
 import { QuizQuestionInfoType } from "@types/question"
-import { withPageAuthRequired } from "@utils/withPageAuthRequired"
 
 interface Props extends QuizQuestionInfoType {}
 
@@ -22,7 +21,7 @@ QuizPage.getLayout = (page) => (
   </Container>
 )
 
-export const getServerSideProps = withPageAuthRequired(async () => {
+export const getServerSideProps = async () => {
   // @TODO in case quiz finalized redirect to home page
   await initializeQuiz()
   const quizQuestionInfo = await getQuizQuestionInfo()
@@ -33,6 +32,8 @@ export const getServerSideProps = withPageAuthRequired(async () => {
       isTimerVisible: false,
     },
   }
-})
+}
+
+QuizPage.requireAuth = true
 
 export default QuizPage
