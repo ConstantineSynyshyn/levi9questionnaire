@@ -1,10 +1,11 @@
-import React from "react";
+import React from "react"
 
-import Container from "@material-ui/core/Container";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container"
+import Box from "@material-ui/core/Box"
+import Typography from "@material-ui/core/Typography"
 
-import { Page } from "@types/page";
+import { Page } from "@types/page"
+import { withPageAuthRequired } from "@utils/withPageAuthRequired"
 
 const CongratulationPage: Page<Props> = () => {
   return (
@@ -16,13 +17,15 @@ const CongratulationPage: Page<Props> = () => {
         if you want to ran it one more time - got to DB and remove answers
       </Typography>
     </Box>
-  );
-};
+  )
+}
 
 CongratulationPage.getLayout = (page) => (
   <Container maxWidth="md" disableGutters>
     {page}
   </Container>
-);
+)
 
-export default CongratulationPage;
+export const getServerSideProps = withPageAuthRequired()
+
+export default CongratulationPage

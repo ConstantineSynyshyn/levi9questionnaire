@@ -6,16 +6,16 @@ import {
   Theme,
   Toolbar,
   Grid,
-} from "@material-ui/core";
-import { ExitToApp } from "@material-ui/icons";
-import Image from "next/image";
-import { signOut, useSession } from "next-auth/client";
-import React from "react";
+} from "@material-ui/core"
+import { ExitToApp } from "@material-ui/icons"
+import Image from "next/image"
+import { signOut, useSession } from "next-auth/client"
+import React from "react"
 
-import TopBarTimer from "@components/Timer/TopBarTimer";
-import Sidebar from "./Sidebar/Sidebar";
-import { useRouter } from "next/router";
-import { ROUTES } from "@constants/routes";
+import TopBarTimer from "@components/Timer/TopBarTimer"
+import Sidebar from "./Sidebar/Sidebar"
+import { useRouter } from "next/router"
+import { ROUTES } from "@constants/routes"
 
 const useStyles = makeStyles((theme: Theme) => ({
   appBar: {
@@ -38,19 +38,19 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: "flex",
     alignItems: "center",
   },
-}));
+}))
 
 interface Props {
-  isTimerVisible?: boolean;
+  isTimerVisible?: boolean
 }
 
 const AppLayout: React.FC<Props> = ({ isTimerVisible = true, children }) => {
-  const classes = useStyles();
-  const [session] = useSession();
-  const route = useRouter();
-  const goHome = React.useCallback(() => route.push(ROUTES.INDEX), [route]);
-  const handleSignOut = React.useCallback(() => signOut(), []);
-  const showTimer = isTimerVisible; // && Boolean(session);
+  const classes = useStyles()
+  const [session] = useSession()
+  const route = useRouter()
+  const goHome = React.useCallback(() => route.push(ROUTES.INDEX), [route])
+  const handleSignOut = React.useCallback(() => signOut(), [])
+  const showTimer = isTimerVisible && Boolean(session)
   return (
     <>
       <AppBar position="fixed" className={classes.appBar}>
@@ -83,13 +83,13 @@ const AppLayout: React.FC<Props> = ({ isTimerVisible = true, children }) => {
           </Grid>
         </Toolbar>
       </AppBar>
-      <Sidebar />
+      {session && <Sidebar />}
       <main className={classes.content}>
         <div className={classes.toolbar} />
         {children}
       </main>
     </>
-  );
-};
+  )
+}
 
-export default AppLayout;
+export default AppLayout

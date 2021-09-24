@@ -1,28 +1,31 @@
-import React from "react";
-import Router from "next/router";
-import { useSession } from "next-auth/client";
-import Container from "@material-ui/core/Container";
-import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import { getSession } from "next-auth/client";
+import React from "react"
+import { GetServerSideProps } from "next"
+import Router from "next/router"
+import { useSession } from "next-auth/client"
+import Container from "@material-ui/core/Container"
+import Box from "@material-ui/core/Box"
+import Button from "@material-ui/core/Button"
+import Typography from "@material-ui/core/Typography"
+import { getSession } from "next-auth/client"
 
-import type { Page } from "../types/page";
-import { ROUTES } from "@constants/routes";
+import type { Page } from "../types/page"
+import { ROUTES } from "@constants/routes"
 import {
   DEFAULT_OPEN_QUESTION_TIME_TO_RESPOND,
   DEFAULT_TIME_TO_RESPOND,
-} from "@constants/configuration";
-import { getUserByEmail } from "@db/entities/User";
+} from "@constants/configuration"
+import { getUserByEmail } from "@db/entities/User"
+import { withPageAuthRequired } from "@utils/withPageAuthRequired"
 
 interface Props {
-  isQuizStarted: boolean;
-  isQuizEnded: boolean;
+  isQuizStarted: boolean
+  isQuizEnded: boolean
 }
 
 const IndexPage: Page<Props> = (props) => {
-  const { isQuizStarted, isQuizEnded = false } = props;
-  const [session] = useSession();
+  const { isQuizStarted, isQuizEnded = false } = props
+  const [session] = useSession()
+  console.log(session)
   const quizInfoBlock = React.useMemo(() => {
     if (isQuizEnded) {
       return (
@@ -48,14 +51,14 @@ const IndexPage: Page<Props> = (props) => {
           variant="contained"
           color="primary"
           onClick={() => {
-            Router.push(ROUTES.QUIZ);
+            Router.push(ROUTES.QUIZ)
           }}
         >
           Start
         </Button>
       </Box>
-    );
-  }, [isQuizStarted, isQuizEnded]);
+    )
+  }, [isQuizStarted, isQuizEnded])
   return (
     <Box component="div" p={2}>
       <Typography variant="h3" color="textPrimary" gutterBottom>
@@ -80,36 +83,26 @@ const IndexPage: Page<Props> = (props) => {
       </Typography>
       {quizInfoBlock}
     </Box>
-  );
-};
-export const getServerSideProps = async (context) => {
-  // const session = await getSession({ req: context.req });
-
-  /*if (!session) {
+  )
+}
+export const getServerSideProps: GetServerSideProps = withPageAuthRequired(
+  async (context) => {
+    const currentUser = await getUserByEmail("")
     return {
-      redirect: {
-        destination: "/auth",
-        permanent: false,
+      props: {
+        isQuizStarted:
+          Boolean(currentUser?.quizStartTime) &&
+          Boolean(currentUser?.initialQuestions),
+        isQuizEnded: Boolean(currentUser?.quizEndTime),
       },
-    };
-  }*/
-
-  const currentUser = await getUserByEmail("");
-  return {
-    props: {
-      session: null,
-      isQuizStarted:
-        Boolean(currentUser?.quizStartTime) &&
-        Boolean(currentUser?.initialQuestions),
-      isQuizEnded: Boolean(currentUser?.quizEndTime),
-    },
-  };
-};
+    }
+  }
+)
 
 IndexPage.getLayout = (page) => (
   <Container maxWidth="md" disableGutters>
     {page}
   </Container>
-);
+)
 
-export default IndexPage;
+export default IndexPage
