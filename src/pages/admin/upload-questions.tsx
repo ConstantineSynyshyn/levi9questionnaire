@@ -16,5 +16,6 @@ UploadQuestionsPage.getLayout = (page) => (
 )
 
 UploadQuestionsPage.requireAuth = true
+UploadQuestionsPage.isAdminPage = true
 
 export default UploadQuestionsPage

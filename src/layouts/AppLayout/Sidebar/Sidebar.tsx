@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles, Theme } from "@material-ui/core";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -11,7 +10,14 @@ import { useRouter } from "next/router";
 
 import { ROUTES } from "@constants/routes";
 
-const menuItems = [
+import { SidebarMenuItems } from "./types";
+import useStyles from "./useStyles";
+
+interface Props {
+  isAdminPanel?: boolean;
+}
+
+const adminMenuItems: SidebarMenuItems = [
   {
     IconComponent: PeopleIcon,
     path: ROUTES.USERS,
@@ -24,39 +30,15 @@ const menuItems = [
   },
 ];
 
-const drawerWidth = 240;
+const candidateMenuItems: SidebarMenuItems = [];
 
-const useStyles = makeStyles((theme: Theme) => ({
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
-    whiteSpace: "nowrap",
-  },
-  drawerClose: {
-    transition: theme.transitions.create("width", {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    overflowX: "hidden",
-    width: theme.spacing(7) + 1,
-    [theme.breakpoints.up("sm")]: {
-      width: theme.spacing(9) + 1,
-    },
-  },
-  toolbar: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-end",
-    padding: theme.spacing(0, 1),
-    ...theme.mixins.toolbar,
-  },
-}));
-
-const Sidebar = () => {
+const Sidebar: React.FC<Props> = ({ isAdminPanel = false }) => {
   const classes = useStyles();
   const route = useRouter();
 
-  return (
+  const menuItems = isAdminPanel ? adminMenuItems : candidateMenuItems;
+
+  return menuItems.length ? (
     <Drawer
       variant="permanent"
       className={`${classes.drawer} ${classes.drawerClose}`}
@@ -76,7 +58,7 @@ const Sidebar = () => {
         ))}
       </List>
     </Drawer>
-  );
+  ) : null;
 };
 
 export default Sidebar;

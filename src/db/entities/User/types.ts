@@ -21,6 +21,7 @@ export interface User {
   quizEndTime?: number;
   userAnswers: UserAnswers;
   isConfirmed: boolean;
+  isAdmin?: boolean;
 }
 
 export type Users = ReadonlyArray<User>;

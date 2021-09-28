@@ -6,7 +6,15 @@ export const prepareInitialQuestion = (
   questions: QuestionWithOptionsList
 ): InitialUseQuestions =>
   [...questions].reduce((list: InitialUseQuestions, item, index) => {
-    const { category, difficultyLevel, id, options, questionText, data, taskType = TaskCategory.QUIZ } = item;
+    const {
+      category,
+      difficultyLevel,
+      id,
+      options,
+      questionText,
+      data,
+      taskType = TaskCategory.QUIZ,
+    } = item;
     return [
       ...list,
       {

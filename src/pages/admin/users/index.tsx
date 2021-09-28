@@ -44,5 +44,6 @@ export const getServerSideProps = async () => {
 }
 
 QuizPage.requireAuth = true
+QuizPage.isAdminPage = true
 
 export default QuizPage
