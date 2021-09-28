@@ -6,6 +6,7 @@ export type Page<T = {}> = NextPage<T> &
     getLayout: (page: ReactElement) => ReactNode
     layout: ComponentType
     requireAuth: boolean
+    isAdminPage: boolean
   }>
 
 export interface LeftTimeType {

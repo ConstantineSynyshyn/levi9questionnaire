@@ -24,14 +24,14 @@ import { getQuizEndTime } from "@utils/index";
  * P.S. Again, now it is for FE only, for having different technologies we can add one more layer around
  * and put that  data in DB, to be able configure that via admin
  */
-export const initializeQuiz = async () => {
-  const user = await getUserByEmail("");
-  if (user.quizStartTime || user.initialQuestions) {
+export const initializeQuiz = async (userEmail: string) => {
+  const user = await getUserByEmail(userEmail);
+  if (user?.quizStartTime || user?.initialQuestions) {
     return;
   }
   const questions = await getQuestions();
   const shuffledQuestions = mixUpList(questions);
-  await storeUserQuestions("", shuffledQuestions);
+  await storeUserQuestions(userEmail, shuffledQuestions);
   return true; // for now it is enough until we decide how to load questions
 };
 
@@ -85,11 +85,13 @@ export const mixUpList = (
  * Load question which is next to last answered question.
  * This function is used for loading of next question via api call
  */
-export const getCurrentQuestion = async (): Promise<{
+export const getCurrentQuestion = async (
+  userEmail: string
+): Promise<{
   currentQuestion: InitialUseQuestion | undefined;
   total: number;
 }> => {
-  const user = await getUserByEmail("");
+  const user = await getUserByEmail(userEmail);
   const passedQuestionsAmount = user.userAnswers?.length || 0;
   return Promise.resolve({
     currentQuestion: user.initialQuestions[passedQuestionsAmount],
@@ -105,8 +107,10 @@ export const getCurrentQuestion = async (): Promise<{
  * - If quiz finalized(no 'quizEndTime' but calculated that time is gone) - update DB and  response with end time, no question quiz finalized
  * - If quiz finalized correctly - the same data as previously
  */
-export const getQuizQuestionInfo = async (): Promise<QuizQuestionInfoType> => {
-  const user = await getUserByEmail("");
+export const getQuizQuestionInfo = async (
+  userEmail: string
+): Promise<QuizQuestionInfoType> => {
+  const user = await getUserByEmail(userEmail);
   if (!user?.initialQuestions || user?.initialQuestions?.length < 0) {
     const result = {
       total: 0,
@@ -116,6 +120,7 @@ export const getQuizQuestionInfo = async (): Promise<QuizQuestionInfoType> => {
     return Promise.resolve(result);
   }
   const finalizedQuiz = await doFinalizeQuiz(
+    userEmail,
     user.quizStartTime,
     user.initialQuestions.length
   );
@@ -176,12 +181,13 @@ export const prepareQuestionForUser = (
  * Check and finalize quiz if time is gone
  */
 export const doFinalizeQuiz = async (
+  userEmail: string,
   startedAt: number,
   quizSize: number
 ): Promise<QuizQuestionInfoType | null> => {
   const endTime = getQuizEndTime(startedAt, quizSize);
   if (endTime < Date.now()) {
-    await finalizeQuiz();
+    await finalizeQuiz(userEmail);
     const result = {
       total: quizSize,
       startedAt: startedAt,

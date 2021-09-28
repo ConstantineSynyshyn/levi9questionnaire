@@ -1,8 +1,9 @@
 import { getIsValidEmail, getIsValidPassword } from "./../../../lib/auth";
 import { NextApiRequest, NextApiResponse } from "next";
 
+import { getUserByEmail } from "@db/entities/User";
 import { hashPassword } from "../../../lib/auth";
-import { connectToDatabase } from "../../../lib/mongodb";
+import { connectToDatabase } from '@db/connection/mongodb';
 
 async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
@@ -27,11 +28,10 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const db = client.db();
 
-  const existingUser = await db.collection("users").findOne({ email: email });
+  const existingUser = await getUserByEmail(email);
 
   if (existingUser) {
     res.status(422).json({ message: "User already exists!" });
-    client.close();
     return;
   }
 
@@ -40,10 +40,10 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
   const result = await db.collection("users").insertOne({
     email: email,
     password: hashedPassword,
+    isAdmin: false,
   });
 
   res.status(201).json({ message: result });
-  client.close();
 }
 
 export default handler;

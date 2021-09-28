@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography"
 
 import { Page } from "@types/page"
 
-const CongratulationPage: Page<Props> = () => {
+const CongratulationPage: Page = () => {
   return (
     <Box component="div" p={2}>
       <Typography variant="h1" color="textPrimary" gutterBottom>

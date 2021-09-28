@@ -14,7 +14,6 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
     try {
       return handleQuizTimer(req, res);
     } catch (e) {
-      console.log('handleQuizTimer', handleQuizTimer);
       return res.status(400).json({
         status: "error",
       });

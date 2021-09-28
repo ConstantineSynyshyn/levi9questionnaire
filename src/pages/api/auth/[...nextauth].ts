@@ -1,8 +1,8 @@
 import NextAuth from 'next-auth';
 import Providers from 'next-auth/providers';
 
+import { getUserByEmail } from "@db/entities/User";
 import { verifyPassword } from '../../../lib/auth';
-import { connectToDatabase } from '../../../lib/mongodb';
 
 export default NextAuth({
   session: {
@@ -16,33 +16,38 @@ export default NextAuth({
         password: { label: 'Password', type: 'password' },
       },
       async authorize(credentials) {
-        const client = await connectToDatabase();
-
-        const usersCollection = client.db().collection('users');
-
-        const user = await usersCollection.findOne({
-          email: credentials.email,
-        });
+        const user = await getUserByEmail(credentials.email);
 
         if (!user) {
-          client.close();
           throw new Error(`No user with ${credentials.email} email found!`);
         }
 
         const isValid = await verifyPassword(credentials.password, user.password);
 
         if (!isValid) {
-          client.close();
           throw new Error('Can not be logged in!');
         }
-
-        client.close();
-        return { email: user.email };
+        return Promise.resolve({ email: user.email, isAdmin: user.isAdmin || false });
       },
+
     }),
     Providers.GitHub({
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
     }),
   ],
+  callbacks: {
+    session: async (session) => {
+      if (session && session.user) {
+        const user = await getUserByEmail(session?.user?.email!);
+        session.user = {
+          ...session.user,
+          // @ts-ignore We need that flag
+          isAdmin: user.isAdmin,
+        }
+      }
+
+      return Promise.resolve(session)
+    },
+  }
 });

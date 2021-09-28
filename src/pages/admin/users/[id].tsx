@@ -36,5 +36,6 @@ export const getServerSideProps = async (req: NextApiRequest) => {
 }
 
 QuizPage.requireAuth = true
+QuizPage.isAdminPage = true
 
 export default QuizPage

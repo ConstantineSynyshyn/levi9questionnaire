@@ -1,5 +1,6 @@
 import React from "react"
-
+import { GetServerSideProps } from 'next'
+import { getSession } from "next-auth/client";
 import Container from "@material-ui/core/Container"
 
 import QuestionContainer from "@components/QuestionContainer/QuestionContainer"
@@ -21,10 +22,12 @@ QuizPage.getLayout = (page) => (
   </Container>
 )
 
-export const getServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+  const session = await getSession({ req });
+  const email = session?.user?.email;
   // @TODO in case quiz finalized redirect to home page
-  await initializeQuiz()
-  const quizQuestionInfo = await getQuizQuestionInfo()
+  await initializeQuiz(email!)
+  const quizQuestionInfo = await getQuizQuestionInfo(email!)
   // @TODO in case (startedAt + total * timePerQuestion) < Date.now() we should finalize quiz and go to thank you page
   return {
     props: {

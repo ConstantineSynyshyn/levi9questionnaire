@@ -5,13 +5,11 @@ import { prepareInitialQuestion } from "./utils";
 
 // @TODO for now it is hardcoded until
 export const storeUserQuestions = async (
-  userEmail: string,
+  email: string,
   questions: QuestionWithOptionsList
 ) => {
-  const email = "i.tananika@levi9.com";
   const { db } = await connectToDatabase();
   const initialQuestions = prepareInitialQuestion(questions);
-  const me = await db.collection("users").findOne({ email });
   await db.collection("users").updateOne(
     { email },
     {
@@ -25,9 +23,8 @@ export const storeUserQuestions = async (
 };
 
 export const getUserByEmail = async (
-  userEmail: string = "i.tananika@levi9.com"
+  email: string,
 ): Promise<User> => {
-  const email = "i.tananika@levi9.com";
   const { db } = await connectToDatabase();
   const data = await db.collection("users").findOne({ email });
 
@@ -35,10 +32,10 @@ export const getUserByEmail = async (
 };
 
 export const storeAnswers = async (
+  email: string,
   answers: UserAnswers,
   isFinalQuestion: boolean = true
 ) => {
-  const email = "i.tananika@levi9.com";
   const dataSet = isFinalQuestion ? { $set: { quizEndTime: Date.now() } } : {};
   const { db } = await connectToDatabase();
   await db.collection("users").updateOne(
@@ -54,9 +51,7 @@ export const storeAnswers = async (
   );
 };
 
-export const finalizeQuiz = async (
-) => {
-  const email = "i.tananika@levi9.com";
+export const finalizeQuiz = async (email: string) => {
   const { db } = await connectToDatabase();
   await db.collection("users").updateOne(
     { email },

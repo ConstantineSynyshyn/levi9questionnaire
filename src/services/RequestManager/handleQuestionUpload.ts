@@ -1,14 +1,21 @@
 import formidable from "formidable";
 import fs from "fs";
 import { NextApiRequest, NextApiResponse } from "next";
+import { getUserEmail } from '@services/utils';
 import * as path from "path";
 
-import { createQuestionsByInputFile } from "../../db/entities/Question";
+import { createQuestionsByInputFile } from "@db/entities/Question";
 
 const handleQuestionUpload = async (
   req: NextApiRequest,
   res: NextApiResponse
 ) => {
+  const email = await getUserEmail(req);
+  if (!email) {
+    return res.status(401).json({
+      message: 'authorisation required',
+    });
+  }
   const form = new formidable.IncomingForm();
   form.parse(req, async (err: any, fields: any, files: any) => {
     if (files?.file) {
