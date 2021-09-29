@@ -1,4 +1,4 @@
-import { UserQuestionView } from "@types/question";
+import { UserQuestionView } from "../../types/question";
 
 export interface QuizQuestionInfoType {
   nextQuestion: UserQuestionView,

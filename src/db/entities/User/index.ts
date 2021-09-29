@@ -1,1 +1,8 @@
-export { getUserByEmail, storeAnswers, storeUserQuestions, getUserList } from './User';
+export {
+  confirmUserEmail,
+  getUserByEmail,
+  storeAnswers,
+  storeUserQuestions,
+  getUserList,
+  userAutoRegistration,
+} from "./User";

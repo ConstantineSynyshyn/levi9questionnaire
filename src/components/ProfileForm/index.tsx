@@ -11,7 +11,7 @@ import {
   Box,
 } from "@material-ui/core";
 import { useForm, Controller } from "react-hook-form";
-import { Profile } from '@lq-types/profile';
+import { Profile } from '../../types';
 
 
 const ProfileForm: React.FC<Props> = ({ profile, onSubmit }) => {

@@ -8,4 +8,5 @@ export interface Profile {
   github: string;
   telegram: string;
   phone: string;
+  name?: string;
 }

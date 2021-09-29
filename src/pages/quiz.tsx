@@ -7,8 +7,7 @@ import QuestionContainer from "@components/QuestionContainer/QuestionContainer"
 import initializeQuiz, {
   getQuizQuestionInfo,
 } from "@services/QuestionManager/manageQuiz"
-import { Page } from "@types/page"
-import { QuizQuestionInfoType } from "@types/question"
+import { Page, QuizQuestionInfoType } from "../types"
 
 interface Props extends QuizQuestionInfoType {}
 

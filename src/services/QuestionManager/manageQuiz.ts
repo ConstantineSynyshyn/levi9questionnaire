@@ -10,7 +10,7 @@ import {
   UserQuestionView,
   QuizQuestionInfoType,
   QuestionWithOptionsList,
-} from "@types/question";
+} from "../../types/question";
 import { finalizeQuiz } from "@db/entities/User/User";
 import { getQuizEndTime } from "@utils/index";
 

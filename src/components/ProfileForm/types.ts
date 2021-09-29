@@ -1,4 +1,4 @@
-import { Profile } from '@types/profile';
+import { Profile } from '../../types';
 
 export interface Props {
   profile?: Partial<Profile>;

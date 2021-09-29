@@ -7,7 +7,7 @@ import {
 import {
   QuestionWithOptions,
   QuestionWithOptionsList,
-} from "@types/question";
+} from "../../../types/question";
 import { ImportQuestionType, ImportQuestionTypeFile } from "./types";
 
 export const mapImportFileWithQuestionScheme = (

@@ -8,11 +8,11 @@ import Grid from "@material-ui/core/Grid"
 import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
 
-import { Page } from "@types/page"
+import { Page } from "../types/page"
 import { ROUTES } from "@constants/routes"
 import { getUserByEmail } from "@db/entities/User"
 
-const CongratulationPage: Page<Props> = () => {
+const CongratulationPage: Page = () => {
   const router = useRouter()
   const homeButtonClickHandler = () => router.push(ROUTES.INDEX)
   return (

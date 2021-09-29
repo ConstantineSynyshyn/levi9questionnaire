@@ -15,7 +15,7 @@ import {
   StyledTextContainer,
   StyledCodeContainer,
 } from "./styles";
-import { UserQuestionView } from "@types/question";
+import { UserQuestionView } from "../../types/question";
 
 interface Props {
   question: UserQuestionView;

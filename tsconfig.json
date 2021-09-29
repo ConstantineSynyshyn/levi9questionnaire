@@ -19,6 +19,7 @@
       "@components/*":["src/components/*"],
       "@db/*":["src/db/*"],
       "@hooks/*": ["src/hooks/*"],
+      "@lib/*": ["src/lib/*"],
       "@services/*":["src/services/*"],
       "@types/*":["src/types/*"],
       "@utils/*":["src/utils/*"]

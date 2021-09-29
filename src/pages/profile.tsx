@@ -1,7 +1,7 @@
 import React from "react"
 
 import Container from "@material-ui/core/Container"
-import { Page, Profile } from "@types"
+import { Page, Profile } from "../types"
 import ProfileForm from "@components/ProfileForm"
 import useOnWindowLeave from "@hooks/useOnWindowLeave"
 

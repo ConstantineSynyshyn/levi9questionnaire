@@ -4,9 +4,9 @@ import useQuizTimeInfo from "./hooks/useQuizTimeInfo";
 import TimeToEnd from "./TimeToEnd";
 
 const TopBarTimer: React.FC = () => {
-  const quizInfo = useQuizTimeInfo() || {};
+  const quizInfo = useQuizTimeInfo();
 
-  const { startedAt, total, passedAt } = quizInfo;
+  const { startedAt, total = 0, passedAt } = quizInfo || {};
 
   if (!startedAt || passedAt) {
     return null;

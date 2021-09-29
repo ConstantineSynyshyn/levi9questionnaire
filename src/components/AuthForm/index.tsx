@@ -1,7 +1,7 @@
-import React, { SyntheticEvent } from "react"
-import { useRouter } from "next/router"
+import React from "react";
+import { useRouter } from "next/router";
 
-import { signIn, useSession } from "next-auth/client"
+import { signIn, useSession } from "next-auth/client";
 import {
   Container,
   CssBaseline,
@@ -9,14 +9,12 @@ import {
   Typography,
   Grid,
   TextField,
-  FormControlLabel,
-  Checkbox,
   Button,
   makeStyles,
-} from "@material-ui/core"
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined"
-import { SIGN_UP_API } from "../../constants/apiRoutes"
-import AuthContainer from "@components/AuthContainer"
+} from "@material-ui/core";
+import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import { SIGN_UP_API } from "../../constants/apiRoutes";
+import AuthContainer from "@components/AuthContainer";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -35,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
-}))
+}));
 
 async function createUser(email: string, password: string) {
   const response = await fetch(SIGN_UP_API, {
@@ -44,62 +42,66 @@ async function createUser(email: string, password: string) {
     headers: {
       "Content-Type": "application/json",
     },
-  })
+  });
 
-  const data = await response.json()
+  const data = await response.json();
 
   if (!response.ok) {
-    throw new Error(data.message || "Something went wrong!")
+    throw new Error(data.message || "Something went wrong!");
   }
 
-  return data
+  return data;
 }
 
 const AuthForm = () => {
-  const [hasAnAccount, setHasAnAccount] = React.useState(false)
-  const router = useRouter()
-  const session = useSession()
+  const [hasAnAccount, setHasAnAccount] = React.useState(false);
+  const router = useRouter();
+  const session = useSession();
 
-  const classes = useStyles()
-  const [emailValue, setEmailValue] = React.useState("")
-  const [passwordValue, setPasswordValue] = React.useState("")
-  const [errorMessage, setErrorMessage] = React.useState(null)
+  const classes = useStyles();
+  const [emailValue, setEmailValue] = React.useState("");
+  const [passwordValue, setPasswordValue] = React.useState("");
+  const [errorMessage, setErrorMessage] = React.useState(null);
   const toogleModeHandler = () => {
-    setHasAnAccount((prevState) => !prevState)
-  }
+    setHasAnAccount((prevState) => !prevState);
+  };
 
-  const emailChangeHandler = (event: SyntheticEvent) => {
-    const newEmailValue = event.target.value
-    setEmailValue(newEmailValue)
-  }
+  const emailChangeHandler = (event: React.ChangeEvent<any>) => {
+    const newEmailValue = event?.target?.value;
+    setEmailValue(newEmailValue);
+  };
 
-  const passwordChangeHandler = (event: SyntheticEvent) => {
-    const newPasswordValue = event.target.value
-    setPasswordValue(newPasswordValue)
-  }
+  const passwordChangeHandler = (event: React.ChangeEvent<any>) => {
+    const newPasswordValue = event?.target?.value;
+    setPasswordValue(newPasswordValue);
+  };
 
   async function submitHandler() {
-    if (hasAnAccount) {
-      const result = await signIn("credentials", {
-        redirect: false,
-        email: emailValue,
-        password: passwordValue,
-      })
-      if (!result?.error) {
-        router.replace("/")
-        return
-      }
-      setErrorMessage(result?.error)
-      return
+    const result: ReturnType<typeof signIn> = await signIn("credentials", {
+      redirect: false,
+      email: emailValue,
+      password: passwordValue,
+    });
+    if (!result?.error) {
+      router.replace("/");
+      return;
     }
-
+    setErrorMessage(result?.error);
+    return;
+    /**
+     * @TODO for now this logic is redundant, because we will use new way
+     *       - /registration/{user@email.address}
+     *       - user created but can't get it, he have receive email with token
+     *       - click on confirm link and in this moment he is being logged in
+     */
+    /*
     try {
       const result = await createUser(emailValue, passwordValue)
       console.log(result)
     } catch (error) {
       setErrorMessage(error.message)
       console.log(error)
-    }
+    }*/
   }
 
   return (
@@ -147,18 +149,6 @@ const AuthForm = () => {
                   error={Boolean(errorMessage)}
                 />
               </Grid>
-              <Grid item xs={12}>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      value={hasAnAccount}
-                      color="primary"
-                      onClick={toogleModeHandler}
-                    />
-                  }
-                  label="I already have an account"
-                />
-              </Grid>
             </Grid>
             <Button
               fullWidth
@@ -174,7 +164,7 @@ const AuthForm = () => {
       </Container>
       <AuthContainer />
     </>
-  )
-}
+  );
+};
 
-export default AuthForm
+export default AuthForm;

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
-import { LeftTimeType } from "@types/";
+import { LeftTimeType } from "../../../types";
 import { getQuizEndTime, getTimeObject } from "@utils/index";
 import useFinalizeQuiz from "./useFinalizeQuiz";
 

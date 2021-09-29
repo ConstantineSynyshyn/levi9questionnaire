@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import React, { ChangeEvent } from "react";
 
 import { ROUTES } from '@constants/routes';
-import { QuizQuestionInfoType } from "@types/question";
+import { QuizQuestionInfoType } from "../../types/question";
 import useHandleQuestion from "./hooks/useHandleQuestion";
 import QuestionContainerComponent from "./QuestionContainerComponent";
 
@@ -33,13 +33,13 @@ const QuestionContainer: React.FC<Props> = (props) => {
     router.push(ROUTES.CONGRATULATION);
     return null;
   }
-
+  const currentQuestionNumber = (passed || 0) + 1
   return (
     <QuestionContainerComponent
       question={nextQuestion}
       totalAmount={total}
       startedAt={startedAt}
-      currentQuestionNumber={passed + 1}
+      currentQuestionNumber={currentQuestionNumber}
       onChange={handleChange}
       onSubmit={handleSubmit}
       currentValue={currentValue}

@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 
 import { SUBMIT_QUESTION_URL } from '@constants/apiRoutes';
-import { QuizQuestionInfoType } from "@types/question";
+import { QuizQuestionInfoType } from "../../../types/question";
 import { HandleChange, HandleSubmit } from "../types";
 
 interface State extends QuizQuestionInfoType {

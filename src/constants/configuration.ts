@@ -23,3 +23,5 @@ export enum TaskCategory {
   QUIZ = 'Quiz',
   CODING = 'Coding',
 };
+
+export const BASE_APP_URL = process.env.PLATFORM_BASE_URL || '';
