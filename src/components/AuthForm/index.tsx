@@ -77,6 +77,12 @@ const AuthForm = () => {
   };
 
   async function submitHandler() {
+    /**
+     * @TODO for now this logic is redundant, because we will use new way
+     *       - /registration/{user@email.address}
+     *       - user created but can't get it, he have receive email with token
+     *       - click on confirm link and in this moment he is being logged in
+     */
     const result: ReturnType<typeof signIn> = await signIn("credentials", {
       redirect: false,
       email: emailValue,
@@ -88,14 +94,9 @@ const AuthForm = () => {
     }
     setErrorMessage(result?.error);
     return;
-    /**
-     * @TODO for now this logic is redundant, because we will use new way
-     *       - /registration/{user@email.address}
-     *       - user created but can't get it, he have receive email with token
-     *       - click on confirm link and in this moment he is being logged in
-     */
-    /*
-    try {
+
+
+    /*try {
       const result = await createUser(emailValue, passwordValue)
       console.log(result)
     } catch (error) {
@@ -157,7 +158,7 @@ const AuthForm = () => {
               className={classes.submit}
               onClick={submitHandler}
             >
-              {hasAnAccount ? "Log me in" : "Sign me up"}
+              {"Log me in"}
             </Button>
           </form>
         </div>

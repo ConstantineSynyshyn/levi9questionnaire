@@ -17,7 +17,7 @@ const AuthGuard: React.FC = ({ children }) => {
   }, [isUser, loading])
 
   if (isUser) {
-    return (<>children</>)
+    return (<>{children}</>)
   }
 
   return (
