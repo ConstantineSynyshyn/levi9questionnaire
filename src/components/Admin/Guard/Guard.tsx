@@ -16,7 +16,7 @@ const Guard: React.FC = ({ children }) => {
   }, [isAdmin, loading])
 
   if (isAdmin) {
-    return (<>children</>)
+    return (<>{children}</>)
   }
 
   return null;
