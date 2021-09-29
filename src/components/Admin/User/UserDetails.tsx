@@ -15,13 +15,7 @@ export interface Props {
 
 const UserDetails: React.FC<Props> = (props) => {
   const { requestedUser, user, quizResult } = props;
-  if (!user) {
-    return (
-      <Typography variant="h3">
-        Requested user {requestedUser} doesn't exists
-      </Typography>
-    );
-  }
+
   const quizResultContent = React.useMemo(() => {
     if (!quizResult || quizResult?.value === undefined || !quizResult?.answerMap) {
       return null;
@@ -40,6 +34,13 @@ const UserDetails: React.FC<Props> = (props) => {
       </>
     )
   }, [quizResult]);
+  if (!user) {
+    return (
+      <Typography variant="h3">
+        {`Requested user ${requestedUser} doesn't exists`}
+      </Typography>
+    );
+  }
   const { email, isConfirmed, quizStartTime, quizEndTime } = user;
   return (
     <Paper>

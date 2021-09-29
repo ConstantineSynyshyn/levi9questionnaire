@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 import QuizTimer from '@components/Timer/QuizTimer';
-import { UserQuestionView } from '@types/question';
+import { UserQuestionView } from '../../types/question';
 import QuestionComponent from "./QuestionComponent";
 
 import {

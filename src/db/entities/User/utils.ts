@@ -1,5 +1,5 @@
 import { TaskCategory } from "@constants/configuration";
-import { QuestionWithOptionsList } from "@types/question";
+import { QuestionWithOptionsList } from "../../../types/question";
 import { InitialUseQuestions } from "./types";
 
 export const prepareInitialQuestion = (

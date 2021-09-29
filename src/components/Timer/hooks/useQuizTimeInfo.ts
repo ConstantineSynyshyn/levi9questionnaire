@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 import { QUIZ_TIME_INFO } from "@constants/apiRoutes";
-import { QuizQuestionInfoType } from "@types";
+import { QuizQuestionInfoType } from "../../../types";
 
-const useQuizTimeInfo = (): QuizQuestionInfoType => {
+const useQuizTimeInfo = (): QuizQuestionInfoType | undefined => {
   const [quizInfo, setQuizInfo] = useState<QuizQuestionInfoType | undefined>();
   useEffect(() => {
     fetch(QUIZ_TIME_INFO, {

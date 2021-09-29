@@ -35,7 +35,7 @@ const MyApp: React.FC<Props> = (props) => {
   const getLayout = Component.getLayout || ((page) => page);
   let content = React.useMemo(() => {
     return getLayout(<Component {...pageProps} />);
-  }, [getLayout, pageProps]);
+  }, [Component, getLayout, pageProps]);
   if (Component.isAdminPage) {
     content = <AdminPageGuard>{content}</AdminPageGuard>;
   }

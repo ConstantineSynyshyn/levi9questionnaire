@@ -1,4 +1,4 @@
-import { LeftTimeType } from "@types/";
+import { LeftTimeType } from "../../types";
 
 export const getTimeLeftString = (leftTimeConfig: LeftTimeType): string => {
   const list = [];

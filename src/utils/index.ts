@@ -2,7 +2,7 @@ import {
   DEFAULT_TIME_TO_RESPOND,
   QUESTION_AMOUNT_PER_CATEGORY,
 } from "@constants/configuration";
-import { LeftTimeType } from '@types';
+import { LeftTimeType } from '../types';
 
 export const getQuizSize = (): number =>
   Object.values(QUESTION_AMOUNT_PER_CATEGORY).reduce((sum, count) => sum + count, 0);

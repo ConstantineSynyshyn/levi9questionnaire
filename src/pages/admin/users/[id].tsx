@@ -8,7 +8,7 @@ import UserDetails, {
 } from "@components/Admin/User/UserDetails"
 import { getUserByEmail } from "@db/entities/User"
 import { getQuizAnalise } from "@services/QuestionManager/analizeQuiz"
-import { Page } from "@types/page"
+import { Page } from "../../../types/page"
 
 interface Props extends UserDetailsProps {}
 

@@ -8,7 +8,7 @@ import {
   UsersOverviewType,
 } from "@components/Admin/User/types"
 import { getUserList } from "@db/entities/User"
-import { Page } from "@types/page"
+import { Page } from "../../../types/page"
 
 interface Props {
   users: UsersOverviewType
