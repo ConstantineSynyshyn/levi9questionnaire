@@ -1,23 +1,24 @@
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import CircularProgress from "@material-ui/core/CircularProgress/CircularProgress";
-import Container from "@material-ui/core/Container";
-import React from "react";
+import Typography from "@material-ui/core/Typography"
+import Box from "@material-ui/core/Box"
+import CircularProgress from "@material-ui/core/CircularProgress/CircularProgress"
+import Container from "@material-ui/core/Container"
+import React from "react"
 
-import useHandleAutoRegistration from './hooks/useHandleAutoRegistration';
+import useHandleAutoRegistration from "./hooks/useHandleAutoRegistration"
 
 interface Props {
-  hash: string;
+  hash: string
 }
 
 const ConfirmEmail: React.FC<Props> = ({ hash }) => {
-  const [_, error] = useHandleAutoRegistration(hash);
+  const [_, error] = useHandleAutoRegistration(hash)
   if (error) {
     return (
       <Container maxWidth="md" disableGutters>
         <Box component="div" p={2}>
           <Typography variant="h3" color="textPrimary" gutterBottom>
-            Login failed. Try  to request new confirm link or connect to administrator
+            Login failed. Try to request new confirm link or connect to
+            administrator
           </Typography>
         </Box>
       </Container>
@@ -25,9 +26,11 @@ const ConfirmEmail: React.FC<Props> = ({ hash }) => {
   }
   return (
     <Container maxWidth="md" disableGutters>
-      <CircularProgress />
+      <Box mx="auto" p={2}>
+        <CircularProgress disableShrink />
+      </Box>
     </Container>
-  );
-};
+  )
+}
 
-export default ConfirmEmail;
+export default ConfirmEmail

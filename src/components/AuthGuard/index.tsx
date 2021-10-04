@@ -2,10 +2,23 @@ import { ROUTES } from "@constants/routes"
 import { useSession } from "next-auth/client"
 import router from "next/router"
 import React from "react"
-import { Box, Container, CircularProgress } from "@material-ui/core"
 
+import CircularProgress from "@material-ui/core/CircularProgress"
+import Container from "@material-ui/core/Container"
+import Box from "@material-ui/core/Box"
+import { makeStyles } from "@material-ui/styles"
+
+const useStyles = makeStyles({
+  container: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "480px",
+  },
+})
 const AuthGuard: React.FC = ({ children }) => {
   const [session, loading] = useSession()
+  const classes = useStyles()
   const isUser = !!session?.user
   React.useEffect(() => {
     if (loading) return
@@ -15,13 +28,13 @@ const AuthGuard: React.FC = ({ children }) => {
   }, [isUser, loading])
 
   if (isUser) {
-    return (<>{children}</>)
+    return <>{children}</>
   }
 
   return (
-    <Container maxWidth="md" disableGutters>
-      <Box display="flex" justifyContent="center" alignItems="center" height="50vh">
-        <CircularProgress />
+    <Container maxWidth="md">
+      <Box className={classes.container}>
+        <CircularProgress disableShrink />
       </Box>
     </Container>
   )

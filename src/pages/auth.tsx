@@ -8,13 +8,17 @@ import { Container, makeStyles } from "@material-ui/core"
 import AuthForm from "../components/AuthForm"
 import Skeleton from "@material-ui/lab/Skeleton"
 
-const useStyles = makeStyles({
-  container: {
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    marginTop: theme.spacing(8),
     display: "flex",
+    flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center",
   },
-})
+  circle: {
+    margin: "0 auto",
+  },
+}))
 
 const AuthPage: Page = () => {
   const [isLoading, setIsLoading] = React.useState(true)
@@ -34,10 +38,17 @@ const AuthPage: Page = () => {
 
   if (isLoading) {
     return (
-      <div className={classes.container}>
-        <Skeleton variant="circle" width={40} height={40} />
-        <Skeleton animation="wave" width={480} height={480} />
-      </div>
+      <Container component="main" maxWidth="xs">
+        <div className={classes.paper}>
+          <Skeleton
+            className={classes.circle}
+            variant="circle"
+            width={40}
+            height={40}
+          />{" "}
+          <Skeleton animation="wave" width={480} height={480} />
+        </div>
+      </Container>
     )
   }
 

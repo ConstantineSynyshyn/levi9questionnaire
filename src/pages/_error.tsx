@@ -9,24 +9,39 @@ import Typography from "@material-ui/core/Typography"
 
 import { Page } from "../types/page"
 import { ROUTES } from "@constants/routes"
+import { makeStyles } from "@material-ui/core/styles"
+
+const useStyles = makeStyles((theme) => ({
+  buttonContainer: {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: theme.spacing(3),
+  },
+}))
 
 interface Props {
   statusCode?: number
 }
 
 const Error: Page<Props> = ({ statusCode }) => {
+  const classes = useStyles()
   const buttonClickHandler = () => {
     router.push(ROUTES.INDEX)
   }
   return (
     <Container maxWidth="md">
-      <Typography variant="h1">
-        {statusCode
-          ? `Ooops... Something wrong happened! An error ${statusCode} occurred on server`
-          : "An error occurred on client"}
-      </Typography>
-      <Box padding={3}>
-        <Button onClick={buttonClickHandler}>Go home!</Button>
+      <Box m={2}>
+        <Typography variant="h3">Ooops... Something went wrong.</Typography>
+        {statusCode && (
+          <Typography variant="body1">
+            {`Issue occured on our side. Server responded with ${statusCode}`}
+          </Typography>
+        )}
+      </Box>
+      <Box className={classes.buttonContainer}>
+        <Button variant="contained" size="large" onClick={buttonClickHandler}>
+          Go home!
+        </Button>
       </Box>
     </Container>
   )
