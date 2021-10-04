@@ -1,10 +1,8 @@
 import { ROUTES } from "@constants/routes"
-import { useSession, signIn } from "next-auth/client"
+import { useSession } from "next-auth/client"
 import router from "next/router"
 import React from "react"
-
-import CircularProgress from "@material-ui/core/CircularProgress"
-import Container from "@material-ui/core/Container"
+import { Box, Container, CircularProgress } from "@material-ui/core"
 
 const AuthGuard: React.FC = ({ children }) => {
   const [session, loading] = useSession()
@@ -22,7 +20,9 @@ const AuthGuard: React.FC = ({ children }) => {
 
   return (
     <Container maxWidth="md" disableGutters>
-      <CircularProgress />
+      <Box display="flex" justifyContent="center" alignItems="center" height="50vh">
+        <CircularProgress />
+      </Box>
     </Container>
   )
 }
