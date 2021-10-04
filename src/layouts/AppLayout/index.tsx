@@ -38,6 +38,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: "flex",
     alignItems: "center",
   },
+  gridItem: {
+    display: "flex", 
+    alignItems: "center"   
+  }
 }));
 
 interface Props {
@@ -58,7 +62,7 @@ const AppLayout: React.FC<Props> = ({ isTimerVisible = true, children }) => {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.topBar}>
           <Grid container justifyContent="space-between">
-            <Grid item>
+            <Grid item className={classes.gridItem}>
               <Image
                 src="/logo-full-white.png"
                 alt="Levi9-logo"

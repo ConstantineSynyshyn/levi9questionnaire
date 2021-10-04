@@ -61,22 +61,39 @@ const IndexPage: Page<Props> = (props) => {
       <Typography variant="h3" color="textPrimary" gutterBottom>
         Welcome {userName}!
       </Typography>
+      <Box mb={4}>
+        <Typography variant="h6" color="textPrimary" gutterBottom>
+          Thank you for taking time to pass the test.
+        </Typography>
+      </Box>
+      <Box mb={4}>
+        <Typography variant="body1" color="textPrimary" gutterBottom>
+          Please keep in mind the following:
+        </Typography>
+        <ul>
+          <li>
+            <Typography variant="body1" color="textPrimary" gutterBottom>
+              You have only one opportunity to submit your test.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" color="textPrimary" gutterBottom>
+              Stage one: quiz questions with {DEFAULT_TIME_TO_RESPOND} seconds time
+              limit for each.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" color="textPrimary" gutterBottom>
+              Stage two: practical questions with {DEFAULT_OPEN_QUESTION_TIME_TO_RESPOND} seconds time limit for each.
+            </Typography>
+          </li>
+        </ul>
+        <Typography variant="body1" color="textPrimary" gutterBottom>
+          Click START when you are ready.
+        </Typography>
+      </Box>
       <Typography variant="body1" color="textPrimary" gutterBottom>
-        You have only one attempt.
-      </Typography>
-      <Typography variant="body1" color="textPrimary" gutterBottom>
-        Stage one: quiz questions with {DEFAULT_TIME_TO_RESPOND} seconds time
-        limit for each.
-      </Typography>
-      <Typography variant="body1" color="textPrimary" gutterBottom>
-        Stage two: practical questions with{" "}
-        {DEFAULT_OPEN_QUESTION_TIME_TO_RESPOND} seconds time limit for each.
-      </Typography>
-      <Typography variant="body1" color="textPrimary" gutterBottom>
-        Stage three: English language quiz.
-      </Typography>
-      <Typography variant="body1" color="textPrimary" gutterBottom>
-        Click start when you are ready. Have fun! &#128293;
+        We wish you the best of luck and have fun! &#128293;
       </Typography>
       {quizInfoBlock}
     </Box>
@@ -88,13 +105,22 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     ? await getUserByEmail(session.user.email)
     : null;
   const userName = currentUser?.details?.name || currentUser?.email || null;
+  const isQuizEnded = Boolean(currentUser?.quizEndTime);
+  if (isQuizEnded) {
+    return {
+      redirect: {
+        destination: ROUTES.CONGRATULATION,
+        permanent: false,
+      },
+    }
+  }
   return {
     props: {
       userName,
       isQuizStarted:
         Boolean(currentUser?.quizStartTime) &&
         Boolean(currentUser?.initialQuestions),
-      isQuizEnded: Boolean(currentUser?.quizEndTime),
+      isQuizEnded,
     },
   };
 };
