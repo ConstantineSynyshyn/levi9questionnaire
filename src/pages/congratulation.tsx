@@ -1,58 +1,42 @@
 import React from "react"
-import { useRouter } from "next/router"
 import { GetServerSideProps } from "next"
-
-import Container from "@material-ui/core/Container"
-import Box from "@material-ui/core/Box"
-import Grid from "@material-ui/core/Grid"
-import Button from "@material-ui/core/Button"
-import Typography from "@material-ui/core/Typography"
-
+import { Container, Typography, Box } from "@material-ui/core"
 import { Page } from "../types/page"
-import { ROUTES } from "@constants/routes"
 import { getUserByEmail } from "@db/entities/User"
+import { getSession } from "next-auth/client"
 
-const CongratulationPage: Page = () => {
-  const router = useRouter()
-  const homeButtonClickHandler = () => router.push(ROUTES.INDEX)
+interface Props {
+  score: number;
+}
+
+const CongratulationPage: Page<Props> = ({ score }) => {
   return (
     <Box component="div" p={2}>
-      <Typography variant="h1" color="textPrimary" gutterBottom>
-        Congratulations, you have finished the test.
+      <Typography variant="h3" color="textPrimary" gutterBottom>
+        Congratulation! You’ve scored {score}.
       </Typography>
-      <Typography variant="h4" color="textPrimary" gutterBottom>
-        We will reach to you when we process your answers.
+      <Typography variant="body1" color="textPrimary" gutterBottom>
+        You will receive a confirmation email and be contacted by our Talent partner shortly.
       </Typography>
-      <Grid container justifyContent="center" spacing={2}>
-        <Grid item xs={4}>
-          <Button
-            fullWidth
-            variant="contained"
-            color="primary"
-            onClick={homeButtonClickHandler}
-          >
-            Go home
-          </Button>
-        </Grid>
-      </Grid>
+      <Typography variant="body1" color="textPrimary" gutterBottom>
+        Look forward to meeting with you!
+      </Typography>
     </Box>
   )
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const currentUser = await getUserByEmail("")
-  const isQuizCompleted = Boolean(currentUser?.quizEndTime)
-  if (!isQuizCompleted) {
-    return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
-    }
-  }
+  const session = await getSession(context);
+  console.log(session)
+  const currentUser = session?.user?.email
+    ? await getUserByEmail(session.user.email)
+    : null;
+  const score = currentUser?.quizScore || 0;
 
   return {
-    props: {},
+    props: {
+      score
+    },
   }
 }
 
