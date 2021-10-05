@@ -25,3 +25,5 @@ export enum TaskCategory {
 };
 
 export const BASE_APP_URL = process.env.PLATFORM_BASE_URL || '';
+
+export const MAX_SCORE_VALUE = 3;

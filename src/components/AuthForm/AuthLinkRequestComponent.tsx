@@ -1,0 +1,62 @@
+import React from "react";
+import { Avatar, Button, TextField, Typography } from "@material-ui/core";
+import LockOutlinedIcon from "@material-ui/core/SvgIcon/SvgIcon";
+
+interface Props {
+  emailValue: string;
+  emailChangeHandler: (event: React.ChangeEvent<any>) => void;
+  containerClassName: string;
+  avatarClassName: string;
+  buttonClassName: string;
+  errorMessage: string | null;
+  submitFn: () => void;
+}
+
+const AuthLinkRequestComponent: React.FC<Props> = (props) => {
+  const {
+    emailValue,
+    emailChangeHandler,
+    containerClassName,
+    avatarClassName,
+    buttonClassName,
+    errorMessage,
+    submitFn,
+  } = props;
+  return (
+    <div className={containerClassName}>
+      <Avatar className={avatarClassName}>
+        <LockOutlinedIcon />
+      </Avatar>
+      <Typography component="h1" variant="h5">
+        Request for login link
+      </Typography>
+      <form noValidate>
+        <TextField
+          value={emailValue}
+          onChange={emailChangeHandler}
+          variant="outlined"
+          required
+          fullWidth
+          id="email"
+          label="Email Address"
+          name="email"
+          autoComplete="email"
+          aria-label="email"
+          helperText={errorMessage}
+          error={Boolean(errorMessage)}
+        />
+        <Button
+          fullWidth
+          variant="contained"
+          color="primary"
+          className={buttonClassName}
+          onClick={submitFn}
+        >
+          Send auth link
+        </Button>
+      </form>
+    </div>
+  );
+};
+
+export default React.memo(AuthLinkRequestComponent);

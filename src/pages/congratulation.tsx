@@ -27,7 +27,6 @@ const CongratulationPage: Page<Props> = ({ score }) => {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const session = await getSession(context);
-  console.log(session)
   const currentUser = session?.user?.email
     ? await getUserByEmail(session.user.email)
     : null;

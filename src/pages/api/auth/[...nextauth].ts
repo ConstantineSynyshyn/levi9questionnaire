@@ -48,7 +48,6 @@ export default NextAuth({
         if (!user || !user.email) {
           throw new Error(`Invalid activation link!${JSON.stringify(user)}`);
         }
-        console.log('Credentials.hash', { credentials, user });
         return Promise.resolve({ email: user.email, isAdmin: user.isAdmin || false });
       },
 

@@ -1,5 +1,6 @@
 export const SIGN_UP_API = "/api/auth/signup";
 export const AUTO_REGISTRATION = "/api/auth/hash";
+export const AUTO_LOGIN = "/api/auth/autologin";
 export const SUBMIT_QUESTION_URL = "/api/submit-question";
 export const UPLOAD_QUESTION_URL = "/api/upload-questions";
 
