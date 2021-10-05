@@ -27,3 +27,8 @@ export const getTimeObject = (endTime: number): LeftTimeType => {
     seconds: Math.floor((endTime / 1000) % 60)
   };
 };
+
+export const htmlDecode = (input: string) => {
+  const doc = new DOMParser().parseFromString(input, "text/html");
+  return doc.documentElement.textContent;
+};

@@ -10,6 +10,7 @@ import FormLabel from "@material-ui/core/FormLabel";
 import TextField from "@material-ui/core/TextField";
 
 import { TaskCategory } from "@constants/configuration";
+import { htmlDecode } from "@utils/index";
 import {
   StyledQuestionPaper,
   StyledTextContainer,
@@ -26,15 +27,14 @@ interface Props {
 
 const QuestionComponent: React.FC<Props> = (props) => {
   const { question, onChange, currentValue = '' } = props;
-  const { questionText, options, taskType, data } = question;
-
+  const { questionText, options, taskType, data } = question || {};
   return (
     <StyledQuestionPaper elevation={3}>
       <StyledTextContainer>
         <Typography variant="h4" align="center">
           <QuestionNodeImageWrapper>
-            <span dangerouslySetInnerHTML={{ __html: questionText}}></span>
-            </QuestionNodeImageWrapper>
+            {htmlDecode(questionText)}
+          </QuestionNodeImageWrapper>
         </Typography>
         {Boolean(data) && <QuestionNodeImageWrapper>
           <StyledCodeContainer>

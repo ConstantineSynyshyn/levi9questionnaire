@@ -2,13 +2,13 @@ import React, { ChangeEvent } from "react";
 
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
 
 import QuizTimer from '@components/Timer/QuizTimer';
 import { UserQuestionView } from '../../types/question';
 import QuestionComponent from "./QuestionComponent";
 
 import {
-  StyledQuestionBox,
   StyledQuestionFooter,
   StyledQuestionHeader,
   StyledTimerContainer,
@@ -39,7 +39,7 @@ const QuestionContainerComponent: React.FC<Props> = (props) => {
   } = props;
   return (
     <StyledQuestionContainer>
-      <StyledQuestionBox>
+      <Container component="main" maxWidth="xl" disableGutters>
         <StyledQuestionHeader>
           <Typography>
             {currentQuestionNumber}/{totalAmount}
@@ -60,7 +60,7 @@ const QuestionContainerComponent: React.FC<Props> = (props) => {
             SUBMIT
           </Button>
         </StyledQuestionFooter>
-      </StyledQuestionBox>
+      </Container>
     </StyledQuestionContainer>
   );
 };
