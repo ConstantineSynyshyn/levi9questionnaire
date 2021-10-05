@@ -1,28 +1,27 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+import { NextApiRequest, NextApiResponse } from "next"
 
-import { handleQuizTimer } from '@services/RequestManager/handleQuizTimer';
+import { handleQuizTimer } from "@services/RequestManager/handleQuizTimer"
+import { getUserEmail } from "@services/utils"
 
-export const config = {
-  api: {
-    bodyParser: false,
-    externalResolver: true,
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+  if (req.method !== "GET") {
+    return res.status(501).json({ status: "Not implemented" })
   }
-};
 
-const handler = (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method === "GET") {
-    try {
-      return handleQuizTimer(req, res);
-    } catch (e) {
-      return res.status(400).json({
-        status: "error",
-      });
+  try {
+    const email = await getUserEmail(req)
+
+    if (!email) {
+      return res.status(401).json({
+        message: "authorisation required",
+      })
     }
-  } else {
+    return handleQuizTimer(email)
+  } catch {
     return res.status(400).json({
       status: "error",
-    });
+    })
   }
-};
+}
 
-export default handler;
+export default handler

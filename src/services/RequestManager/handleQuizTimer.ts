@@ -1,35 +1,17 @@
-import {
-  getQuizQuestionInfo,
-} from "@services/QuestionManager/manageQuiz";
-import { NextApiRequest, NextApiResponse } from "next";
+import { getQuizQuestionInfo } from "@services/QuestionManager/manageQuiz"
+import { NextApiRequest, NextApiResponse } from "next"
 
-import { finalizeQuiz } from "@db/entities/User/User";
-import { getUserEmail } from '@services/utils';
+import { finalizeQuiz } from "@db/entities/User/User"
+import ServiceError from "@utils/serviceError"
 
-export const handleQuizTimer = async (
-  req: NextApiRequest,
-  res: NextApiResponse
-) => {
-  const email = await getUserEmail(req);
-  if (!email) {
-    return res.status(401).json({
-      message: 'authorisation required',
-    });
-  }
-  const result = await getQuizQuestionInfo(email);
-  return res.status(200).json(result);
-};
+export const handleQuizTimer = async (email: string) => {
+  const result = await getQuizQuestionInfo(email)
+  return result
+}
 
-export const handleFinalizeQuiz = async (
-  req: NextApiRequest,
-  res: NextApiResponse
-) => {
-  const email = await getUserEmail(req);
-  if (!email) {
-    return res.status(401).json({
-      message: 'authorisation required',
-    });
-  }
-  await finalizeQuiz(email);
-  return res.status(200).json({ result: 'done' });
-};
+export const handleFinalizeQuiz = async (email: string) => {
+  try {
+    await finalizeQuiz(email)
+  } catch (error) {}
+  throw new ServiceError("Could'nt end quiz!")
+}

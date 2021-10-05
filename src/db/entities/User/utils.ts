@@ -1,6 +1,6 @@
-import { TaskCategory } from "@constants/configuration";
-import { QuestionWithOptionsList } from "../../../types/question";
-import { InitialUseQuestions } from "./types";
+import { TaskCategory } from "@constants/configuration"
+import { QuestionWithOptionsList } from "../../../types/question"
+import { InitialUseQuestions } from "./types"
 
 export const prepareInitialQuestion = (
   questions: QuestionWithOptionsList
@@ -14,7 +14,7 @@ export const prepareInitialQuestion = (
       questionText,
       data,
       taskType = TaskCategory.QUIZ,
-    } = item;
+    } = item
     return [
       ...list,
       {
@@ -24,8 +24,8 @@ export const prepareInitialQuestion = (
         questionText,
         data,
         taskType,
-        options: JSON.parse(JSON.stringify(options)),
+        options,
         internalQuestionId: index + 1,
       },
-    ];
-  }, []);
+    ]
+  }, [])

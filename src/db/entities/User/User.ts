@@ -1,117 +1,147 @@
-import { connectToDatabase } from "@db/connection/mongodb";
-import { QuestionWithOptionsList } from "../../../types/question";
-import { User, UserAnswers, Users } from "./types";
-import { prepareInitialQuestion } from "./utils";
+import { connectToDatabase } from "@db/connection/mongodb"
+
+import ServiceError from "@utils/serviceError"
+import { QuestionWithOptionsList } from "../../../types/question"
+import { User, UserAnswers, Users } from "./types"
+import { prepareInitialQuestion } from "./utils"
 
 // @TODO for now it is hardcoded until
 export const storeUserQuestions = async (
   email: string,
   questions: QuestionWithOptionsList
 ) => {
-  const { db } = await connectToDatabase();
-  const initialQuestions = prepareInitialQuestion(questions);
-  await db.collection("users").updateOne(
-    { email },
-    {
-      $set: {
-        initialQuestions: initialQuestions,
-        quizStartTime: Date.now(),
-        userAnswers: [],
-      },
-    }
-  );
-};
+  try {
+    const { db } = await connectToDatabase()
+    const initialQuestions = prepareInitialQuestion(questions)
+    await db.collection("users").updateOne(
+      { email },
+      {
+        $set: {
+          initialQuestions: initialQuestions,
+          quizStartTime: Date.now(),
+          userAnswers: [],
+        },
+      }
+    )
+  } catch {
+    throw new ServiceError("Couldn't store questions for user")
+  }
+}
 
 export const getUserByEmail = async (email: string): Promise<User> => {
-  const { db } = await connectToDatabase();
-  const data = await db.collection("users").findOne({ email });
+  try {
+    const { db } = await connectToDatabase()
+    const data = await db.collection("users").findOne({ email })
 
-  return Promise.resolve(JSON.parse(JSON.stringify(data)));
-};
+    return data
+  } catch {
+    throw new ServiceError("Couldn't get user by email")
+  }
+}
 
 export const storeAnswers = async (
   email: string,
   answers: UserAnswers,
   isFinalQuestion: boolean = true
 ) => {
-  const dataSet = isFinalQuestion ? { $set: { quizEndTime: Date.now() } } : {};
-  const { db } = await connectToDatabase();
-  await db.collection("users").updateOne(
-    { email },
-    {
-      $push: {
-        userAnswers: {
-          $each: answers,
+  try {
+    const dataSet = isFinalQuestion ? { $set: { quizEndTime: Date.now() } } : {}
+    const { db } = await connectToDatabase()
+    await db.collection("users").updateOne(
+      { email },
+      {
+        $push: {
+          userAnswers: {
+            $each: answers,
+          },
         },
-      },
-      ...dataSet,
-    }
-  );
-};
+        ...dataSet,
+      }
+    )
+  } catch {
+    throw new ServiceError("Couldn't store answers")
+  }
+}
 
 export const finalizeQuiz = async (email: string) => {
-  const { db } = await connectToDatabase();
-  await db
-    .collection("users")
-    .updateOne({ email }, { $set: { quizEndTime: Date.now() } });
-};
+  try {
+    const { db } = await connectToDatabase()
+    await db
+      .collection("users")
+      .updateOne({ email }, { $set: { quizEndTime: Date.now() } })
+  } catch {
+    throw new ServiceError("Couldn't finalize quiz")
+  }
+}
 
 export const getUserList = async (): Promise<Users> => {
-  const { db } = await connectToDatabase();
-  const list = await db
-    .collection("users")
-    .find({})
-    .sort({ email: -1 })
-    .toArray();
+  try {
+    const { db } = await connectToDatabase()
+    const list = await db
+      .collection("users")
+      .find({})
+      .sort({ email: -1 })
+      .toArray()
 
-  return Promise.resolve(JSON.parse(JSON.stringify(list)));
-};
+    return list
+  } catch {
+    throw new ServiceError("Couldn't get user list")
+  }
+}
 
-export const userAutoRegistration = async (
+export const userAutoRegistration = async (email: string, hash: string) => {
+  try {
+    const { db } = await connectToDatabase()
+    await db.collection("users").insertOne({
+      hash,
+      email,
+      isAdmin: false,
+      isConfirmed: false,
+    })
+  } catch (error) {
+    throw new ServiceError("Couldn't create user record in db")
+  }
+}
+
+export const userUpdateRegistrationData = async (
   email: string,
-  hash: string,
-  isNewUser: boolean
+  hash: string
 ) => {
-  const { db } = await connectToDatabase();
-  if (isNewUser) {
+  try {
+    const { db } = await connectToDatabase()
     await db.collection("users").findOneAndUpdate(
       { email, isAdmin: false },
       { $set: { hash, isAdmin: false, isConfirmed: false } },
       {
         new: true,
       }
-    );
-  } else {
-    await db.collection("users").insertOne({
-      hash,
-      email,
-      isAdmin: false,
-      isConfirmed: false,
-    });
+    )
+  } catch {
+    throw new ServiceError("Couldn't update user's record in db")
   }
-};
+}
 
 export const confirmUserEmail = async (hash: string): Promise<User> => {
-  const filter = {
-    hash,
-    isAdmin: false,
-  };
-  const update = {
-    $set: {
-      isConfirmed: true,
-      hash: "",
-    },
-  };
-  const { db } = await connectToDatabase();
-  const user = await db
-    .collection("users")
-    .findOneAndUpdate(filter, update, {
+  try {
+    const filter = {
+      hash,
+      isAdmin: false,
+    }
+    const update = {
+      $set: {
+        isConfirmed: true,
+        hash: "",
+      },
+    }
+    const { db } = await connectToDatabase()
+    const user = await db.collection("users").findOneAndUpdate(filter, update, {
       returnOriginal: false,
       upsert: true,
       new: true,
-    });
+    })
 
-  return user && user?.value
-    ? Promise.resolve(JSON.parse(JSON.stringify(user?.value)))
-    : Promise.resolve(null);
-};
+    return user ? user.value : null
+  } catch {
+    throw new ServiceError("Couldn't confirm email")
+  }
+}
