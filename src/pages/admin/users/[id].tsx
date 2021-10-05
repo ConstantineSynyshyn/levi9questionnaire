@@ -23,13 +23,13 @@ QuizPage.getLayout = (page) => (
 )
 
 export const getServerSideProps = async (req: NextApiRequest) => {
-  const { id } = req.query
-  const user = await getUserByEmail(id as string)
+  const { id: email } = req.query
+  const user = await getUserByEmail(email as string)
+
   let quizResult = null
   if (user) {
     quizResult = getQuizAnalise(user.initialQuestions, user.userAnswers)
   }
-
   return {
     props: { user, quizResult },
   }
