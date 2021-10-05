@@ -43,12 +43,13 @@ export const StyledTextContainer = styled.div`
 `;
 
 export const StyledCodeContainer = styled.pre`
-  padding: 1rem;
+  padding: 16px;
   background-color: lightgray;
   border-radius: 5px;
   font-size: 0.85rem;
   user-select: none;
   tab-size: 2;
+  margin: 0 0 16px 0;
 `;
 
 export const StyledQuestionPaper = styled(Paper)`

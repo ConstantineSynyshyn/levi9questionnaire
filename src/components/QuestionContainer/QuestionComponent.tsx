@@ -16,6 +16,7 @@ import {
   StyledCodeContainer,
 } from "./styles";
 import { UserQuestionView } from "../../types/question";
+import QuestionNodeImageWrapper from "./QuestionNodeImageWrapper";
 
 interface Props {
   question: UserQuestionView;
@@ -31,9 +32,15 @@ const QuestionComponent: React.FC<Props> = (props) => {
     <StyledQuestionPaper elevation={3}>
       <StyledTextContainer>
         <Typography variant="h4" align="center">
-          {questionText}
+          <QuestionNodeImageWrapper>
+            <span dangerouslySetInnerHTML={{ __html: questionText}}></span>
+            </QuestionNodeImageWrapper>
         </Typography>
-        {Boolean(data) && <StyledCodeContainer>{data}</StyledCodeContainer>}
+        {Boolean(data) && <QuestionNodeImageWrapper>
+          <StyledCodeContainer>
+            {data}
+            </StyledCodeContainer>
+          </QuestionNodeImageWrapper>}
       </StyledTextContainer>
       <Grid container spacing={2}>
         {taskType === TaskCategory.CODING ? (
