@@ -23,7 +23,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         message: "authorisation required",
       })
     }
-    const result = handleQuizTimer(email)
+    const result = await handleQuizTimer(email)
+
     return res.status(200).json(result)
   } catch {
     return res.status(400).json({
