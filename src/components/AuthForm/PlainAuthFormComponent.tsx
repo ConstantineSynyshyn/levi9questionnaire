@@ -1,23 +1,17 @@
-import React from "react";
-import {
-  Avatar,
-  Button,
-  Grid,
-  TextField,
-  Typography,
-} from "@material-ui/core";
-import LockOutlinedIcon from "@material-ui/core/SvgIcon/SvgIcon";
+import React from "react"
+import { Avatar, Button, Grid, TextField, Typography } from "@material-ui/core"
+import LockOutlinedIcon from "@material-ui/core/SvgIcon/SvgIcon"
 
 interface Props {
-  emailValue: string;
-  passwordValue: string;
-  emailChangeHandler: (event: React.ChangeEvent<any>) => void;
-  passwordChangeHandler: (event: React.ChangeEvent<any>) => void;
-  containerClassName: string;
-  avatarClassName: string;
-  buttonClassName: string;
-  errorMessage: string | null;
-  submitFn: () => void;
+  emailValue: string
+  passwordValue: string
+  emailChangeHandler: (event: React.ChangeEvent<any>) => void
+  passwordChangeHandler: (event: React.ChangeEvent<any>) => void
+  containerClassName: string
+  avatarClassName: string
+  buttonClassName: string
+  errorMessage: string | null
+  submitFn: () => void
 }
 
 const PlainAuthFormComponent: React.FC<Props> = (props) => {
@@ -31,14 +25,14 @@ const PlainAuthFormComponent: React.FC<Props> = (props) => {
     buttonClassName,
     errorMessage,
     submitFn,
-  } = props;
+  } = props
   return (
     <div className={containerClassName}>
       <Avatar className={avatarClassName}>
         <LockOutlinedIcon />
       </Avatar>
       <Typography component="h1" variant="h5">
-        Sign up
+        Sign in
       </Typography>
       <form noValidate>
         <Grid container spacing={2}>
@@ -86,7 +80,7 @@ const PlainAuthFormComponent: React.FC<Props> = (props) => {
         </Button>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default React.memo(PlainAuthFormComponent);
+export default React.memo(PlainAuthFormComponent)
