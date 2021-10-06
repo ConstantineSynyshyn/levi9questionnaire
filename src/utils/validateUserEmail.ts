@@ -5,6 +5,8 @@ const patternValidationFactory =
       ? pattern.test(candidate)
       : new RegExp(pattern, "u").test(candidate)
 
-const validUserEmailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/u
+const validUserEmailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/
 
-export const isValidUserEmail = patternValidationFactory(validUserEmailPattern)
+export const getIsValidUserEmail = patternValidationFactory(
+  validUserEmailPattern
+)

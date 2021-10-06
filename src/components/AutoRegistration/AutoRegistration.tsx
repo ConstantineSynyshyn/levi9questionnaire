@@ -5,9 +5,7 @@ import Box from "@material-ui/core/Box"
 
 interface Props {
   email?: string
-  error?: {
-    message: string
-  }
+  error?: string
 }
 
 const AutoRegistration: React.FC<Props> = ({ email, error }) => {
@@ -15,7 +13,7 @@ const AutoRegistration: React.FC<Props> = ({ email, error }) => {
     return (
       <Box component="div" p={2}>
         <Typography variant="h4" color="error" gutterBottom>
-          {error.message}
+          {error}
         </Typography>
       </Box>
     )

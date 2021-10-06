@@ -6,7 +6,7 @@ import { Page } from "../../types/page"
 import AutoRegistration from "@components/AutoRegistration"
 import { handleAutoRegistration } from "@services/RequestManager/handleAutoRegistration"
 import { getUserByEmail } from "@db/entities/User"
-import { isValidUserEmail } from "@utils/validateUserEmail"
+import { getIsValidUserEmail } from "@utils/validateUserEmail"
 
 interface Props {
   email: string
@@ -27,12 +27,12 @@ Registration.getLayout = (page) => (
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const { email = "" } = query
   const candidateEmail = Array.isArray(email) ? email[0] : email
-  const validUserEmail = isValidUserEmail(candidateEmail)
+  const isValidUserEmail = getIsValidUserEmail(candidateEmail)
 
-  if (!validUserEmail) {
+  if (!isValidUserEmail) {
     return {
       props: {
-        error: { message: `Can't create user for ${candidateEmail}.` },
+        error: `Can't create user for ${candidateEmail}.`,
       },
     }
   }

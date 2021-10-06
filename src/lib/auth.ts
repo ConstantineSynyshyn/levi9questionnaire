@@ -1,18 +1,17 @@
-import { hash, compare } from "bcrypt";
+import { hash, compare } from "bcrypt"
 
 export async function hashPassword(password: string): Promise<string> {
-  const hashedPassword = await hash(password, 12);
-  return hashedPassword;
+  const hashedPassword = await hash(password, 12)
+  return hashedPassword
 }
 
 export async function verifyPassword(
   password: string,
   hashedPassword: string
 ): Promise<boolean> {
-  const isValid = await compare(password, hashedPassword);
-  return isValid;
+  const isValid = await compare(password, hashedPassword)
+  return isValid
 }
 
-export const getIsValidEmail = (email: string): boolean => email?.includes("@");
 export const getIsValidPassword = (password: string): boolean =>
-  password?.length > 7;
+  password?.length > 7
