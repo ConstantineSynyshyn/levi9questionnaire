@@ -23,6 +23,15 @@ $ yarn
 $ yarn dev
 ```
 
+## Registration
+
+App is designed for passwordless login, so you should be registered and loged in via registration link.
+However, you can achieve the same result calling:
+
+```shell
+${appBaseUrl}/registration/${yourEmailHere}
+```
+
 ## Testing strategy
 
 `React testing library` was choosen due to it's very light-weight and since it emphasizes testing without all the implementation details.
