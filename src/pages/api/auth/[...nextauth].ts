@@ -7,6 +7,7 @@ import { verifyPassword } from "../../../lib/auth"
 export default NextAuth({
   session: {
     jwt: true,
+    maxAge: 20 * 24 * 60 * 60
   },
   providers: [
     Providers.Credentials({
