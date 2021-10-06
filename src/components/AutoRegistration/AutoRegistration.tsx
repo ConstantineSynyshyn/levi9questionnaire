@@ -4,9 +4,10 @@ import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 
 interface Props {
-  email: string
-  error?: string
-  success?: string
+  email?: string
+  error?: {
+    message: string
+  }
 }
 
 const AutoRegistration: React.FC<Props> = ({ email, error }) => {
@@ -14,7 +15,7 @@ const AutoRegistration: React.FC<Props> = ({ email, error }) => {
     return (
       <Box component="div" p={2}>
         <Typography variant="h4" color="error" gutterBottom>
-          {error}
+          {error.message}
         </Typography>
       </Box>
     )
