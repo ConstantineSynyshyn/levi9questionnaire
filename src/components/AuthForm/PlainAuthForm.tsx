@@ -1,42 +1,43 @@
-import { signIn } from "next-auth/client";
-import { useRouter } from "next/router";
-import React from "react";
+import { signIn } from "next-auth/client"
+import { useRouter } from "next/router"
+import React from "react"
 
-import PlainAuthFormComponent from "./PlainAuthFormComponent";
-import useStyles from "./useStyles";
+import PlainAuthFormComponent from "./PlainAuthFormComponent"
+import useStyles from "./useStyles"
 
 const PlainAuthForm: React.FC = () => {
-  const classes = useStyles();
-  const router = useRouter();
-  const [emailValue, setEmailValue] = React.useState("");
-  const [passwordValue, setPasswordValue] = React.useState("");
-  const [errorMessage, setErrorMessage] = React.useState(null);
+  const classes = useStyles()
+  const router = useRouter()
+  const [emailValue, setEmailValue] = React.useState("")
+  const [passwordValue, setPasswordValue] = React.useState("")
+  const [errorMessage, setErrorMessage] = React.useState(null)
 
   const emailChangeHandler = (event: React.ChangeEvent<any>) => {
-    const newEmailValue = event?.target?.value;
-    setEmailValue(newEmailValue);
-  };
+    const newEmailValue = event?.target?.value
+    setEmailValue(newEmailValue)
+  }
 
   const passwordChangeHandler = (event: React.ChangeEvent<any>) => {
-    const newPasswordValue = event?.target?.value;
-    setPasswordValue(newPasswordValue);
-  };
+    const newPasswordValue = event?.target?.value
+    setPasswordValue(newPasswordValue)
+  }
   const submitFn = React.useCallback(() => {
     async function submitHandler() {
       const result: ReturnType<typeof signIn> = await signIn("credentials", {
         redirect: false,
         email: emailValue,
         password: passwordValue,
-      });
+      })
+
       if (!result?.error) {
-        router.replace("/");
-        return;
+        router.replace("/")
+        return
       }
-      setErrorMessage(result?.error);
-      return;
+      setErrorMessage(result?.error)
+      return
     }
-    submitHandler();
-  }, [emailValue, passwordValue, router]);
+    submitHandler()
+  }, [emailValue, passwordValue, router])
 
   return (
     <PlainAuthFormComponent
@@ -50,7 +51,7 @@ const PlainAuthForm: React.FC = () => {
       errorMessage={errorMessage}
       submitFn={submitFn}
     />
-  );
-};
+  )
+}
 
-export default PlainAuthForm;
+export default PlainAuthForm

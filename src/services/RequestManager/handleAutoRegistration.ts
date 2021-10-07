@@ -17,7 +17,9 @@ const getEmailTemplateWithUrl = (url: string): string => `
 
 const handleAutoRegistration = async (
   email: string
-): Promise<{ message: SMTPTransport.SentMessageInfo } | { error: string }> => {
+): Promise<
+  { message: SMTPTransport.SentMessageInfo; success: true } | Error
+> => {
   const confirmationHash = await getConfirmationHash(email)
   await userAutoRegistration(email, confirmationHash)
   const url =
@@ -29,15 +31,20 @@ const handleAutoRegistration = async (
 
     return {
       message: result,
+      success: true,
     }
   } catch {
-    throw new Error(
+    return new Error(
       "Something went wrong. Contact admin to receive your link or try again"
     )
   }
 }
 
-const handleRequestAuthLink = async (email: string) => {
+const handleRequestAuthLink = async (
+  email: string
+): Promise<
+  { message: SMTPTransport.SentMessageInfo; success: true } | Error
+> => {
   const confirmationHash = await getConfirmationHash(email)
   await userUpdateRegistrationData(email, confirmationHash)
   const url =
@@ -49,9 +56,10 @@ const handleRequestAuthLink = async (email: string) => {
 
     return {
       message: result,
+      success: true,
     }
   } catch {
-    throw new Error(
+    return new Error(
       "Something went wrong. Contact admin to receive your link or try again"
     )
   }
