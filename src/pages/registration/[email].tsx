@@ -49,6 +49,13 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   }
 
   const result = await handleAutoRegistration(candidateEmail)
+
+  if (result instanceof Error) {
+    return {
+      props: {},
+    }
+  }
+
   return {
     props: { email },
   }
