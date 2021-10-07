@@ -1,15 +1,16 @@
-import React from "react";
-import { Avatar, Button, TextField, Typography } from "@material-ui/core";
-import LockOutlinedIcon from "@material-ui/core/SvgIcon/SvgIcon";
+import React from "react"
+import { Avatar, Button, TextField, Typography } from "@material-ui/core"
+import LockOutlinedIcon from "@material-ui/core/SvgIcon/SvgIcon"
 
 interface Props {
-  emailValue: string;
-  emailChangeHandler: (event: React.ChangeEvent<any>) => void;
-  containerClassName: string;
-  avatarClassName: string;
-  buttonClassName: string;
-  errorMessage: string | null;
-  submitFn: () => void;
+  emailValue: string
+  emailChangeHandler: (event: React.ChangeEvent<any>) => void
+  containerClassName: string
+  avatarClassName: string
+  buttonClassName: string
+  errorMessage: string | null
+  successMessage: string | null
+  submitFn: () => void
 }
 
 const AuthLinkRequestComponent: React.FC<Props> = (props) => {
@@ -20,8 +21,9 @@ const AuthLinkRequestComponent: React.FC<Props> = (props) => {
     avatarClassName,
     buttonClassName,
     errorMessage,
+    successMessage,
     submitFn,
-  } = props;
+  } = props
   return (
     <div className={containerClassName}>
       <Avatar className={avatarClassName}>
@@ -55,8 +57,9 @@ const AuthLinkRequestComponent: React.FC<Props> = (props) => {
           Send auth link
         </Button>
       </form>
+      {successMessage && <Typography>{successMessage}</Typography>}
     </div>
-  );
-};
+  )
+}
 
-export default React.memo(AuthLinkRequestComponent);
+export default React.memo(AuthLinkRequestComponent)
