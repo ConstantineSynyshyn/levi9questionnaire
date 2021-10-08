@@ -18,6 +18,7 @@ const QuestionContainer: React.FC<Props> = (props) => {
     onChange,
     onSubmit,
     currentValue,
+    isLoading,
   } = useHandleQuestion(props);
   const router = useRouter();
   const handleSubmit = React.useCallback(() => {
@@ -34,6 +35,7 @@ const QuestionContainer: React.FC<Props> = (props) => {
     return null;
   }
   const currentQuestionNumber = (passed || 0) + 1
+
   return (
     <QuestionContainerComponent
       question={nextQuestion}
@@ -43,6 +45,7 @@ const QuestionContainer: React.FC<Props> = (props) => {
       onChange={handleChange}
       onSubmit={handleSubmit}
       currentValue={currentValue}
+      isLoading={isLoading}
     />
   );
 };

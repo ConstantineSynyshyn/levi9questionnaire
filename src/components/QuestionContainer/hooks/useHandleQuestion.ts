@@ -12,6 +12,7 @@ interface HandleQuestionInfo extends QuizQuestionInfoType {
   currentValue?: string | ReadonlyArray<string>;
   onSubmit: HandleSubmit;
   onChange: HandleChange;
+  isLoading: boolean;
 }
 
 const useHandleQuestion = (
@@ -71,6 +72,7 @@ const useHandleQuestion = (
     currentValue,
     onSubmit,
     onChange,
+    isLoading,
   };
 };
 

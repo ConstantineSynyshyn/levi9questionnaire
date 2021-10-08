@@ -24,6 +24,7 @@ interface Props {
   onChange: (e: ChangeEvent<any>) => void;
   onSubmit: () => void;
   currentValue?: string | ReadonlyArray<string>
+  isLoading: boolean
 }
 
 const QuestionContainerComponent: React.FC<Props> = (props) => {
@@ -36,6 +37,7 @@ const QuestionContainerComponent: React.FC<Props> = (props) => {
     onChange,
     currentValue,
     passedAt,
+    isLoading,
   } = props;
   return (
     <StyledQuestionContainer>
@@ -56,7 +58,7 @@ const QuestionContainerComponent: React.FC<Props> = (props) => {
           />
         )}
         <StyledQuestionFooter>
-          <Button variant="contained" color="primary" onClick={onSubmit}>
+          <Button variant="contained" color="primary" onClick={onSubmit} disabled={isLoading}>
             SUBMIT
           </Button>
         </StyledQuestionFooter>

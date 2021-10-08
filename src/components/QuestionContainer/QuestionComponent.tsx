@@ -26,7 +26,7 @@ interface Props {
 }
 
 const QuestionComponent: React.FC<Props> = (props) => {
-  const { question, onChange, currentValue = '' } = props;
+  const { question, onChange, currentValue = "" } = props;
   const { questionText, options, taskType, data } = question || {};
   return (
     <StyledQuestionPaper elevation={3}>
@@ -56,7 +56,12 @@ const QuestionComponent: React.FC<Props> = (props) => {
         ) : (
           <FormControl component="fieldset">
             <FormLabel component="legend">Options:</FormLabel>
-            <RadioGroup aria-label="question" name="question" value={currentValue} onChange={onChange}>
+            <RadioGroup
+              aria-label="question"
+              name="question"
+              value={currentValue}
+              onChange={onChange}
+            >
               {options.map((text) => (
                 <Grid item key={text}>
                   <FormControlLabel
