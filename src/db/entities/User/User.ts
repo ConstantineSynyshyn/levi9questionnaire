@@ -27,7 +27,7 @@ export const storeUserQuestions = async (
 export const getUserByEmail = async (email: string): Promise<User> => {
   const { db } = await connectToDatabase()
   const user = await db.collection("users").findOne({ email })
-  delete user._id
+  delete user?._id
   return user
 }
 

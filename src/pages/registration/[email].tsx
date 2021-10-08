@@ -4,7 +4,10 @@ import React from "react"
 
 import { Page } from "../../types/page"
 import AutoRegistration from "@components/AutoRegistration"
-import { handleAutoRegistration } from "@services/RequestManager/handleAutoRegistration"
+import {
+  handleAutoRegistration,
+  handleRequestAuthLink,
+} from "@services/RequestManager/handleAutoRegistration"
 import { getUserByEmail } from "@db/entities/User"
 import { getIsValidUserEmail } from "@utils/validateUserEmail"
 
@@ -39,7 +42,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 
   const user = await getUserByEmail(candidateEmail)
 
-  if (user.isAdmin) {
+  if (user?.isAdmin) {
     return {
       redirect: {
         destination: "/auth",
@@ -48,7 +51,9 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     }
   }
 
-  const result = await handleAutoRegistration(candidateEmail)
+  const result = user?.email
+    ? await handleRequestAuthLink(candidateEmail)
+    : await handleAutoRegistration(candidateEmail)
 
   if (result instanceof Error) {
     return {
