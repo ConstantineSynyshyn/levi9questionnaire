@@ -20,6 +20,7 @@ export interface User {
   initialQuestions: InitialUseQuestions;
   quizStartTime: number;
   quizEndTime?: number;
+  quizTime?: number;
   userAnswers: UserAnswers;
   isConfirmed: boolean;
   isAdmin?: boolean;

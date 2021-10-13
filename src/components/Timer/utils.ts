@@ -1,5 +1,5 @@
 import { LeftTimeType } from "../../types";
-
+// @deprecated utils/index instead
 export const getTimeLeftString = (leftTimeConfig: LeftTimeType): string => {
   const list = [];
   const { seconds, minutes, hours } = leftTimeConfig;

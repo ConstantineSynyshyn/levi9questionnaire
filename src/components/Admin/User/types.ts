@@ -4,7 +4,10 @@ export interface UserOverviewType
   extends Pick<
     UserDocument,
     "email" | "quizStartTime" | "quizEndTime" | "isConfirmed"
-  > {}
+  > {
+  quizTime?: string | null;
+  score?: number;
+}
 
 export type UsersOverviewType = ReadonlyArray<UserOverviewType>;
 

@@ -1,6 +1,7 @@
 export interface Column {
   title: string;
   fieldName: string;
+  sortable?: boolean;
 }
 
 export type ColumnsConfigType = ReadonlyArray<Column>;

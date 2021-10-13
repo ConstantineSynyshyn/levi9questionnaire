@@ -5,4 +5,5 @@ export {
   storeUserQuestions,
   getUserList,
   userAutoRegistration,
+  getCollectionSize,
 } from "./User";
