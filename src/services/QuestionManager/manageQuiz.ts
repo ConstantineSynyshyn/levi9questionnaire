@@ -172,7 +172,7 @@ export const prepareQuestionForUser = (
     questionText,
     data,
     taskType,
-    options: answers,
+    options: [...answers].sort(() => Math.random() - 0.5),
     qId: internalQuestionId,
   };
 };

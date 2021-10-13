@@ -5,7 +5,7 @@ import { ROUTES } from "@constants/routes";
 
 import TimeToEndComponent from "./components/TimeToEnd";
 import useTimeToQuizEnd from "./hooks/useTimeToQuizEnd";
-import { getTimeLeftString } from "./utils";
+import { getTimeLeftString } from "@utils/index";
 
 interface Props {
   startTime: number;

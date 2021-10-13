@@ -1,9 +1,12 @@
 import {
-  InitialUseQuestion,
   UserAnswers,
   UserAnswer,
   User,
 } from "@db/entities/User/types";
+import {
+  getAnswerMap,
+  isAnswerCorrect,
+} from "@db/entities/User/utils";
 import { QuizAnaliseInfo } from "./types";
 
 type AnswerMapType = { [key: string]: UserAnswer };
@@ -30,26 +33,4 @@ export const getQuizAnalise = (
     value,
     answerMap,
   }
-};
-
-export const getAnswerMap = (answers: UserAnswers = []): AnswerMapType =>
-  answers.reduce(
-    (map, answer) => ({
-      ...map,
-      [answer.id]: answer,
-    }),
-    {}
-  );
-
-export const isAnswerCorrect = (
-  initialQuestionOptions: InitialUseQuestion["options"],
-  userOptions: UserAnswer["answer"]
-): boolean => {
-  const answer = Array.isArray(userOptions) ? userOptions : [userOptions];
-  const res = answer.filter((item) =>
-    initialQuestionOptions.some(
-      ({ text, isCorrect }) => isCorrect && item === text
-    )
-  );
-  return res.length === answer.length;
 };

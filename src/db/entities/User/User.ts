@@ -1,9 +1,12 @@
 import { connectToDatabase } from "@db/connection/mongodb"
 
-import ServiceError from "@utils/serviceError"
 import { QuestionWithOptionsList } from "../../../types/question"
+import { convertStringedDirectionToMongo } from "../utils"
 import { User, UserAnswers, Users } from "./types"
-import { prepareInitialQuestion } from "./utils"
+import {
+  prepareInitialQuestion,
+  getQuizScoreParams,
+} from "./utils"
 
 // @TODO for now it is hardcoded until
 export const storeUserQuestions = async (
@@ -36,7 +39,13 @@ export const storeAnswers = async (
   answers: UserAnswers,
   isFinalQuestion: boolean = true
 ) => {
-  const dataSet = isFinalQuestion ? { $set: { quizEndTime: Date.now() } } : {}
+  let dataSet = {}
+  if (isFinalQuestion) {
+    const currentUser = await getUserByEmail(email)
+    dataSet = currentUser?.email
+      ? { $set: getQuizScoreParams(currentUser) }
+      : dataSet
+  }
   const { db } = await connectToDatabase()
   await db.collection("users").updateOne(
     { email },
@@ -52,20 +61,45 @@ export const storeAnswers = async (
 }
 
 export const finalizeQuiz = async (email: string) => {
+  const currentUser = await getUserByEmail(email)
+  if (!email || !currentUser?.email) {
+    return
+  }
   const { db } = await connectToDatabase()
   await db
     .collection("users")
-    .updateOne({ email }, { $set: { quizEndTime: Date.now() } })
+    .updateOne({ email }, { $set: getQuizScoreParams(currentUser) })
 }
 
-export const getUserList = async (): Promise<Users> => {
+export const getUserList = async (
+  sortBy: string = "email",
+  dir?: string,
+  limit: number = 100,
+  offset?: number
+): Promise<Users> => {
+  const direction = convertStringedDirectionToMongo(dir)
   const { db } = await connectToDatabase()
   const list = await db
     .collection("users")
-    .find({})
-    .sort({ email: -1 })
+    .aggregate([
+      {
+        $project: {
+          _id : true,
+          email : true,
+          quizStartTime : true,
+          quizEndTime : true,
+          isConfirmed : true,
+          quizScore : true,
+          quizTime : true,
+          [sortBy]: { $ifNull: [ "$" + sortBy, 0 ] }
+        }
+      }
+      ,
+      {$sort: { [sortBy]: direction }}
+    ])
+    .skip(offset)
+    .limit(limit)
     .toArray()
-
   return list
 }
 
@@ -94,6 +128,7 @@ export const userUpdateRegistrationData = async (
 }
 
 export const confirmUserEmail = async (hash: string): Promise<User | null> => {
+  const { db } = await connectToDatabase()
   const filter = {
     hash,
     isAdmin: false,
@@ -104,12 +139,13 @@ export const confirmUserEmail = async (hash: string): Promise<User | null> => {
       hash: "",
     },
   }
-  const { db } = await connectToDatabase()
   const user = await db.collection("users").findOneAndUpdate(filter, update, {
     returnOriginal: false,
-    upsert: true,
-    new: true,
   })
-
   return user ? user.value : null
+}
+
+export const getCollectionSize = async () => {
+  const { db } = await connectToDatabase()
+  return db.collection("users").count()
 }
