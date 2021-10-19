@@ -10,7 +10,7 @@ interface Props {
   buttonClassName: string
   errorMessage: string | null
   successMessage: string | null
-  submitFn: () => void
+  submitFn: (event: React.SyntheticEvent) => void
 }
 
 const AuthLinkRequestComponent: React.FC<Props> = (props) => {
@@ -29,10 +29,8 @@ const AuthLinkRequestComponent: React.FC<Props> = (props) => {
       <Avatar className={avatarClassName}>
         <LockOutlinedIcon />
       </Avatar>
-      <Typography variant="h5">
-        Request for login link
-      </Typography>
-      <form noValidate>
+      <Typography variant="h5">Request for login link</Typography>
+      <form noValidate onSubmit={submitFn}>
         <TextField
           value={emailValue}
           onChange={emailChangeHandler}

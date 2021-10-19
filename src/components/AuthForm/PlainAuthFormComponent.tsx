@@ -11,7 +11,7 @@ interface Props {
   avatarClassName: string
   buttonClassName: string
   errorMessage: string | null
-  submitFn: () => void
+  submitFn: (event: React.SyntheticEvent) => void
 }
 
 const PlainAuthFormComponent: React.FC<Props> = (props) => {
@@ -34,7 +34,7 @@ const PlainAuthFormComponent: React.FC<Props> = (props) => {
       <Typography component="h1" variant="h5">
         Sign in
       </Typography>
-      <form noValidate>
+      <form onSubmit={submitFn} noValidate>
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <TextField
