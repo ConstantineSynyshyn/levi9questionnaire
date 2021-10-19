@@ -10,10 +10,10 @@ import { getConfirmationHash } from "@services/utils"
 const emailTitle = "Confirmation email for Levi9 testing platform registration"
 
 const getEmailTemplateWithUrl = (url: string): string => `
-  <h3>Wellcome to Levi9 testing platform</h3>
-  <p>You successfully regisetred in testing platform</p>
+  <h3><b>Welcome to Levi9 testing platform!</b></h3>
+  <p>You successfully registered on the testing platform.</p>
   <p>To be able to run the test, please confirm your email:</p>
-  <a href="${url}">Verify my email</a></p>;`
+  <a href="${url}">Verify my email!</a></p>;`
 
 const handleAutoRegistration = async (
   email: string
