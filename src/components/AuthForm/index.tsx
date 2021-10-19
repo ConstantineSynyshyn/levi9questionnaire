@@ -2,7 +2,7 @@ import React from "react"
 
 import AppBar from "@material-ui/core/AppBar"
 import Container from "@material-ui/core/Container"
-import Grid from "@material-ui/core/Grid"
+import Box from "@material-ui/core/Box"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
 
@@ -34,8 +34,8 @@ const AuthForm: React.FC = () => {
           variant="fullWidth"
           aria-label="tabs"
         >
-          <Tab label="I know my credentials" />
           <Tab label="Send me an invitation link" />
+          <Tab label="I know my credentials" />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -44,14 +44,14 @@ const AuthForm: React.FC = () => {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0}>
-          <Grid item>
-            <PlainAuthForm />
-          </Grid>
+          <Box>
+            <AuthLinkRequest />
+          </Box>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Grid item>
-            <AuthLinkRequest />
-          </Grid>
+          <Box>
+            <PlainAuthForm />
+          </Box>
         </TabPanel>
       </SwipeableViews>
     </Container>
