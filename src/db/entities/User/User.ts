@@ -117,6 +117,11 @@ export const userUpdateRegistrationData = async (
   email: string,
   hash: string
 ) => {
+  const currentUser = await getUserByEmail(email)
+  if (!currentUser?.email) {
+    await userAutoRegistration(email, hash)
+    return
+  }
   const { db } = await connectToDatabase()
   await db.collection("users").findOneAndUpdate(
     { email, isAdmin: false },

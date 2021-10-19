@@ -29,7 +29,7 @@ const AuthLinkRequestComponent: React.FC<Props> = (props) => {
       <Avatar className={avatarClassName}>
         <LockOutlinedIcon />
       </Avatar>
-      <Typography component="h1" variant="h5">
+      <Typography variant="h5">
         Request for login link
       </Typography>
       <form noValidate>
