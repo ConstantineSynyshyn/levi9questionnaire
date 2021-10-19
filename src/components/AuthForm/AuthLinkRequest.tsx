@@ -18,7 +18,7 @@ const AuthLinkRequest: React.FC = () => {
     const newEmailValue = event?.target?.value
     setEmailValue(newEmailValue)
   }
-  const submitFn = React.useCallback(() => {
+  const submitFn = (event: React.SyntheticEvent) => {
     async function submitHandler() {
       const res: any = await fetch(AUTO_LOGIN, {
         method: "POST",
@@ -36,8 +36,9 @@ const AuthLinkRequest: React.FC = () => {
       setSuccessMessage(getAuthLinkFormSuccessMessage(emailValue))
       return
     }
+    event.preventDefault()
     submitHandler()
-  }, [emailValue])
+  }
 
   return (
     <AuthLinkRequestComponent

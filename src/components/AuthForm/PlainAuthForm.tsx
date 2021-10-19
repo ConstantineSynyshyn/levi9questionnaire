@@ -21,7 +21,7 @@ const PlainAuthForm: React.FC = () => {
     const newPasswordValue = event?.target?.value
     setPasswordValue(newPasswordValue)
   }
-  const submitFn = React.useCallback(() => {
+  const submitFn = (event: React.SyntheticEvent) => {
     async function submitHandler() {
       const result: ReturnType<typeof signIn> = await signIn("credentials", {
         redirect: false,
@@ -36,8 +36,9 @@ const PlainAuthForm: React.FC = () => {
       setErrorMessage(result?.error)
       return
     }
+    event.preventDefault()
     submitHandler()
-  }, [emailValue, passwordValue, router])
+  }
 
   return (
     <PlainAuthFormComponent
