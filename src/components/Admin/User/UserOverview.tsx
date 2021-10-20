@@ -24,10 +24,12 @@ const columnsConfig = [
   {
     title: "Quiz started at",
     fieldName: "quizStartTime",
+    sortable: true,
   },
   {
     title: "Quiz passed at",
     fieldName: "quizEndTime",
+    sortable: true,
   },
   {
     title: "Score",
@@ -58,7 +60,7 @@ const UserOverview: React.FC<Props> = (props) => {
           ? new Date(item.quizStartTime).toUTCString()
           : "-",
         quizEndTime: item.quizEndTime
-          ? new Date(item.quizStartTime).toUTCString()
+          ? new Date(item.quizEndTime).toUTCString()
           : "-",
         score: item?.score || '-',
         quizTime: item?.quizTime || '-',

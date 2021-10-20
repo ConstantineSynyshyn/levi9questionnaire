@@ -14,6 +14,8 @@ const SORTABLE_FIELDS: { [key: string]: string } = {
   email: "email",
   score: "quizScore",
   quizTime: "quizTime",
+  quizStartTime: "quizStartTime",
+  quizEndTime: "quizEndTime",
 }
 
 const ROW_PER_PAGE = 30
