@@ -1,4 +1,5 @@
 import { UserQuestionView } from "../../types/question";
+import { InitialUseQuestion } from "@db/entities/User/types"
 
 export interface QuizQuestionInfoType {
   nextQuestion: UserQuestionView,
@@ -7,7 +8,13 @@ export interface QuizQuestionInfoType {
   startedAt: number,
 }
 
+export interface QuizResultMapItem {
+  question: InitialUseQuestion
+  isCorrect: boolean
+  userAnswer: string | null
+}
+
 export interface QuizAnaliseInfo {
-  value: number;
-  answerMap: { [key: string]: boolean };
+  value: number
+  answerFullMap: QuizResultMapItem[]
 }
