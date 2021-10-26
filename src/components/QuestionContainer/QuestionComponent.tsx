@@ -1,47 +1,50 @@
-import React, { ChangeEvent } from "react";
+import React, { ChangeEvent } from "react"
 
-import Radio from "@material-ui/core/Radio";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormControl from "@material-ui/core/FormControl";
-import FormLabel from "@material-ui/core/FormLabel";
-import TextField from "@material-ui/core/TextField";
+import Radio from "@material-ui/core/Radio"
+import Paper from "@material-ui/core/Paper"
+import Typography from "@material-ui/core/Typography"
+import Grid from "@material-ui/core/Grid"
+import RadioGroup from "@material-ui/core/RadioGroup"
+import FormControlLabel from "@material-ui/core/FormControlLabel"
+import FormControl from "@material-ui/core/FormControl"
+import FormLabel from "@material-ui/core/FormLabel"
+import TextField from "@material-ui/core/TextField"
 
-import { TaskCategory } from "@constants/configuration";
-import { htmlDecode } from "@utils/index";
+import { TaskCategory } from "@constants/configuration"
+import { htmlDecode } from "@utils/index"
 import {
   StyledQuestionPaper,
   StyledTextContainer,
   StyledCodeContainer,
-} from "./styles";
-import { UserQuestionView } from "../../types/question";
-import QuestionNodeImageWrapper from "./QuestionNodeImageWrapper";
+  useStyles,
+} from "./useStyles"
+import { UserQuestionView } from "../../types/question"
+import QuestionNodeImageWrapper from "./QuestionNodeImageWrapper"
 
 interface Props {
-  question: UserQuestionView;
-  onChange: (e: ChangeEvent<any>) => void;
-  currentValue?: string | ReadonlyArray<string>;
+  question: UserQuestionView
+  onChange: (e: ChangeEvent<any>) => void
+  currentValue?: string | ReadonlyArray<string>
 }
 
 const QuestionComponent: React.FC<Props> = (props) => {
-  const { question, onChange, currentValue = "" } = props;
-  const { questionText, options, taskType, data } = question || {};
+  const { question, onChange, currentValue = "" } = props
+  const { questionText, options, taskType, data } = question || {}
+  const classes = useStyles()
   return (
-    <StyledQuestionPaper elevation={3}>
-      <StyledTextContainer>
+    <Paper elevation={3} className={classes.questionPaper}>
+      <div className={classes.textContainer}>
         <Typography variant="h4" align="center">
           <QuestionNodeImageWrapper>
             {htmlDecode(questionText)}
           </QuestionNodeImageWrapper>
         </Typography>
-        {Boolean(data) && <QuestionNodeImageWrapper>
-          <StyledCodeContainer>
-            {data}
-            </StyledCodeContainer>
-          </QuestionNodeImageWrapper>}
-      </StyledTextContainer>
+        {Boolean(data) && (
+          <QuestionNodeImageWrapper>
+            <pre className={classes.codeContainer}>{data}</pre>
+          </QuestionNodeImageWrapper>
+        )}
+      </div>
       <Grid container spacing={2}>
         {taskType === TaskCategory.CODING ? (
           <TextField
@@ -75,8 +78,8 @@ const QuestionComponent: React.FC<Props> = (props) => {
           </FormControl>
         )}
       </Grid>
-    </StyledQuestionPaper>
-  );
-};
+    </Paper>
+  )
+}
 
-export default React.memo(QuestionComponent);
+export default React.memo(QuestionComponent)
