@@ -1,6 +1,6 @@
 import { UserAnswers, UserAnswer, User } from "@db/entities/User/types"
 import { getAnswerMap, isAnswerCorrect } from "@db/entities/User/utils"
-import { QuizAnaliseInfo } from "./types"
+import { QuizAnaliseInfo, QuizResultMapItem } from "./types"
 
 type AnswerMapType = { [key: string]: UserAnswer }
 
@@ -31,6 +31,6 @@ export const getQuizAnalise = (
   }, [])
   return {
     value,
-    answerFullMap,
+    answerFullMap: answerFullMap as unknown as QuizResultMapItem[],
   }
 }
