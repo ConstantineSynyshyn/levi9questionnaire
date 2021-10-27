@@ -6,4 +6,5 @@ export {
   getUserList,
   userAutoRegistration,
   getCollectionSize,
+  getUsers,
 } from "./User";
