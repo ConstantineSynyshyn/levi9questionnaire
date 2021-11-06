@@ -1,11 +1,13 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button"
 import Paper from "@material-ui/core/Paper";
 import { useRouter } from "next/router";
 
 import { ROUTES } from "@constants/routes";
 import useHandleSort from './hooks/useHandleSort';
 import useHandlePageChange from './hooks/useHandlePageChange';
+import useUserDownload from './hooks/useUserDownload';
 import { UsersOverviewType } from "./types";
 import BaseTable from "./Table";
 
@@ -77,9 +79,14 @@ const UserOverview: React.FC<Props> = (props) => {
     [router]
   );
   const { currentPage, handleChangePage } = useHandlePageChange()
-
+  const handleDownload = useUserDownload()
   return (
     <Paper>
+      <Box p={1}>
+        <Button variant="contained" color="primary" onClick={handleDownload}>
+          Download Users
+        </Button>
+      </Box>
       <Box p={2}>
         <BaseTable
           data={data}

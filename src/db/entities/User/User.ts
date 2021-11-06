@@ -34,6 +34,13 @@ export const getUserByEmail = async (email: string): Promise<User> => {
   return user
 }
 
+export const getUsers = async (): Promise<User[]> => {
+  const { db } = await connectToDatabase()
+  const users = await db.collection("users")
+    .find({ 'quizStartTime': { $gte: 0 } }).toArray()
+  return JSON.parse(JSON.stringify(users))
+}
+
 export const storeAnswers = async (
   email: string,
   answers: UserAnswers,
