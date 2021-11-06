@@ -1,28 +1,27 @@
-import React, { ChangeEvent } from "react";
+import React, { ChangeEvent } from "react"
 
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
+import Button from "@material-ui/core/Button"
+import Typography from "@material-ui/core/Typography"
+import Container from "@material-ui/core/Container"
 
-import QuizTimer from '@components/Timer/QuizTimer';
-import { UserQuestionView } from '../../types/question';
-import QuestionComponent from "./QuestionComponent";
+import QuizTimer from "@components/Timer/QuizTimer"
+import { UserQuestionView } from "../../types/question"
+import QuestionComponent from "./QuestionComponent"
 
 import {
-  StyledQuestionFooter,
-  StyledQuestionHeader,
   StyledTimerContainer,
   StyledQuestionContainer,
-} from "./styles";
+  useStyles,
+} from "./useStyles"
 
 interface Props {
-  question?: UserQuestionView;
-  startedAt: number;
-  totalAmount: number;
-  currentQuestionNumber: number;
-  passedAt?: number;
-  onChange: (e: ChangeEvent<any>) => void;
-  onSubmit: () => void;
+  question?: UserQuestionView
+  startedAt: number
+  totalAmount: number
+  currentQuestionNumber: number
+  passedAt?: number
+  onChange: (e: ChangeEvent<any>) => void
+  onSubmit: () => void
   currentValue?: string | ReadonlyArray<string>
   isLoading: boolean
 }
@@ -38,18 +37,23 @@ const QuestionContainerComponent: React.FC<Props> = (props) => {
     currentValue,
     passedAt,
     isLoading,
-  } = props;
+  } = props
+  const classes = useStyles()
   return (
-    <StyledQuestionContainer>
+    <div>
       <Container component="main" maxWidth="xl" disableGutters>
-        <StyledQuestionHeader>
+        <div className={classes.questionHeader}>
           <Typography>
             {currentQuestionNumber}/{totalAmount}
           </Typography>
-          <StyledTimerContainer>
-            <QuizTimer startTime={startedAt} quizSize={totalAmount} passedAt={passedAt} />
-          </StyledTimerContainer>
-        </StyledQuestionHeader>
+          <div className={classes.timerContainer}>
+            <QuizTimer
+              startTime={startedAt}
+              quizSize={totalAmount}
+              passedAt={passedAt}
+            />
+          </div>
+        </div>
         {Boolean(question) && (
           <QuestionComponent
             question={question!}
@@ -57,14 +61,19 @@ const QuestionContainerComponent: React.FC<Props> = (props) => {
             onChange={onChange}
           />
         )}
-        <StyledQuestionFooter>
-          <Button variant="contained" color="primary" onClick={onSubmit} disabled={isLoading}>
+        <div className={classes.questionFooter}>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={onSubmit}
+            disabled={isLoading}
+          >
             SUBMIT
           </Button>
-        </StyledQuestionFooter>
+        </div>
       </Container>
-    </StyledQuestionContainer>
-  );
-};
+    </div>
+  )
+}
 
-export default React.memo(QuestionContainerComponent);
+export default React.memo(QuestionContainerComponent)

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import Document, {
   Html,
   Head,
@@ -6,39 +6,31 @@ import Document, {
   NextScript,
   DocumentContext,
   DocumentInitialProps,
-} from "next/document";
-import { ServerStyleSheet as StyledServerStyleSheet } from "styled-components";
+} from "next/document"
 
-import { ServerStyleSheets as MuiServerStyleSheets } from "@material-ui/core/styles";
+import { ServerStyleSheets as MuiServerStyleSheets } from "@material-ui/core/styles"
 
 class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
-    const originalRenderPage = ctx.renderPage;
-    const styledComponentsSheet = new StyledServerStyleSheet();
-    const materialSheets = new MuiServerStyleSheets();
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            styledComponentsSheet.collectStyles(
-              materialSheets.collect(<App {...props} />)
-            ),
-        });
+    const originalRenderPage = ctx.renderPage
+    const materialSheets = new MuiServerStyleSheets()
 
-      const initialProps = await Document.getInitialProps(ctx);
+    ctx.renderPage = () =>
+      originalRenderPage({
+        enhanceApp: (App) => (props) =>
+          materialSheets.collect(<App {...props} />),
+      })
 
-      return {
-        ...initialProps,
-        styles: [
-          ...React.Children.toArray(initialProps.styles),
-          styledComponentsSheet.getStyleElement(),
-          materialSheets.getStyleElement(),
-        ],
-      };
-    } finally {
-      styledComponentsSheet.seal();
+    const initialProps = await Document.getInitialProps(ctx)
+
+    return {
+      ...initialProps,
+      styles: [
+        ...React.Children.toArray(initialProps.styles),
+        materialSheets.getStyleElement(),
+      ],
     }
   }
 
@@ -55,8 +47,8 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument
