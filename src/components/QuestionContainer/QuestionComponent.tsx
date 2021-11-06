@@ -12,12 +12,7 @@ import TextField from "@material-ui/core/TextField"
 
 import { TaskCategory } from "@constants/configuration"
 import { htmlDecode } from "@utils/index"
-import {
-  StyledQuestionPaper,
-  StyledTextContainer,
-  StyledCodeContainer,
-  useStyles,
-} from "./useStyles"
+import { useStyles } from "./useStyles"
 import { UserQuestionView } from "../../types/question"
 import QuestionNodeImageWrapper from "./QuestionNodeImageWrapper"
 

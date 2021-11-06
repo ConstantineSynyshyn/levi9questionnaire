@@ -8,11 +8,7 @@ import QuizTimer from "@components/Timer/QuizTimer"
 import { UserQuestionView } from "../../types/question"
 import QuestionComponent from "./QuestionComponent"
 
-import {
-  StyledTimerContainer,
-  StyledQuestionContainer,
-  useStyles,
-} from "./useStyles"
+import { useStyles } from "./useStyles"
 
 interface Props {
   question?: UserQuestionView
