@@ -6,6 +6,7 @@
   "difficultyLevel": 1,
   "id": "049c1056-2dcd-4983-b0b5-a84428d5e798",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<p> This is a line of text</p>",
@@ -42,6 +43,7 @@
   "difficultyLevel": 1,
   "id": "12d624f8-ce97-471f-a3a5-b47f469dcd72",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<a href=\"url\" target=\"_blank\">",
@@ -73,6 +75,7 @@
   "difficultyLevel": 1,
   "id": "67068ba8-6552-4437-ae75-3ec7a990c3a2",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "A collection of images put into a single image",
@@ -104,6 +107,7 @@
   "difficultyLevel": 1,
   "id": "785faea5-b5cf-4f5a-a10a-852c2cc89a26",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "True",
@@ -125,6 +129,7 @@
   "difficultyLevel": 1,
   "id": "7cd0de7b-df49-4ee4-b532-02af85ca3eb4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<textfield>",
@@ -151,6 +156,7 @@
   "difficultyLevel": 1,
   "id": "52a816a8-0514-476c-86f2-e8c25144fd3e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "3",
@@ -182,6 +188,7 @@
   "difficultyLevel": 1,
   "id": "6e88ed4c-817c-46ce-ba88-0c41f566a4c5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "sprite",
@@ -213,6 +220,7 @@
   "difficultyLevel": 1,
   "id": "2ffecf15-f121-4ec6-9130-405e5895cb34",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "False",
@@ -234,6 +242,7 @@
   "difficultyLevel": 1,
   "id": "aec9bde8-3b73-4d6d-9fe0-1315f1b78bf3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "In the <head> section",
@@ -265,6 +274,7 @@
   "difficultyLevel": 1,
   "id": "e9c9a172-3e6a-4777-b6df-f289654fb328",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<script>",
@@ -296,6 +306,7 @@
   "difficultyLevel": 1,
   "id": "fb4fc72b-8e16-4419-8b11-7ea362f648f5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "A language attribute can be added to the HTML tag",
@@ -327,6 +338,7 @@
   "difficultyLevel": 1,
   "id": "aea2efce-fd09-4eb4-8beb-f83d6cde8c3f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Bootstrap",
@@ -358,6 +370,7 @@
   "difficultyLevel": 1,
   "id": "e12e9bd3-6e3f-4b75-abde-75a9e834f8f3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "body {color: black;}",
@@ -389,6 +402,7 @@
   "difficultyLevel": 1,
   "id": "522afd5e-57f3-4f50-9fc0-309352ac3ce1",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "object",
@@ -420,6 +434,7 @@
   "difficultyLevel": 1,
   "id": "819098b1-118e-435e-9f47-b017a86c8e59",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "block",
@@ -451,6 +466,7 @@
   "difficultyLevel": 1,
   "id": "896c4cb2-31d5-408b-a815-6b6f320ce177",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "script async",
@@ -482,6 +498,7 @@
   "difficultyLevel": 1,
   "id": "53f54388-5af7-498f-8957-9b05a8fe925b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Better performance",
@@ -513,6 +530,7 @@
   "difficultyLevel": 1,
   "id": "b9d4bc13-a537-4876-ac47-b833c77cc392",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "False",
@@ -534,6 +552,7 @@
   "difficultyLevel": 1,
   "id": "86e649b7-d8a0-49f4-8f94-d5053a56b0d8",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<h1>",
@@ -565,6 +584,7 @@
   "difficultyLevel": 1,
   "id": "894b29d0-8e74-424e-950e-8c2828702fb4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<textarea>",
@@ -591,6 +611,7 @@
   "difficultyLevel": 1,
   "id": "6fe6f4fd-1b94-442a-9032-2623019b5069",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Tells the browser how to render the HTML markup",
@@ -622,6 +643,7 @@
   "difficultyLevel": 1,
   "id": "92f35727-d450-46f2-8af2-680fbc7513e0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Is a layout mode providing for the arrangement of elements",
@@ -653,6 +675,7 @@
   "difficultyLevel": 1,
   "id": "1d6e6f21-4c75-4c0a-a448-36685593ed0b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "8px",
@@ -684,6 +707,7 @@
   "difficultyLevel": 1,
   "id": "7ee7c6a5-6bb8-4f84-a19e-26092d147ea3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "color",
@@ -710,6 +734,7 @@
   "difficultyLevel": 1,
   "id": "8820f39b-7449-4c37-89fb-a12584396234",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<a href=\"http://www.google.com\">google</a>",
@@ -736,6 +761,7 @@
   "difficultyLevel": 1,
   "id": "a0368c7c-0f50-4388-aa2a-0aa413805419",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<br>",
@@ -767,6 +793,7 @@
   "difficultyLevel": 1,
   "id": "d4205769-4db7-47fa-8981-72dd2d00ddf2",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<!DOCTYPE HTML>",
@@ -793,6 +820,7 @@
   "difficultyLevel": 1,
   "id": "8df47a9a-ca81-493f-8125-80e205fedfcb",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<p>",
@@ -829,6 +857,7 @@
   "difficultyLevel": 1,
   "id": "9e381e00-0fa6-4aea-8dd4-8994a3c0b675",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "localStorage stores data with no expiration date",
@@ -860,6 +889,7 @@
   "difficultyLevel": 1,
   "id": "5c97d09a-defa-4d2e-899b-a0e7d4fec453",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<html>",
@@ -896,6 +926,7 @@
   "difficultyLevel": 1,
   "id": "f62d5325-7809-4195-8b4a-c754772580a6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "</html>",
@@ -932,6 +963,7 @@
   "difficultyLevel": 1,
   "id": "3c40aa8b-ab2b-47c8-a976-c4c7917df354",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "CSS pre-processors",
@@ -963,6 +995,7 @@
   "difficultyLevel": 1,
   "id": "5a56c79d-e715-4a7f-9374-190dfe4fbba6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Creative Style Sheets",
@@ -989,6 +1022,7 @@
   "difficultyLevel": 1,
   "id": "c42cd964-0e27-4f41-8f01-e72a89d835a2",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Web Accessibility Initiative – Accessible Rich Internet Applications",
@@ -1020,6 +1054,7 @@
   "difficultyLevel": 1,
   "id": "99d6c0c5-0dd3-4d72-9729-4e080124b12c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Controls the vertical stacking order of elements that overlap",
@@ -1051,6 +1086,7 @@
   "difficultyLevel": 1,
   "id": "dd1364f3-edd9-4a53-8a2e-e21eb15c54fc",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "nav",
@@ -1082,6 +1118,7 @@
   "difficultyLevel": 1,
   "id": "6e2698f4-bf61-43ab-b724-4225a67e8ca0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Both the <head> section and the <body> section are correct",
@@ -1113,6 +1150,7 @@
   "difficultyLevel": 1,
   "id": "7cfa3145-0ed7-4a6a-9a98-1e53cc45219d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "All HTML elements can be considered as boxes",
@@ -1144,6 +1182,7 @@
   "difficultyLevel": 1,
   "id": "d9a37396-37f6-4ae3-855d-dce6438d44b1",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "id",
@@ -1175,6 +1214,7 @@
   "difficultyLevel": 1,
   "id": "01530a79-e5de-467e-a1ae-68f58ffa4c9a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "clear:both",
@@ -1206,6 +1246,7 @@
   "difficultyLevel": 1,
   "id": "39ae0f17-b57f-47a6-b5a7-cedabd53ad8d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<div style=\"background-color:grey;\">",
@@ -1237,6 +1278,7 @@
   "difficultyLevel": 1,
   "id": "64fe77c4-eae1-4648-b486-7b120ab70cec",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "IDs can only be used once in the HTML",
@@ -1268,6 +1310,7 @@
   "difficultyLevel": 1,
   "id": "1f7d6fc0-85c5-446c-a27e-ff208c53b5d4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Fixes issues related to floating child elements within a parent element",
@@ -1299,6 +1342,7 @@
   "difficultyLevel": 1,
   "id": "7ca77197-c50c-484c-9205-53d508231cb4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Hyper Text Markup Language",
@@ -1325,6 +1369,7 @@
   "difficultyLevel": 1,
   "id": "d7351cc7-0843-4b6f-b6bd-3a697dcf4f40",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<style>",
@@ -1356,6 +1401,7 @@
   "difficultyLevel": 1,
   "id": "0262cf2f-84d1-4c05-9ec8-7430742cb319",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Provide the ability to embed custom data attributes on all HTML elements",
@@ -1387,6 +1433,7 @@
   "difficultyLevel": 1,
   "id": "79b8188c-fa60-41d0-944e-13940a6920f8",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<ol>",
@@ -1418,6 +1465,7 @@
   "difficultyLevel": 1,
   "id": "fe98bbbf-4600-4825-b31c-a310d5708526",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<img src=\"smile.gif\">",
@@ -1454,6 +1502,7 @@
   "difficultyLevel": 1,
   "id": "41c740c2-9e15-4fca-8006-cf8766185c74",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "doctype",
@@ -1485,6 +1534,7 @@
   "difficultyLevel": 1,
   "id": "bae29945-f304-4068-82ca-ef8a5590c592",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "<title>",
@@ -1521,6 +1571,7 @@
   "difficultyLevel": 1,
   "id": "042c6fb9-5fb2-4bc4-a413-6a476c3afc74",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Resets the default browser styling",
@@ -1552,6 +1603,7 @@
   "difficultyLevel": 1,
   "id": "6360cada-d620-4e46-94db-c81944158a08",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "blink",
@@ -1583,6 +1635,7 @@
   "difficultyLevel": 1,
   "id": "da0f6635-ffd9-432b-be01-9272f354c32f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Get and post",
@@ -1614,6 +1667,7 @@
   "difficultyLevel": 1,
   "id": "54bdba49-f65a-46f6-99f4-8a791a3fb46c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "doctype",
@@ -1645,6 +1699,7 @@
   "difficultyLevel": 1,
   "id": "fbe006b4-a8f8-4640-a13b-095cb31a1c59",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Cascading",
@@ -1676,6 +1731,7 @@
   "difficultyLevel": 1,
   "id": "5f5288db-1d0e-4d11-8f08-682d01fa544c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "'\"The best preparation for tomorrow is doing your best today.'\"",
@@ -1712,6 +1768,7 @@
   "difficultyLevel": 1,
   "id": "2c5b618c-c6ec-4920-957a-6b9b212051af",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "True",
@@ -1733,6 +1790,7 @@
   "difficultyLevel": 1,
   "id": "a5bba43c-0973-46d2-b0ef-dee1986c6840",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "3",
@@ -1764,6 +1822,7 @@
   "difficultyLevel": 1,
   "id": "20c6db09-7f66-4c9a-8029-4ccadb5b83e6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "False",
@@ -1785,6 +1844,7 @@
   "difficultyLevel": 1,
   "id": "f5f2153d-061c-4ff3-b5e3-23cb2b549aa7",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -1816,6 +1876,7 @@
   "difficultyLevel": 1,
   "id": "99e3a344-4efa-4982-88f6-8f66f5e149d6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "fluffy.age;\n4\nscratchy.age;\n4",
@@ -1842,6 +1903,7 @@
   "difficultyLevel": 1,
   "id": "c6422d40-e46b-4813-b5c9-52a30c42d61a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "It finds the largest number in the array",
@@ -1873,6 +1935,7 @@
   "difficultyLevel": 1,
   "id": "f88404ae-c968-4c56-89cf-fa44bea31a3f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "7",
@@ -1904,6 +1967,7 @@
   "difficultyLevel": 1,
   "id": "835bf4a3-6e97-463a-b983-ebb71090acfe",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "push()",
@@ -1935,6 +1999,7 @@
   "difficultyLevel": 1,
   "id": "4fb2ce53-aed0-4399-a814-ccec34e3a010",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Stores multiple values in a single variable",
@@ -1966,6 +2031,7 @@
   "difficultyLevel": 1,
   "id": "97002e0a-57fb-44a4-b1fe-e99ae4c5ec47",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "A script will send a request to the server, and continue its execution without waiting for the reply",
@@ -1997,6 +2063,7 @@
   "difficultyLevel": 1,
   "id": "7c8648d4-833d-4af6-a698-debaac0bccf1",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "console.log(info)",
@@ -2023,6 +2090,7 @@
   "difficultyLevel": 1,
   "id": "2fec021c-c4ee-44fd-99e4-a09d844f872e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Creates a way to include JavaScript modules within the current scope",
@@ -2054,6 +2122,7 @@
   "difficultyLevel": 1,
   "id": "f6677417-9428-4ce0-b739-8167ec12c118",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "When a variable hasn't be defined with a value",
@@ -2085,6 +2154,7 @@
   "difficultyLevel": 1,
   "id": "4adffd04-2679-4919-9716-fbef9797b4b3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Adds a string to the DOM",
@@ -2116,6 +2186,7 @@
   "difficultyLevel": 1,
   "id": "bfb8e940-99a5-4b97-af7f-76f979681525",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "we know the exact number of times to execute a block of code",
@@ -2147,6 +2218,7 @@
   "difficultyLevel": 1,
   "id": "7fc328df-c12e-4bc0-ab56-3c7671d1b1c9",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "4",
@@ -2178,6 +2250,7 @@
   "difficultyLevel": 1,
   "id": "fa3ecb21-b107-42a8-9159-fc9965d8f70d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "A function within another function, the inner function has access to variables in the outer function",
@@ -2209,6 +2282,7 @@
   "difficultyLevel": 1,
   "id": "9a7a9d32-b17a-4f40-a9a5-51e8e66b5fa8",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "charAt()",
@@ -2240,6 +2314,7 @@
   "difficultyLevel": 1,
   "id": "1850c057-513e-4d40-8698-fcc5a283a911",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document.createElement();",
@@ -2271,6 +2346,7 @@
   "difficultyLevel": 1,
   "id": "ada8b465-e4a8-45b3-b688-929b7d76da3a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "The handler of the parent works even if the child is clicked",
@@ -2302,6 +2378,7 @@
   "difficultyLevel": 1,
   "id": "3897f177-9792-4104-9d1f-bb302e1a4d93",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Prototypes allow you to easily define methods to all instances of a particular object",
@@ -2333,6 +2410,7 @@
   "difficultyLevel": 1,
   "id": "4595510f-9680-4ea7-a5b3-f3c05db68a2a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "setInterval(myFunc, 1000);",
@@ -2369,6 +2447,7 @@
   "difficultyLevel": 1,
   "id": "b23cda84-8cd7-4ffb-ab8a-3bcf0f26025e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "pop()",
@@ -2400,6 +2479,7 @@
   "difficultyLevel": 1,
   "id": "3cd462fa-020e-4156-b318-18a0064e07b6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Ready event occurs after the HTML document is loaded, while the onload event occurs later, when all content is loaded",
@@ -2431,6 +2511,7 @@
   "difficultyLevel": 1,
   "id": "973756be-3977-4fcb-ad3e-f6096de914f6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "4",
@@ -2467,6 +2548,7 @@
   "difficultyLevel": 1,
   "id": "c7d013c5-5ff5-454e-bbf7-d971bf6733dc",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "False",
@@ -2488,6 +2570,7 @@
   "difficultyLevel": 1,
   "id": "34b172df-38ba-4476-9178-8f110c5594b5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "fluffy.age;\n4\nscratchy.age;\n3",
@@ -2514,6 +2597,7 @@
   "difficultyLevel": 1,
   "id": "cc0b5db1-710e-469a-9032-ef3f587ebe75",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Is a container for storing data values",
@@ -2545,6 +2629,7 @@
   "difficultyLevel": 1,
   "id": "f4373efa-0e3e-4fc4-8bbf-0ec27b586f4e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Asynchronous JavaScript and XML",
@@ -2576,6 +2661,7 @@
   "difficultyLevel": 1,
   "id": "677d8e02-0c85-48fe-980b-c3f1998ded6a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "var",
@@ -2607,6 +2693,7 @@
   "difficultyLevel": 1,
   "id": "84561cc3-5bc5-41f7-967b-0d903e7ae24a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "A function is a block of code designed to preform a task",
@@ -2638,6 +2725,7 @@
   "difficultyLevel": 1,
   "id": "91f3f690-4624-4e66-84a4-f37a27b1e1bc",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "function Bunny(type) {\n this.type = type;\n}",
@@ -2669,6 +2757,7 @@
   "difficultyLevel": 1,
   "id": "48c10fc7-cb6c-4b39-bb1e-b866f78cea18",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "3",
@@ -2705,6 +2794,7 @@
   "difficultyLevel": 1,
   "id": "4761aaa6-9d18-4b9b-9408-02c4eded0dab",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Can cause SEO issues",
@@ -2736,6 +2826,7 @@
   "difficultyLevel": 1,
   "id": "4347e2d6-9b1e-4358-aea5-d4db3c0d0940",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "(var k = 33; k &gt;= 23; k--)",
@@ -2767,6 +2858,7 @@
   "difficultyLevel": 1,
   "id": "bf25bea4-e3cd-4890-888f-a10dc8325a45",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "4",
@@ -2803,6 +2895,7 @@
   "difficultyLevel": 1,
   "id": "e0aaad8d-8212-4ca5-bb63-47dce48fd230",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "1",
@@ -2834,6 +2927,7 @@
   "difficultyLevel": 1,
   "id": "14d1c945-21e5-4543-b4db-ed7171c3f3c7",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "property",
@@ -2865,6 +2959,7 @@
   "difficultyLevel": 1,
   "id": "ff0b22df-c693-4a04-8dee-2bc6fe786c4a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "5",
@@ -2896,6 +2991,7 @@
   "difficultyLevel": 1,
   "id": "6bb294da-e50b-4142-b405-2f7437d2cbb8",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "After 1.5 seconds after the window.onload event",
@@ -2927,6 +3023,7 @@
   "difficultyLevel": 1,
   "id": "1d7ec060-7e86-483d-81c1-e3508d1da63d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document.removeChild(...)",
@@ -2958,6 +3055,7 @@
   "difficultyLevel": 1,
   "id": "18f7a296-234a-4638-abc6-45ac1dfbb12e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "After the webpage has been loaded.",
@@ -2989,6 +3087,7 @@
   "difficultyLevel": 1,
   "id": "8c40102e-6b2d-44e4-9309-78e83cb51b54",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "an array of element objects",
@@ -3020,6 +3119,7 @@
   "difficultyLevel": 1,
   "id": "9eb65499-2636-464a-a4ab-4849ea75f641",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "when the mouse cursor enters element id=\"myPar\"",
@@ -3051,6 +3151,7 @@
   "difficultyLevel": 1,
   "id": "d3657e0f-ab60-45ac-ba0c-582e2fbaf2d4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "event.offsetX",
@@ -3082,6 +3183,7 @@
   "difficultyLevel": 1,
   "id": "ced315b8-0905-4f58-af45-66b2cf66515f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "it refers to the HTML element object that called this function.",
@@ -3113,6 +3215,7 @@
   "difficultyLevel": 1,
   "id": "1c593502-9541-4b94-8339-28d4e7be62d3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document.getElementById(\"p\");",
@@ -3144,6 +3247,7 @@
   "difficultyLevel": 1,
   "id": "9e1bcf6d-0dc8-4015-be99-6132a0364bc8",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "1",
@@ -3175,6 +3279,7 @@
   "difficultyLevel": 1,
   "id": "e7407593-35ea-4784-9687-d78da93746be",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document.createElement(\"p\");",
@@ -3211,6 +3316,7 @@
   "difficultyLevel": 1,
   "id": "0d00e252-18cc-407a-8e5c-70ea1f3d7055",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "1",
@@ -3242,6 +3348,7 @@
   "difficultyLevel": 1,
   "id": "470f6f25-f4ca-48d1-8dff-812fb6419ef8",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "removes the event handler function for \"mousemove\" events for element with id=\"button\"",
@@ -3273,6 +3380,7 @@
   "difficultyLevel": 1,
   "id": "bd773e57-cea7-4b94-ad8c-1e29aa2da136",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "c",
@@ -3304,6 +3412,7 @@
   "difficultyLevel": 1,
   "id": "21e19a02-0d93-4c1d-a6cc-cc243e79e7dd",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "$(\"name\").value",
@@ -3335,6 +3444,7 @@
   "difficultyLevel": 1,
   "id": "70c05b92-85eb-4b9a-b71b-9a4072502697",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "yes",
@@ -3356,6 +3466,7 @@
   "difficultyLevel": 1,
   "id": "e446fb83-c071-4b83-9ade-70363173d8eb",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "2",
@@ -3387,6 +3498,7 @@
   "difficultyLevel": 1,
   "id": "d1671332-6d68-4696-a4e5-5ec6eb6e5f81",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "$(\"div\").children[2]",
@@ -3418,6 +3530,7 @@
   "difficultyLevel": 1,
   "id": "834c2d7c-7a12-4d72-9e07-bf2c212f5f08",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "no",
@@ -3439,6 +3552,7 @@
   "difficultyLevel": 1,
   "id": "b8ac8de3-a70b-4df8-9689-63b3cd56f94d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "no",
@@ -3460,6 +3574,7 @@
   "difficultyLevel": 1,
   "id": "ded546c1-c934-48ad-8e55-ceb23cdccf96",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Yes",
@@ -3481,6 +3596,7 @@
   "difficultyLevel": 1,
   "id": "d52c0233-79db-46ea-a557-393df2cf831b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "2",
@@ -3512,6 +3628,7 @@
   "difficultyLevel": 1,
   "id": "59a429bc-f07f-473c-80e6-f259fc809445",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "$(\"myForm\").submit();",
@@ -3543,6 +3660,7 @@
   "difficultyLevel": 1,
   "id": "2f85c35d-3849-4877-b09b-4069ec56acc6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "allParas[i].style.backgroundColor = \"silver\"",
@@ -3574,6 +3692,7 @@
   "difficultyLevel": 1,
   "id": "c9c5337d-0ec0-46ad-bfd3-9c6d716972f6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "3",
@@ -3610,6 +3729,7 @@
   "difficultyLevel": 1,
   "id": "76f89f92-711c-4915-b9ea-253beffd4634",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Sets the background color to silver of the third child of element id=\"myP\"",
@@ -3646,6 +3766,7 @@
   "difficultyLevel": 1,
   "id": "90fd0f3d-9547-4741-bad7-abea67f085a5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "link()",
@@ -3677,6 +3798,7 @@
   "difficultyLevel": 1,
   "id": "2a28ce82-47da-4b5c-85c0-19d609c71a47",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Const turns variables into constants, and they can't be changed.",
@@ -3708,6 +3830,7 @@
   "difficultyLevel": 1,
   "id": "ba49e356-9b3e-4edd-b4be-688a4d1cfaad",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "using typeof operator",
@@ -3739,6 +3862,7 @@
   "difficultyLevel": 1,
   "id": "7073d8ec-94d4-4ea4-a50a-2e55d07f865b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "The event occurs when the pointer is moved onto an element",
@@ -3770,6 +3894,7 @@
   "difficultyLevel": 1,
   "id": "95bf077f-bc0b-42db-b9b2-7bebbe998a3f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "true true",
@@ -3801,6 +3926,7 @@
   "difficultyLevel": 1,
   "id": "78f9184d-102b-4337-a5c3-ca7571525850",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "true",
@@ -3832,6 +3958,7 @@
   "difficultyLevel": 1,
   "id": "168f5066-181e-4108-a234-e629b62240b9",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false",
@@ -3863,6 +3990,7 @@
   "difficultyLevel": 1,
   "id": "2ddea5a5-72f2-46bd-8c79-13d80f8a8984",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Element.addEventListener",
@@ -3899,6 +4027,7 @@
   "difficultyLevel": 1,
   "id": "63e43e06-10e4-42bd-afb9-842f74338f1b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "bar bar",
@@ -3930,6 +4059,7 @@
   "difficultyLevel": 1,
   "id": "49f44a37-9264-49e1-8634-7c3ba58c7b3b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "6, 10",
@@ -3961,6 +4091,7 @@
   "difficultyLevel": 1,
   "id": "f688476f-165b-449a-973f-e90cf7406548",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "for, while, do..while",
@@ -3992,6 +4123,7 @@
   "difficultyLevel": 1,
   "id": "1ef3591f-ea56-47ea-9b50-35631a8b2dad",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it's not resolved",
@@ -4023,6 +4155,7 @@
   "difficultyLevel": 1,
   "id": "eaa8e4de-5e81-4200-95ba-7f050d63194f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "NodeList",
@@ -4054,6 +4187,7 @@
   "difficultyLevel": 1,
   "id": "42717246-c833-4f84-9ae0-f1dc394981cb",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "1 undefined",
@@ -4085,6 +4219,7 @@
   "difficultyLevel": 1,
   "id": "410a0644-8c1f-4124-ba41-b2a088c5301d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "All variants make the array empty",
@@ -4116,6 +4251,7 @@
   "difficultyLevel": 1,
   "id": "0a7e7601-90d9-43f7-9d03-0da50fa320d9",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "'Lorem Ipsum'",
@@ -4152,6 +4288,7 @@
   "difficultyLevel": 1,
   "id": "e99aac45-a177-421f-87be-d73577a4ff20",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "toString()",
@@ -4183,6 +4320,7 @@
   "difficultyLevel": 1,
   "id": "9f4e7e39-aec2-46a7-aac1-14a289453b92",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined\nobject\nfunction",
@@ -4214,6 +4352,7 @@
   "difficultyLevel": 1,
   "id": "5cd2638c-dc60-4819-a7bf-8a0a946d1c8c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "4",
@@ -4245,6 +4384,7 @@
   "difficultyLevel": 1,
   "id": "561129f4-c40d-47d1-9d90-c26744bef9e7",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Evaluating the code will rise an exception",
@@ -4276,6 +4416,7 @@
   "difficultyLevel": 1,
   "id": "0753bc65-5a9f-469e-87f1-3dc637d599ee",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "2,3",
@@ -4312,6 +4453,7 @@
   "difficultyLevel": 1,
   "id": "e56bd209-f0c3-4428-8f59-7b474f10333f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "[ 'W', 'o', 'r', 'l', 'd' ]",
@@ -4343,6 +4485,7 @@
   "difficultyLevel": 1,
   "id": "ee16141c-d0b6-41ab-824a-42d7d75e0a9c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "JavaScript",
@@ -4374,6 +4517,7 @@
   "difficultyLevel": 1,
   "id": "0dc4e830-d17a-49d1-832c-a00af0edc755",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "function fn(){}",
@@ -4405,6 +4549,7 @@
   "difficultyLevel": 1,
   "id": "e4bc6776-6ce4-45ee-ae96-f02a70b8ecea",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "instanceof",
@@ -4436,6 +4581,7 @@
   "difficultyLevel": 1,
   "id": "b9755edd-127c-4244-b3da-28c80b1138d3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "bind()",
@@ -4467,6 +4613,7 @@
   "difficultyLevel": 1,
   "id": "d7025cfb-7b68-4c3d-96f3-78fe02ad7da6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document.getElementById(id)",
@@ -4498,6 +4645,7 @@
   "difficultyLevel": 1,
   "id": "9934fb58-56b9-4fc6-a0cb-67f7a61e5384",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Evaluating the code will rise an exception",
@@ -4529,6 +4677,7 @@
   "difficultyLevel": 1,
   "id": "e4a93d9f-e536-458e-8fa8-1d265d9fb5a4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "string",
@@ -4560,6 +4709,7 @@
   "difficultyLevel": 1,
   "id": "3bc76500-79d0-4aa5-980e-8228f94bde3c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "The event occurs when the user presses a mouse button over an element",
@@ -4591,6 +4741,7 @@
   "difficultyLevel": 1,
   "id": "15335daf-bae0-491a-94fe-d9483e90b944",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "isset",
@@ -4622,6 +4773,7 @@
   "difficultyLevel": 1,
   "id": "b4744e20-c856-4cdb-86c2-701ae7444a01",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Array.prototype.map()",
@@ -4663,6 +4815,7 @@
   "difficultyLevel": 1,
   "id": "60a1060b-dd01-4c10-8958-b21a462e6248",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "32",
@@ -4694,6 +4847,7 @@
   "difficultyLevel": 1,
   "id": "a5826913-1b07-487d-859d-2104c5a37e17",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Method changes the original array",
@@ -4730,6 +4884,7 @@
   "difficultyLevel": 1,
   "id": "45d053e3-b2f9-44cf-a404-d67cade3bcfd",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "string.length",
@@ -4761,6 +4916,7 @@
   "difficultyLevel": 1,
   "id": "0bd5b708-597c-42e1-aed6-ce00e88af649",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "4, 2",
@@ -4797,6 +4953,7 @@
   "difficultyLevel": 1,
   "id": "08e2c7a0-2778-4a98-8671-a3a85866fafa",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "15",
@@ -4828,6 +4985,7 @@
   "difficultyLevel": 1,
   "id": "72ee0e3f-85d1-43e8-8ce2-e83aeac6a390",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false, true",
@@ -4864,6 +5022,7 @@
   "difficultyLevel": 1,
   "id": "c509b9b7-b285-40d7-ba8a-a3274ee82ba9",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "true",
@@ -4895,6 +5054,7 @@
   "difficultyLevel": 1,
   "id": "43f7feab-0348-4d45-9777-4c980b04a692",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined true",
@@ -4926,6 +5086,7 @@
   "difficultyLevel": 1,
   "id": "d979f8ed-3cc8-41da-b60a-c347dd41b16e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Hello",
@@ -4957,6 +5118,7 @@
   "difficultyLevel": 1,
   "id": "f73f8474-cf3c-4b93-8f55-588b23d75971",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "The event occurs when the user clicks on an element",
@@ -4988,6 +5150,7 @@
   "difficultyLevel": 1,
   "id": "0a08c871-9e92-41fa-a59d-adf56226b347",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "number, 123",
@@ -5019,6 +5182,7 @@
   "difficultyLevel": 1,
   "id": "3d244a6d-942a-4e89-95ff-946cbcfb0d66",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Date",
@@ -5050,6 +5214,7 @@
   "difficultyLevel": 1,
   "id": "cf99d49c-91f7-4632-9a79-96f37934d5a4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Object.keys()",
@@ -5086,6 +5251,7 @@
   "difficultyLevel": 1,
   "id": "a7588383-631e-4e33-96e9-ea9e9f40d5fe",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "var a = { 'a', 'b' };",
@@ -5117,6 +5283,7 @@
   "difficultyLevel": 1,
   "id": "c0adddf3-d2b1-4c0f-8d7e-fb3f66394fdc",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Array of numbers",
@@ -5148,6 +5315,7 @@
   "difficultyLevel": 1,
   "id": "1a79caf7-6488-4fbc-ad16-d021f5c3e15d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "11",
@@ -5179,6 +5347,7 @@
   "difficultyLevel": 1,
   "id": "f3af73bb-55ab-4201-a512-cddad407e935",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "720",
@@ -5210,6 +5379,7 @@
   "difficultyLevel": 1,
   "id": "429ba636-8da4-4c37-84b9-c31b395d5c44",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "20",
@@ -5241,6 +5411,7 @@
   "difficultyLevel": 1,
   "id": "b8d6608c-53e1-4931-88dc-6efd63ae27cd",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "function that is passed to another function as a parameter",
@@ -5272,6 +5443,7 @@
   "difficultyLevel": 1,
   "id": "77761786-fc40-4f96-b1f9-df79b2906d43",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "function myFunction() {}",
@@ -5303,6 +5475,7 @@
   "difficultyLevel": 1,
   "id": "a9e2d693-0aaf-472e-b3d9-37ddec489fc0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "myFunc()",
@@ -5334,6 +5507,7 @@
   "difficultyLevel": 1,
   "id": "cf9ab140-f308-4976-ba6f-0be7b0c09f1f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "'Hi John'",
@@ -5365,6 +5539,7 @@
   "difficultyLevel": 1,
   "id": "447335e3-4e18-4c06-9163-a37c47dd5a76",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "5\n5\n5\n5\n5",
@@ -5396,6 +5571,7 @@
   "difficultyLevel": 1,
   "id": "be7f187c-b619-444a-82f5-9044dad65a5b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -5432,6 +5608,7 @@
   "difficultyLevel": 1,
   "id": "9ae68ae4-e8bd-421f-bb65-870a74332cc0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "5",
@@ -5463,6 +5640,7 @@
   "difficultyLevel": 1,
   "id": "0438ba67-b2a8-4be9-96e9-2a21ec6b66c3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "object",
@@ -5494,6 +5672,7 @@
   "difficultyLevel": 1,
   "id": "b87b6e8e-cada-432b-bbac-2448da943ba7",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false false",
@@ -5525,6 +5704,7 @@
   "difficultyLevel": 1,
   "id": "a13d652b-2404-4b33-98da-5550d7b96c1b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "[\"100\"] 1",
@@ -5556,6 +5736,7 @@
   "difficultyLevel": 1,
   "id": "2a4db9bb-be7c-4573-b9f1-6af750e00bf2",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "True",
@@ -5587,6 +5768,7 @@
   "difficultyLevel": 1,
   "id": "8b67deb3-453c-4753-afab-2f1099c53494",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Hello",
@@ -5618,6 +5800,7 @@
   "difficultyLevel": 1,
   "id": "9553b978-9714-48ff-8853-3fb1421f1274",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "8",
@@ -5654,6 +5837,7 @@
   "difficultyLevel": 1,
   "id": "6a2931f3-fcaa-4df9-b823-728b74636cc9",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "arr.splice(2,1)",
@@ -5685,6 +5869,7 @@
   "difficultyLevel": 1,
   "id": "a8411ae3-c887-4783-82ac-a17fafb6e0a6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "NodeList",
@@ -5721,6 +5906,7 @@
   "difficultyLevel": 1,
   "id": "35bba1b3-87bf-4d66-9e42-72024fac3ee0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -5752,6 +5938,7 @@
   "difficultyLevel": 1,
   "id": "a27ccebc-7e10-4872-89da-a87146edbe18",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false",
@@ -5783,6 +5970,7 @@
   "difficultyLevel": 1,
   "id": "8adf1777-847d-40b5-b8ba-77d0089de4e5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "string",
@@ -5814,6 +6002,7 @@
   "difficultyLevel": 1,
   "id": "b57846f7-2bee-4aa7-98ed-49c3d32e3987",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -5845,6 +6034,7 @@
   "difficultyLevel": 1,
   "id": "1eae343a-3f53-44dc-870b-1c7a569ac056",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "true true true true",
@@ -5876,6 +6066,7 @@
   "difficultyLevel": 1,
   "id": "cccbcc4c-a26f-4201-a188-eb9b9a410013",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "funcA Window {...} innerFunc1 Window {...} innerFunA11 Window {...}",
@@ -5907,6 +6098,7 @@
   "difficultyLevel": 1,
   "id": "73142f33-5e44-4234-ae96-a4b93d0ec49a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Total amount left in account: 5600 Total amount left in account: 5300",
@@ -5938,6 +6130,7 @@
   "difficultyLevel": 1,
   "id": "cd7a8b7a-ce96-4183-9751-3bc9f027f1a1",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Array.prototype.reduce()",
@@ -5979,6 +6172,7 @@
   "difficultyLevel": 1,
   "id": "bdff8ad7-a20d-4a5d-b149-0dacfe530521",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "NaN",
@@ -6010,6 +6204,7 @@
   "difficultyLevel": 1,
   "id": "cff89cde-ad6c-4445-b110-c23e3b8e2134",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "'function' 'object'",
@@ -6041,6 +6236,7 @@
   "difficultyLevel": 1,
   "id": "e616c5ad-456d-4fab-bc5c-14ea092d93e6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "10",
@@ -6072,6 +6268,7 @@
   "difficultyLevel": 1,
   "id": "1cad7f54-cd6f-4eb5-afd4-3659c4601527",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "console.log will print false",
@@ -6103,6 +6300,7 @@
   "difficultyLevel": 1,
   "id": "74e3e620-5a80-404a-9b44-18f2c4e86065",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "console will return \"string\"",
@@ -6134,6 +6332,7 @@
   "difficultyLevel": 1,
   "id": "1a981689-9a39-4fcb-aacd-4876956198df",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "2",
@@ -6165,6 +6364,7 @@
   "difficultyLevel": 1,
   "id": "d7de24c5-3c44-4725-8309-3dfc4c4d6ccd",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -6196,6 +6396,7 @@
   "difficultyLevel": 1,
   "id": "d7224a7f-e17c-4a14-8f32-f73c66291158",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "12345678 undefined",
@@ -6227,6 +6428,7 @@
   "difficultyLevel": 1,
   "id": "9a9f578b-72f6-45c0-b215-92ad85d7dcb8",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document.createElement('div')",
@@ -6258,6 +6460,7 @@
   "difficultyLevel": 1,
   "id": "8e690130-b533-4953-bbdf-3390e61a52b5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "newArray.push(newElement)",
@@ -6289,6 +6492,7 @@
   "difficultyLevel": 1,
   "id": "0b65e8eb-c8df-452f-9d7a-ede5825e70b9",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "ECMAScript 2015 (ES6)",
@@ -6330,6 +6534,7 @@
   "difficultyLevel": 1,
   "id": "600a799f-7263-4231-8810-dbbe1906d871",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "3",
@@ -6361,6 +6566,7 @@
   "difficultyLevel": 1,
   "id": "8bac69cb-5f56-483c-bdab-c1b9c2627949",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "\"object\"",
@@ -6392,6 +6598,7 @@
   "difficultyLevel": 1,
   "id": "336812c6-0a1b-4e44-b6d3-6f1a140ace1b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "The event occurs when the pointer is moved out of an element",
@@ -6423,6 +6630,7 @@
   "difficultyLevel": 1,
   "id": "d55fe2ce-bab7-4b96-a72d-b52bb96f2020",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "true true",
@@ -6454,6 +6662,7 @@
   "difficultyLevel": 1,
   "id": "2aa43c77-788f-49f2-aede-83b89eebb9a7",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Array.prototype.filter()",
@@ -6495,6 +6704,7 @@
   "difficultyLevel": 1,
   "id": "ac95e63f-b007-4ff3-a962-264c841961ce",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined undefined",
@@ -6526,6 +6736,7 @@
   "difficultyLevel": 1,
   "id": "0085c72a-abea-4d36-953c-7a4ce6e289a8",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "concat()",
@@ -6557,6 +6768,7 @@
   "difficultyLevel": 1,
   "id": "4e9535c4-0d1a-414d-84d9-a61610223549",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "'FOUND' -1",
@@ -6593,6 +6805,7 @@
   "difficultyLevel": 1,
   "id": "ecc31468-34ac-482b-9b26-decd5d9f391c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "3",
@@ -6624,6 +6837,7 @@
   "difficultyLevel": 1,
   "id": "4cc04da1-ab55-4cc6-a1fc-c6ce6ad722b7",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "2",
@@ -6660,6 +6874,7 @@
   "difficultyLevel": 1,
   "id": "4d58e838-a03d-4eab-87af-6aa0a4b048d5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Function.prototype.apply()",
@@ -6696,6 +6911,7 @@
   "difficultyLevel": 1,
   "id": "c05bc3f2-945d-4b6d-92e7-660f19b74cd4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "a !== b",
@@ -6727,6 +6943,7 @@
   "difficultyLevel": 1,
   "id": "f634c407-41bf-4b74-a744-e6825d05e3ec",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "31",
@@ -6768,6 +6985,7 @@
   "difficultyLevel": 1,
   "id": "05a23392-f748-4367-8f18-e3c52cd63ca4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "try...catch...finally",
@@ -6809,6 +7027,7 @@
   "difficultyLevel": 1,
   "id": "4e6516f6-ff0b-49b5-90cb-9f783469d218",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Uncaught Error",
@@ -6840,6 +7059,7 @@
   "difficultyLevel": 1,
   "id": "0f929e70-bd72-469f-9f7e-0e4f955b7850",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "'a', error",
@@ -6871,6 +7091,7 @@
   "difficultyLevel": 1,
   "id": "e8510b27-a162-4be8-88aa-77e3f0623157",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "number",
@@ -6902,6 +7123,7 @@
   "difficultyLevel": 1,
   "id": "82790c8d-a50c-488b-80be-3a0d983f184c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "foo foo",
@@ -6933,6 +7155,7 @@
   "difficultyLevel": 1,
   "id": "f8c7d055-9946-427b-9c41-dc64d4f65fd6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "John",
@@ -6964,6 +7187,7 @@
   "difficultyLevel": 1,
   "id": "0a3559ed-0f87-4bef-b648-6aa307f8e273",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Object",
@@ -6995,6 +7219,7 @@
   "difficultyLevel": 1,
   "id": "0aecaf87-7611-4be1-a5fe-cfb9ae93f3de",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "No",
@@ -7026,6 +7251,7 @@
   "difficultyLevel": 1,
   "id": "aab2e84f-4c1d-4538-82ed-ef391acfedad",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "\"string\"",
@@ -7057,6 +7283,7 @@
   "difficultyLevel": 1,
   "id": "9b331e88-c394-4c84-96bc-e4b1896d0bb0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "event.preventDefault()",
@@ -7088,6 +7315,7 @@
   "difficultyLevel": 1,
   "id": "adca285e-dd10-40f7-8d9e-56498b45c00a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Array",
@@ -7124,6 +7352,7 @@
   "difficultyLevel": 1,
   "id": "ba41db31-d711-4cb0-8948-8da06758103c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "function",
@@ -7160,6 +7389,7 @@
   "difficultyLevel": 1,
   "id": "05511a2a-d42c-40a9-87c7-178403477f4f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "no",
@@ -7191,6 +7421,7 @@
   "difficultyLevel": 1,
   "id": "e3b93942-96f9-4481-b155-a4ce060eb375",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false false",
@@ -7222,6 +7453,7 @@
   "difficultyLevel": 1,
   "id": "0e6846e2-5719-452e-a625-bf60825a2d41",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "method calls a provided function once for each element in an array, in order",
@@ -7253,6 +7485,7 @@
   "difficultyLevel": 1,
   "id": "28e36eb0-8dd7-4f4c-bb73-d2616f5a2fd7",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "iframe",
@@ -7284,6 +7517,7 @@
   "difficultyLevel": 1,
   "id": "cc1c6afa-2c70-4bab-abfe-89dcb0ca947c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Infinity",
@@ -7315,6 +7549,7 @@
   "difficultyLevel": 1,
   "id": "d6705222-4613-4dbe-ab44-01bf1c178feb",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "true",
@@ -7346,6 +7581,7 @@
   "difficultyLevel": 1,
   "id": "bd76a581-e980-4341-9051-3c14bee7f8ad",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "yes",
@@ -7377,6 +7613,7 @@
   "difficultyLevel": 1,
   "id": "acbc8235-9e48-4ea7-97b7-d60921208f3e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "ReferenceError",
@@ -7408,6 +7645,7 @@
   "difficultyLevel": 1,
   "id": "0a9ed786-e523-4028-a5af-1372ecf7771c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "toLocaleString()",
@@ -7439,6 +7677,7 @@
   "difficultyLevel": 1,
   "id": "dd30f6e8-0748-4ab6-abfc-a40e3143df50",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "string",
@@ -7475,6 +7714,7 @@
   "difficultyLevel": 1,
   "id": "46a3b562-eae0-40fb-9de3-296058c4cdcb",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "replace()",
@@ -7506,6 +7746,7 @@
   "difficultyLevel": 1,
   "id": "102bebb9-c6ef-4a62-a613-bca40e09406b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -7537,6 +7778,7 @@
   "difficultyLevel": 1,
   "id": "b5d34163-0f01-44be-8f90-264acf835655",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "The omitted value takes “undefined”",
@@ -7568,6 +7810,7 @@
   "difficultyLevel": 1,
   "id": "c5dba660-0867-4db7-b849-62c210715b4c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "//",
@@ -7599,6 +7842,7 @@
   "difficultyLevel": 1,
   "id": "1970c166-5728-4621-a183-179edd7bcf9b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "toString()",
@@ -7630,6 +7874,7 @@
   "difficultyLevel": 1,
   "id": "b671ee28-583b-4e3a-9f78-4eef445a1be5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "6",
@@ -7661,6 +7906,7 @@
   "difficultyLevel": 1,
   "id": "ad088f6c-e549-42bd-a5e2-40f232c92a14",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "12",
@@ -7697,6 +7943,7 @@
   "difficultyLevel": 1,
   "id": "9c8f01f9-d442-45eb-8496-3948cf6794ba",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "NaNNaNNaNNaNNaNNaNNaN RULES",
@@ -7728,6 +7975,7 @@
   "difficultyLevel": 1,
   "id": "fdc9f7a7-e998-4ca0-ad58-63730102d284",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "[ 2, 4, 8, 12, 16 ] true",
@@ -7759,6 +8007,7 @@
   "difficultyLevel": 1,
   "id": "8b821297-6e0e-4632-be43-2737f3a9e0b4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "event.target",
@@ -7790,6 +8039,7 @@
   "difficultyLevel": 1,
   "id": "0d00b8ed-d151-461b-a871-5541b359a077",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "location",
@@ -7821,6 +8071,7 @@
   "difficultyLevel": 1,
   "id": "45c5e29e-a033-4a1e-9076-d66421a82e5a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "\"use strict\"",
@@ -7852,6 +8103,7 @@
   "difficultyLevel": 1,
   "id": "b0282b10-ed45-42d3-bd66-f38e6485f051",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "8",
@@ -7883,6 +8135,7 @@
   "difficultyLevel": 1,
   "id": "ec4fa5e5-2bc8-4205-ad52-9153e4a72b80",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "5",
@@ -7914,6 +8167,7 @@
   "difficultyLevel": 1,
   "id": "e945c3cc-4606-4ee5-bb98-ff52349d10c4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "htmlElement.addEventListener( \"click\", ... )",
@@ -7945,6 +8199,7 @@
   "difficultyLevel": 1,
   "id": "88d97432-bea6-4588-ba4d-3e7595c18414",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Yes",
@@ -7976,6 +8231,7 @@
   "difficultyLevel": 1,
   "id": "010eea69-5775-46c1-b5b8-7ed45c24995a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "5",
@@ -8007,6 +8263,7 @@
   "difficultyLevel": 1,
   "id": "e779fb11-72cd-4969-bf3e-32a4265da35e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Yes, it is possible",
@@ -8038,6 +8295,7 @@
   "difficultyLevel": 1,
   "id": "1ed978fc-9fae-44de-9094-4d51da1e09fe",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "10001",
@@ -8069,6 +8327,7 @@
   "difficultyLevel": 1,
   "id": "689f6e8a-f462-49b3-aab2-0c91c4234409",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -8105,6 +8364,7 @@
   "difficultyLevel": 1,
   "id": "b101a4b2-52fb-4f2a-b08c-f52600d1fd1e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "100",
@@ -8141,6 +8401,7 @@
   "difficultyLevel": 1,
   "id": "948da291-7a74-48e0-84ec-fd83b032f6d4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "{a: 100}",
@@ -8172,6 +8433,7 @@
   "difficultyLevel": 1,
   "id": "2f139f16-f2ba-4312-91bc-6eda47e5c9a2",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Number",
@@ -8213,6 +8475,7 @@
   "difficultyLevel": 1,
   "id": "48e625f0-abd9-432a-8b55-af731e700418",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "57",
@@ -8244,6 +8507,7 @@
   "difficultyLevel": 1,
   "id": "4ff43efa-9988-41f4-b007-52460c298bed",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "1 4 3 2",
@@ -8275,6 +8539,7 @@
   "difficultyLevel": 1,
   "id": "181732a0-bd76-47eb-9880-1f0e49922f09",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "method creates an array filled with all array elements that pass a test (provided as a function)",
@@ -8306,6 +8571,7 @@
   "difficultyLevel": 1,
   "id": "2eee6048-6a15-4027-9cfa-a7e20b402306",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "(function() {} )();",
@@ -8337,6 +8603,7 @@
   "difficultyLevel": 1,
   "id": "f24c1b25-78b5-40ad-8fcf-b66ade8d2474",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Powers of 3 in the range from 3 to 10000 (i.e. 3,9,27...)",
@@ -8368,6 +8635,7 @@
   "difficultyLevel": 1,
   "id": "a812f02d-13b6-4e2f-b212-2f92908577b2",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "function",
@@ -8399,6 +8667,7 @@
   "difficultyLevel": 1,
   "id": "6eb79eed-cd24-4069-b6e7-40b519d1a526",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "exits from the current cycle block or switches to 'me' label",
@@ -8430,6 +8699,7 @@
   "difficultyLevel": 1,
   "id": "f84899a8-952c-4494-88ab-9950542a1510",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "only second",
@@ -8461,6 +8731,7 @@
   "difficultyLevel": 1,
   "id": "04a5feb2-2eae-4f9e-a912-7b995623595b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined [1, 2, 3, 4, 5]",
@@ -8502,6 +8773,7 @@
   "difficultyLevel": 1,
   "id": "dcaa6625-8ee3-4f37-bc4c-b33bdf55c9b5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "No",
@@ -8533,6 +8805,7 @@
   "difficultyLevel": 1,
   "id": "e6cdf351-be8b-4ff8-aca2-037eb3492dff",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document",
@@ -8569,6 +8842,7 @@
   "difficultyLevel": 1,
   "id": "ad838821-8880-45f5-8062-1407de40c24f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "20",
@@ -8600,6 +8874,7 @@
   "difficultyLevel": 1,
   "id": "84230629-9da1-4cd6-9121-623aa4fc69f3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -8631,6 +8906,7 @@
   "difficultyLevel": 1,
   "id": "57d83d87-69b2-4b46-b2b9-0c54edb2a91a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "No",
@@ -8662,6 +8938,7 @@
   "difficultyLevel": 1,
   "id": "d2b06ad6-32f7-4f32-b174-062bac248ec7",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "values.length = 0",
@@ -8693,6 +8970,7 @@
   "difficultyLevel": 1,
   "id": "f10ce0ba-1b19-45ae-8633-e501eaba59cd",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "foo123 aq123",
@@ -8724,6 +9002,7 @@
   "difficultyLevel": 1,
   "id": "9cc0781d-cc6e-4cad-af1b-bd64b57fddb6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "number, string, boolean, null, undefined, object",
@@ -8755,6 +9034,7 @@
   "difficultyLevel": 1,
   "id": "3280ea08-622a-48f0-a48c-5e47028e908b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "&lt;script&gt;",
@@ -8786,6 +9066,7 @@
   "difficultyLevel": 1,
   "id": "490f9c60-281d-4198-b5d3-0db94cb73963",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false false",
@@ -8817,6 +9098,7 @@
   "difficultyLevel": 1,
   "id": "6d938d1e-d625-45db-bb72-48d6c8351b79",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "parseInt()",
@@ -8848,6 +9130,7 @@
   "difficultyLevel": 1,
   "id": "1355acd9-c595-498a-a031-02860f8ca3a8",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -8879,6 +9162,7 @@
   "difficultyLevel": 1,
   "id": "7c140c3d-c5e7-4d65-a09f-8384a2b7b60d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -8910,6 +9194,7 @@
   "difficultyLevel": 1,
   "id": "3fc7b631-1489-4c35-a7ec-db7f01de7185",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -8941,6 +9226,7 @@
   "difficultyLevel": 1,
   "id": "7762afdc-7537-4f64-8755-3c8842dc64d6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "setInterval()\n",
@@ -8972,6 +9258,7 @@
   "difficultyLevel": 1,
   "id": "0e4fec56-710a-4070-a18b-fb86a21ea561",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "as much as possible",
@@ -9003,6 +9290,7 @@
   "difficultyLevel": 1,
   "id": "257fe223-cc7e-42fb-b12f-177df4c6f520",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "200",
@@ -9034,6 +9322,7 @@
   "difficultyLevel": 1,
   "id": "27563ac5-d9bd-42e3-b0d0-97492e9e6f2a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document.getElementById(\"demo\").innerHTML = \"Hello World!\";",
@@ -9065,6 +9354,7 @@
   "difficultyLevel": 1,
   "id": "56a34a7f-c2cb-4537-8922-b7c392bdfcd3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "1undefined",
@@ -9096,6 +9386,7 @@
   "difficultyLevel": 1,
   "id": "7bbd3a9d-fba6-44f0-a703-ad13ad8d03de",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined, Hello world!, Uncaught ReferenceError",
@@ -9127,6 +9418,7 @@
   "difficultyLevel": 1,
   "id": "fa806718-c52c-4934-951b-7287423a8454",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "The value of the variable \"c\" will be assigned to \"obj.c\".",
@@ -9168,6 +9460,7 @@
   "difficultyLevel": 1,
   "id": "52fb2d7d-4a05-4fcd-9cc1-a8a3944638d7",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "\"object\"",
@@ -9199,6 +9492,7 @@
   "difficultyLevel": 1,
   "id": "af104b3a-1df4-4690-bb7f-d422e36a0c1d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "0",
@@ -9240,6 +9534,7 @@
   "difficultyLevel": 1,
   "id": "83ff8337-3bbb-4174-ac4b-8ad002027f5e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "6, 9",
@@ -9276,6 +9571,7 @@
   "difficultyLevel": 1,
   "id": "401b881f-d12f-4af8-824d-00a358eb72ce",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "\"object\"",
@@ -9307,6 +9603,7 @@
   "difficultyLevel": 1,
   "id": "77cfe1d1-8989-496a-b1bc-b1e521ab62bb",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "function add(a, b) {\n  return a + b;\n}",
@@ -9338,6 +9635,7 @@
   "difficultyLevel": 1,
   "id": "eae1bc9e-6dca-4685-a41e-807c50a33212",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "decrements the total length by 1",
@@ -9369,6 +9667,7 @@
   "difficultyLevel": 1,
   "id": "23162914-e981-4b65-88f1-37618a41405f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": " Shifts the bits of \"a\" left by the number of bits specified in \"b\"",
@@ -9410,6 +9709,7 @@
   "difficultyLevel": 1,
   "id": "db36608a-8f1b-45e2-9096-506b8ee0af86",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "6",
@@ -9441,6 +9741,7 @@
   "difficultyLevel": 1,
   "id": "38c25eae-efc0-4b73-b27e-5ac4a8758a35",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "40",
@@ -9477,6 +9778,7 @@
   "difficultyLevel": 1,
   "id": "cf11371c-48a6-4409-89ab-fe0e704db6ed",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Multiplication, division, addition, subtraction.",
@@ -9508,6 +9810,7 @@
   "difficultyLevel": 1,
   "id": "689b9fa2-0f98-43fc-8975-f32a97931edc",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "let + const",
@@ -9539,6 +9842,7 @@
   "difficultyLevel": 1,
   "id": "f70af314-996f-4dc4-bf27-08e5897c6b3a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "0 2 4",
@@ -9570,6 +9874,7 @@
   "difficultyLevel": 1,
   "id": "8467b07c-6aab-403f-a0f1-10a8413c81a0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document.getElementById(“myText”).style.fontSize = “20?;",
@@ -9601,6 +9906,7 @@
   "difficultyLevel": 1,
   "id": "6b745e00-d7da-48d5-a29c-4e284074be2c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "0",
@@ -9632,6 +9938,7 @@
   "difficultyLevel": 1,
   "id": "1c4ce55b-a94d-425e-ad28-7ab509c04591",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -9663,6 +9970,7 @@
   "difficultyLevel": 1,
   "id": "09a0a3d6-0d18-4fba-8bfc-53c255bdcf0b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "document.getElementsByClassName('clickable')[0]",
@@ -9694,6 +10002,7 @@
   "difficultyLevel": 1,
   "id": "c4fb0a16-5e80-4cf8-91fd-78ca59c983e5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "elem.querySelectorAll()",
@@ -9725,6 +10034,7 @@
   "difficultyLevel": 1,
   "id": "8824db9b-2bf0-4ee6-8e14-41dfbc6fe3cf",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false, false",
@@ -9761,6 +10071,7 @@
   "difficultyLevel": 1,
   "id": "f166b6e0-aeb4-426d-95d4-a8537d253ccb",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Swaps the values inside a and b, without using extra variables.",
@@ -9792,6 +10103,7 @@
   "difficultyLevel": 1,
   "id": "49597079-187b-468e-a0bb-9e3e2abb6b4c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Hello John",
@@ -9823,6 +10135,7 @@
   "difficultyLevel": 1,
   "id": "bcd7734b-275a-496d-8c9f-ac9d3ba4f56a",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Yes",
@@ -9854,6 +10167,7 @@
   "difficultyLevel": 1,
   "id": "b6db8ac1-2531-4540-b9b9-0ddbf5459781",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "function function",
@@ -9885,6 +10199,7 @@
   "difficultyLevel": 1,
   "id": "f8d2f501-bd97-4ac8-a4d3-65c303278a5d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false false",
@@ -9916,6 +10231,7 @@
   "difficultyLevel": 1,
   "id": "54a3d04d-f126-470e-9fbc-b38e059330f2",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "2",
@@ -9947,6 +10263,7 @@
   "difficultyLevel": 1,
   "id": "b1bb8ff7-1090-40d7-8a2c-e735ec6bec60",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -9983,6 +10300,7 @@
   "difficultyLevel": 1,
   "id": "ff503638-3e92-4c82-a8d5-e763dab5e5ad",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "error",
@@ -10014,6 +10332,7 @@
   "difficultyLevel": 1,
   "id": "0ee82f2c-0d21-4f59-a596-a467bceeb640",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "number",
@@ -10045,6 +10364,7 @@
   "difficultyLevel": 1,
   "id": "3befdf70-daf8-4b77-b881-eb995e83e681",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -10076,6 +10396,7 @@
   "difficultyLevel": 1,
   "id": "632498a7-52cb-486c-9d94-c3de65225139",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -10117,6 +10438,7 @@
   "difficultyLevel": 1,
   "id": "2b450ade-e107-4588-bc13-f3d21787f034",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "3",
@@ -10148,6 +10470,7 @@
   "difficultyLevel": 1,
   "id": "6c12d7e5-7452-4fa1-89d1-7c1005a2ecc6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "match()",
@@ -10179,6 +10502,7 @@
   "difficultyLevel": 1,
   "id": "e4b208e5-caa5-4e82-9262-afb6b6102f49",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "setTimeout(function() { alert('Hello') }, 5000)",
@@ -10215,6 +10539,7 @@
   "difficultyLevel": 1,
   "id": "16171e78-b8e5-4902-ba68-76b44ef216f6",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "ReferenceError: employeeId is not defined",
@@ -10246,6 +10571,7 @@
   "difficultyLevel": 1,
   "id": "9c5c9359-1717-4205-bd1a-dbf5413302ab",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "[\"name\", \"salary\", \"country\", \"phoneNo\"]",
@@ -10277,6 +10603,7 @@
   "difficultyLevel": 1,
   "id": "7bed8c53-0aea-4676-baf9-01ce9ffef6b3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false false",
@@ -10308,6 +10635,7 @@
   "difficultyLevel": 1,
   "id": "2e2af7fa-90ba-4be6-833a-54f7f4c31134",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "true",
@@ -10339,6 +10667,7 @@
   "difficultyLevel": 1,
   "id": "ab7cd9d8-4b35-4a78-b763-12241f16a7d4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "method creates a new array with the results of calling a function for every array element",
@@ -10370,6 +10699,7 @@
   "difficultyLevel": 1,
   "id": "72fc8399-02f5-4914-ac2e-3f38544736d0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "[ [1,3], [5,5], [1,8] ]",
@@ -10401,6 +10731,7 @@
   "difficultyLevel": 0,
   "id": "34be9485-662e-4a65-a2f2-f9db910b5c0d",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "{a:2, b:1, c:3}",
@@ -10432,6 +10763,7 @@
   "difficultyLevel": 1,
   "id": "edcca8a5-f5c9-4777-8bce-7840a4e729d5",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "arr[arr.length] = value",
@@ -10463,6 +10795,7 @@
   "difficultyLevel": 1,
   "id": "c9bc5265-fd25-473c-8e58-c22230b99331",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Object.keys()",
@@ -10494,6 +10827,7 @@
   "difficultyLevel": 1,
   "id": "211c8d2f-119f-4fe5-b240-b640bca4d107",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "2, 2",
@@ -10530,6 +10864,7 @@
   "difficultyLevel": 1,
   "id": "27898377-67fa-4537-bda4-4b32bfd461dc",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false",
@@ -10566,6 +10901,7 @@
   "difficultyLevel": 1,
   "id": "0df58746-eabf-4cf3-970f-27b6a4b57b27",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Object {bar: \"hello\"} undefined",
@@ -10597,6 +10933,7 @@
   "difficultyLevel": 1,
   "id": "d933a286-3db0-4858-ac25-a9bd8980f536",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -10628,6 +10965,7 @@
   "difficultyLevel": 1,
   "id": "9b244266-71ba-4bd0-bf1e-ef3d01c1fc57",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Any number",
@@ -10659,6 +10997,7 @@
   "difficultyLevel": 1,
   "id": "08406c74-1b03-4668-a3a7-6e0fc43dcf54",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "// comment\n",
@@ -10695,6 +11034,7 @@
   "difficultyLevel": 1,
   "id": "2e0ba47a-915e-436b-8e78-d16e46732d4e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "var c = a == b",
@@ -10726,6 +11066,7 @@
   "difficultyLevel": 1,
   "id": "66723bde-ce82-4c75-8b06-35ddae7af48c",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "12.3",
@@ -10757,6 +11098,7 @@
   "difficultyLevel": 1,
   "id": "b97cbee4-726b-444c-be2a-5f3ada93371f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "false",
@@ -10788,6 +11130,7 @@
   "difficultyLevel": 1,
   "id": "617ed5f1-edd1-4261-bcd6-35bb8a03e81f",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "null",
@@ -10819,6 +11162,7 @@
   "difficultyLevel": 1,
   "id": "3f09515a-875d-47d9-b369-b6fdf87a152e",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -10850,6 +11194,7 @@
   "difficultyLevel": 1,
   "id": "c2bdfca7-f171-451d-b05a-eb2eb4100282",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "var I = new object();",
@@ -10881,6 +11226,7 @@
   "difficultyLevel": 1,
   "id": "f1bf6a79-8f57-45d3-b097-6f0600eac9a9",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "splice()",
@@ -10912,6 +11258,7 @@
   "difficultyLevel": 1,
   "id": "e07c692f-c9a8-4c20-a7c7-6315391e06e1",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "JSON.stringify()",
@@ -10943,6 +11290,7 @@
   "difficultyLevel": 1,
   "id": "24f71f05-da02-4aad-b7d6-c2d475534494",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "object",
@@ -10979,6 +11327,7 @@
   "difficultyLevel": 1,
   "id": "c93b0232-6d78-4bc3-9f8c-6751198b0fa0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "true",
@@ -11010,6 +11359,7 @@
   "difficultyLevel": 1,
   "id": "a034f787-6ce1-4cb2-8e11-3f690df03021",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "pop()",
@@ -11041,6 +11391,7 @@
   "difficultyLevel": 1,
   "id": "2face67a-2ae8-49eb-8fdb-9688ce82cfd3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "event.stopPropagation()",
@@ -11077,6 +11428,7 @@
   "difficultyLevel": 1,
   "id": "a73b5bd3-5ca4-43ea-95cd-35d834504f7b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "str.split('')",
@@ -11108,6 +11460,7 @@
   "difficultyLevel": 1,
   "id": "3856caa4-18dc-4b2f-9181-a4e0bac6844b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "1,2,3",
@@ -11139,6 +11492,7 @@
   "difficultyLevel": 1,
   "id": "644fb3e6-caea-42e9-bc22-c368d8839834",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "'a'",
@@ -11170,6 +11524,7 @@
   "difficultyLevel": 1,
   "id": "d7069c47-8173-4a2d-9942-7ec673137cf0",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "try..catch \n",
@@ -11201,6 +11556,7 @@
   "difficultyLevel": 1,
   "id": "8c1c4d43-5d73-42b6-a104-bef4f48bde37",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "`Be ${person} - everyone else is already taken`",
@@ -11232,6 +11588,7 @@
   "difficultyLevel": 1,
   "id": "9fd72006-bf15-4fdf-a811-11e0df77d412",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": " indexOf()",
@@ -11263,6 +11620,7 @@
   "difficultyLevel": 1,
   "id": "30be0946-6552-45bb-8a09-de965558f9c1",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined\nlocal",
@@ -11294,6 +11652,7 @@
   "difficultyLevel": 1,
   "id": "b5809cb0-b4f3-4940-b2af-8483f8b86532",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "[]",
@@ -11325,6 +11684,7 @@
   "difficultyLevel": 1,
   "id": "8722bcba-ed12-426d-b11a-8ace2c983085",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "var __global;",
@@ -11356,6 +11716,7 @@
   "difficultyLevel": 1,
   "id": "48da6b5f-e87d-47b8-b15f-180404cdbd85",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "-1",
@@ -11387,6 +11748,7 @@
   "difficultyLevel": 1,
   "id": "3a9cce96-6040-4d0e-88c8-c0314300a2ac",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "function a(){} undefined",
@@ -11423,6 +11785,7 @@
   "difficultyLevel": 1,
   "id": "fb0015d5-7ef0-4b0e-b6fd-fbe70a1c8e38",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "6, 2, 2, 3",
@@ -11454,6 +11817,7 @@
   "difficultyLevel": 1,
   "id": "ac17e8cc-1ae0-4567-8307-6f2322e9e650",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Slice() method returns the selected element(s) in an array, as a new array object",
@@ -11485,6 +11849,7 @@
   "difficultyLevel": 1,
   "id": "ae867769-536c-4b45-8a12-bafa078116af",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "2",
@@ -11516,6 +11881,7 @@
   "difficultyLevel": 1,
   "id": "60bf9ca2-2e42-401d-9dd1-f73d6c5fb5a1",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -11547,6 +11913,7 @@
   "difficultyLevel": 1,
   "id": "595ca14f-71f6-4989-a1d7-eaddde43cec1",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "undefined",
@@ -11578,6 +11945,7 @@
   "difficultyLevel": 1,
   "id": "36347387-817c-440b-a549-cd5e04cb9c7b",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "0",
@@ -11609,6 +11977,7 @@
   "difficultyLevel": 1,
   "id": "32132093-1517-48a5-9172-c79d8fb39ca3",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "js1js1js1js1js1js1js1",
@@ -11640,6 +12009,7 @@
   "difficultyLevel": 1,
   "id": "0a16a846-d050-4ffa-8243-ef80ca4de753",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "[ 'dog', 'rat', 'goat', 'cow', 'horse', 'cat' ]",
@@ -11671,6 +12041,7 @@
   "difficultyLevel": 1,
   "id": "8a7e9d0b-50cc-41ac-8edf-d5d8b180e214",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "\"function\"",
@@ -11702,6 +12073,7 @@
   "difficultyLevel": 1,
   "id": "ec063f62-8796-42b5-895d-1484fc877654",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "\"number\"",
@@ -11733,6 +12105,7 @@
   "difficultyLevel": 1,
   "id": "e8e390de-3f0d-45ff-9e81-4e8318d5dd88",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "The number of milliseconds since January 1st, 1970\t",
@@ -11764,6 +12137,7 @@
   "difficultyLevel": 1,
   "id": "de9a8cec-0185-45f2-9b19-79103c9cafa1",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Uncaught error",
@@ -11795,6 +12169,7 @@
   "difficultyLevel": 1,
   "id": "c46e8add-f49f-4786-a07f-9c529cd23703",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "Because all comparisons are performed not simultaneously but one by one from left to right in an expression.",
@@ -11831,6 +12206,7 @@
   "difficultyLevel": 1,
   "id": "114569b7-4170-4af6-9f10-d70d1b16fd07",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "15",
@@ -11862,6 +12238,7 @@
   "difficultyLevel": 1,
   "id": "634ec056-dee2-4709-b30d-d9c1497d5fb4",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "1",
@@ -11893,6 +12270,7 @@
   "difficultyLevel": 1,
   "id": "f722e9e1-112e-4886-9fb5-3beb583ee946",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "\"abc123\"",
@@ -11924,6 +12302,7 @@
   "difficultyLevel": 1,
   "id": "b5653f47-6a2e-4a62-9950-d5fdede514af",
   "taskType": "Quiz",
+  "courseName": "FE",
   "options": [
     {
       "text": "\"function\"",

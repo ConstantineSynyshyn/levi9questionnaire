@@ -1,4 +1,4 @@
-import { QuestionCategory, TaskCategory } from '@constants/configuration';
+import { CourseName, QuestionCategory, TaskCategory } from '@constants/configuration';
 
 export interface ImportQuestionType {
   text: string;
@@ -7,6 +7,7 @@ export interface ImportQuestionType {
   difficultyLevel?: number;
   category?: QuestionCategory;
   taskType: TaskCategory;
+  courseName: CourseName;
 }
 
 export type ImportQuestionTypeFile = ReadonlyArray<ImportQuestionType>;

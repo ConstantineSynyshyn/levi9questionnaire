@@ -1,8 +1,15 @@
 export const DEFAULT_TIME_TO_RESPOND = 45;
 export const DEFAULT_OPEN_QUESTION_TIME_TO_RESPOND = 180;
 
+export enum CourseName {
+  FE = 'FE',
+  QA = 'QA',
+}
+
+export const CURRENT_COURSE = CourseName.QA;
+
 // to be able to split quiz according to different categories
-export enum QuestionCategory {
+export enum FEQuestionCategory {
   JAVASCRIPT = 'JavaScript',
   HTML = 'HTML',
   CSS = 'CSS',
@@ -11,11 +18,56 @@ export enum QuestionCategory {
   ENGLISH = 'ENGLISH',
 }
 
-export const QUESTION_AMOUNT_PER_CATEGORY = {
-  [QuestionCategory.JAVASCRIPT]: 20,
-  [QuestionCategory.HTML]: 10,
-  [QuestionCategory.CSS]: 7,
-  [QuestionCategory.GIT]: 3,
+// to be able to split quiz according to different categories
+export enum QAQuestionCategory {
+  JAVASCRIPT = 'JavaScript',
+  HTML = 'HTML',
+  CSS = 'CSS',
+  GIT = 'GIT',
+  COMMON = 'COMMON',
+  ENGLISH = 'ENGLISH',
+}
+
+/**
+ * @TODO we use QuestionCategory everywhere.
+ *        So, to not to change it everywhere, just export correct enum until dynamic implementation
+ */
+export { QAQuestionCategory as QuestionCategory };
+
+export const QUESTION_AMOUNT_PER_FE_CATEGORY = {
+  [FEQuestionCategory.JAVASCRIPT]: 20,
+  [FEQuestionCategory.HTML]: 10,
+  [FEQuestionCategory.CSS]: 7,
+  [FEQuestionCategory.GIT]: 3,
+};
+
+export const QUESTION_AMOUNT_PER_QA_CATEGORY = {
+  [QAQuestionCategory.JAVASCRIPT]: 20,
+  [QAQuestionCategory.HTML]: 10,
+  [QAQuestionCategory.CSS]: 7,
+  [QAQuestionCategory.GIT]: 3,
+};
+
+/**
+ * @TODO we use QuestionCategory everywhere.
+ *        So, set correct categories untill dynamic implementation
+ */
+export const QUESTION_AMOUNT_PER_CATEGORY = QUESTION_AMOUNT_PER_QA_CATEGORY;
+
+/**
+ * @TODO, in general, when dynamic implementation, this will be general config where we can pick setting based on course
+ *        but ideally, it should be moved on db level and admin should be able to configure that via UI and define current
+ *        course
+ */
+export const COURSE_QUESTIONS_CONFIG = {
+  [CourseName.FE]: {
+    categories: [FEQuestionCategory.JAVASCRIPT, FEQuestionCategory.CSS, FEQuestionCategory.HTML, FEQuestionCategory.GIT],
+    questionsAmountConfig: QUESTION_AMOUNT_PER_FE_CATEGORY,
+  },
+  [CourseName.QA]: {
+    categories: [QAQuestionCategory.JAVASCRIPT, QAQuestionCategory.CSS, QAQuestionCategory.HTML, QAQuestionCategory.GIT],
+    questionsAmountConfig: QUESTION_AMOUNT_PER_QA_CATEGORY,
+  }
 };
 
 // to be able to split task just for quiz or as a coding task(at least for now)

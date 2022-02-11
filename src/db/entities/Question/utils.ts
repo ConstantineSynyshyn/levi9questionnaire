@@ -1,6 +1,6 @@
 import { v4 } from "uuid";
 
-import { QuestionCategory, TaskCategory, MAX_SCORE_VALUE } from "@constants/configuration";
+import { QuestionCategory, TaskCategory, MAX_SCORE_VALUE, CURRENT_COURSE } from "@constants/configuration";
 import {
   QuestionWithOptions,
   QuestionWithOptionsList,
@@ -24,6 +24,7 @@ export const mapImportFileWithQuestionScheme = (
         difficultyLevel = 0,
         data = "",
         taskType = TaskCategory.QUIZ,
+        courseName = CURRENT_COURSE,
       } = initialQuestion;
       let questionRelatedProps = {
         questionText: text,
@@ -41,6 +42,7 @@ export const mapImportFileWithQuestionScheme = (
         difficultyLevel,
         id: v4(),
         taskType,
+        courseName,
         options: convertPlainOptionsToObject(options),
         ...questionRelatedProps,
       };
