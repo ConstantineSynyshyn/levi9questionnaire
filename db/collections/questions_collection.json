@@ -12326,4 +12326,2916 @@
     }
   ],
   "questionText": "What will be the output of the following code?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9472e"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "e37400ce-765f-46a7-ae10-d52d4f945dbd",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Quality assurance plans the test process and how it is monitored",
+      "id": "f75b3e87-2ee5-4e34-b87e-fdc3b3ae33a8",
+      "isCorrect": true
+    },
+    {
+      "text": "Quality assurance creates test cases and finds bugs",
+      "id": "c57e021b-6924-4201-81bd-676038f97e49",
+      "isCorrect": false
+    },
+    {
+      "text": "Quality assurance creates test cases and executes them",
+      "id": "04cefd3b-5737-4755-a5fa-3a102eb41b10",
+      "isCorrect": false
+    },
+    {
+      "text": "Quality assurance is testing software",
+      "id": "28f938b3-5068-4195-9fb6-c72e5337349a",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the role of QA in team?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9472f"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "23f6f73c-1d58-474b-9bb4-257078170fcb",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Quality Control",
+      "id": "7351179d-c07e-4640-8cc5-9dc9bb71e0ca",
+      "isCorrect": true
+    },
+    {
+      "text": "Quality Computing",
+      "id": "8615f545-33b5-491f-abb1-790f7af8e97f",
+      "isCorrect": false
+    },
+    {
+      "text": "Question Control",
+      "id": "be1ce96e-0bd1-479b-bae5-3d9de311a6ab",
+      "isCorrect": false
+    },
+    {
+      "text": "Quick Concept",
+      "id": "cafeeb44-b37f-47e5-8ad4-655ac4784529",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is QC?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94730"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "d306dfb6-a0ef-422f-b0f1-214b32ce3a34",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Quality assessment of the product",
+      "id": "7e26acb1-4931-42f8-b078-a4c29905d1bc",
+      "isCorrect": true
+    },
+    {
+      "text": "Finding bugs in software",
+      "id": "11c2116f-60a3-4acf-9d9e-4d7632effe1e",
+      "isCorrect": false
+    },
+    {
+      "text": "Maximum test coverage",
+      "id": "844f1fdc-09e0-4883-8b0d-b2ff7484b84b",
+      "isCorrect": false
+    },
+    {
+      "text": "Software without bugs",
+      "id": "0cc7bb19-7ff0-4e98-9ab0-e0754e089bed",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the main goal of testing?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94731"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "1e3e7bf1-68da-4a3e-b4ed-0cda56c04125",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "is the process of assessment of software quality",
+      "id": "94639a6d-5d2a-4a07-9c63-7242ab270706",
+      "isCorrect": true
+    },
+    {
+      "text": "is the process of finding bugs in software",
+      "id": "65661513-cc60-4025-b925-ac5397130378",
+      "isCorrect": false
+    },
+    {
+      "text": "is the process of assertion of software quality",
+      "id": "e49376e6-2703-45ee-ad38-c02b24422457",
+      "isCorrect": false
+    },
+    {
+      "text": "is the process of test cases execution",
+      "id": "c244c225-e1da-4b81-9fcc-9856971bd4cd",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is testing?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94732"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "df53677b-98df-4422-ba28-c3e60b9ae373",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "bug report",
+      "id": "f035540a-d320-4f61-8cfc-ab578caf4769",
+      "isCorrect": true
+    },
+    {
+      "text": "check list",
+      "id": "b14922d1-452b-4d70-ad7d-4e211c2022f0",
+      "isCorrect": false
+    },
+    {
+      "text": "test plan",
+      "id": "ed927097-699f-474e-9417-d64030c6046d",
+      "isCorrect": false
+    },
+    {
+      "text": "test case",
+      "id": "d38a6bcd-00f7-465d-a49a-3bef1c423f5b",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What type of documentation should be used to report a new issue?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94733"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "169528e5-76bf-43af-8e0b-6e2fb1538d58",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "test strategy",
+      "id": "67d546c3-8851-4cf7-894b-1f122add46ba",
+      "isCorrect": true
+    },
+    {
+      "text": "test plan",
+      "id": "47b0881c-5446-4034-acb7-faaf72d7d0e9",
+      "isCorrect": false
+    },
+    {
+      "text": "test project",
+      "id": "f3dddbb5-333a-4e9b-9b1d-1e19a10bb0bf",
+      "isCorrect": false
+    },
+    {
+      "text": "test case",
+      "id": "93c4dcbe-5de3-4ecd-b5b2-3d13eddbd5fc",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What type of documentation can be used to plan testing types/scope for new project?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94734"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "6e588d88-150e-4a86-8b3a-6247b90bc0db",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "test plan",
+      "id": "241afb82-ce34-433c-9cd8-b0539afb18fb",
+      "isCorrect": true
+    },
+    {
+      "text": "source control",
+      "id": "e6da14f1-1204-413e-bdb1-98aa0dbd4d29",
+      "isCorrect": false
+    },
+    {
+      "text": "project architecture plan",
+      "id": "e053a232-b358-4e2a-a7f8-10496a2a4914",
+      "isCorrect": false
+    },
+    {
+      "text": "test summary report",
+      "id": "ee5da9fd-a268-417f-bb51-7d21a0f762df",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What type of documentation can be used to understand testing scope for new project?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94735"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "6b55f247-2d9e-4044-9ecf-323949cd66e3",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "test case",
+      "id": "1e99e46b-7123-4444-9aa6-60a70e7a174d",
+      "isCorrect": true
+    },
+    {
+      "text": "test report",
+      "id": "35af159c-c428-4b3c-bc26-aa7443c4e69a",
+      "isCorrect": false
+    },
+    {
+      "text": "test plan",
+      "id": "63d892c3-7868-43df-b660-7fa30b107712",
+      "isCorrect": false
+    },
+    {
+      "text": "test project",
+      "id": "9d8f48f4-0384-431f-a75c-c5695c09ece2",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What test artifact can be used to cover new functionality?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94736"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "b6acb404-c0bb-4cc1-bc4c-e3f2c8a07b84",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Risk matrix",
+      "id": "e11efd68-fd89-4460-bed2-24335b50af40",
+      "isCorrect": true
+    },
+    {
+      "text": "Scope of Testing",
+      "id": "f8092698-9399-4d50-8cb4-4b940af77cb8",
+      "isCorrect": false
+    },
+    {
+      "text": "Testing approach",
+      "id": "057638ae-464b-49f8-a557-7a9abf80272d",
+      "isCorrect": false
+    },
+    {
+      "text": "Schedule",
+      "id": "7b4198ff-9c2b-472e-bfd8-ea7af3913947",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is not a part of test plan?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94737"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "714d6db1-7f46-4f7d-bed7-fe03d8e0a839",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Actual results",
+      "id": "94dfec07-06b1-4f47-bf67-fd464d75a708",
+      "isCorrect": true
+    },
+    {
+      "text": "Preconditions",
+      "id": "5ef79d9e-1b9e-4f2a-aa6d-29e263b49296",
+      "isCorrect": false
+    },
+    {
+      "text": "Test steps",
+      "id": "9b5c7636-3a5c-4942-80aa-30474f3361d1",
+      "isCorrect": false
+    },
+    {
+      "text": "Expected results",
+      "id": "b1d96603-d107-4dd0-890c-b1d93836f963",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is not a part of test case?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94738"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "cf5e1b7c-4c55-472a-9a71-042a5a0b6d5d",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Testing approach",
+      "id": "ce23bf5e-2c40-4d15-b1e8-6dd37d27b070",
+      "isCorrect": true
+    },
+    {
+      "text": "Preconditions",
+      "id": "e1d09ecb-daf0-44ef-81f6-1e32f1ddb88d",
+      "isCorrect": false
+    },
+    {
+      "text": "Actual behavior",
+      "id": "1133eb8e-851c-4411-b73b-fd7c66af9d4d",
+      "isCorrect": false
+    },
+    {
+      "text": "Expected behavior",
+      "id": "2c648bd3-85c7-422c-8dbb-b8553ed87bfd",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is not a part of bug report?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94739"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "4656038f-4b61-4d8a-a913-b726de4ef0e1",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "test plan, test case, check list",
+      "id": "0200a44b-7327-4558-a7f9-dfdf6b0dbd60",
+      "isCorrect": true
+    },
+    {
+      "text": "test plan, test report, check list",
+      "id": "24dfa929-2254-403a-8c50-6518e5cc316d",
+      "isCorrect": false
+    },
+    {
+      "text": "test project, test plan, test case",
+      "id": "dbbca007-0e66-4f6e-b985-39f0133700f8",
+      "isCorrect": false
+    },
+    {
+      "text": "test project, test report, test case",
+      "id": "1fadea0d-1f03-459d-8b43-088cc03bec60",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What of these types of test documentation are correct?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9473a"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "b986c2a1-9e6b-4c0a-8dbb-5d7d8dd381ef",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Build: It is a version of compiled software.\nRelease: It is a version of compiled software, shipped to the customer.",
+      "id": "026dd43f-9655-4784-91c7-6d50ad95bab8",
+      "isCorrect": true
+    },
+    {
+      "text": "Build: It is a version of compiled software with set of new features.\nRelease: It is a version of compiled software, that includes promised functionality to the customer.",
+      "id": "2addee54-8918-496e-a9c6-6c1f3e805594",
+      "isCorrect": false
+    },
+    {
+      "text": "Build: It is a version of compiled software for every tiny change of code.\nRelease: It is a number of compiled software, shipped to the customer.",
+      "id": "1e60f691-6867-450c-a1a4-580ee9d831a4",
+      "isCorrect": false
+    },
+    {
+      "text": "Build: It is a version of compiled software.\nRelease: It is a version of compiled software, that includes promised functionality to the customer.",
+      "id": "08240061-fb8f-4b8c-b87b-a457d2825429",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the difference between build and release?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9473b"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "f5a2a9aa-8763-490c-89ec-3eb3681087b1",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Compilation bug",
+      "id": "cbbfe872-9c16-4c7f-baa3-14f967f59817",
+      "isCorrect": true
+    },
+    {
+      "text": "Integration bug",
+      "id": "42cf184b-a653-48f6-bf83-661cc0958788",
+      "isCorrect": false
+    },
+    {
+      "text": "Compatibility bug",
+      "id": "a34dadb3-50fd-4409-bfef-28e54d0f9e72",
+      "isCorrect": false
+    },
+    {
+      "text": "Localization Bug",
+      "id": "4ce3e827-86df-461f-bf64-e9ea83ea6b85",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What kind of bug doesn't exist?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9473c"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "14bbfcde-f2d1-486e-b890-76aacbb21a56",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Any kind of error, mistake or failure in software that prevent the software function from executing properly.",
+      "id": "f933e406-12ff-4bbb-b761-cbf3fea74003",
+      "isCorrect": true
+    },
+    {
+      "text": "Any kind of error, mistake or unexpected behavior in software, that is reported by software user, and is not reflected in documentation",
+      "id": "d682f2eb-0a53-4a9d-bace-bd327793a34d",
+      "isCorrect": false
+    },
+    {
+      "text": "Any kind of error, mistake or failure in software that is reported by QA or customer",
+      "id": "fe7deefb-ce38-4a6e-bd97-2b3de35b463e",
+      "isCorrect": false
+    },
+    {
+      "text": "Any kind of error, mistake or failure in software, that is not distinguished by developer or end user as a feature",
+      "id": "213a5408-bd1d-41be-9368-bfa8ca10cf81",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is a bug?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9473d"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "26c2765e-0939-483e-b5f1-1013b6135c92",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Severity is how difficult the issue is to fix. \nPriority is how important the issue is to fix. ",
+      "id": "e1465bef-11f8-4a18-9c9c-b76c9aadca2b",
+      "isCorrect": true
+    },
+    {
+      "text": "Severity is how important the issue is to fix. \nPriority is when issue can be fixed. ",
+      "id": "88a470ae-0d84-4932-8a13-c22963fa1d79",
+      "isCorrect": false
+    },
+    {
+      "text": "Severity is when issue can be fixed. \nPriority is how important the issue is to fix",
+      "id": "1ee695f4-82f3-4ca1-a922-be7c209c342b",
+      "isCorrect": false
+    },
+    {
+      "text": "Severity is how important the issue is to fix. \nPriority is how difficult the issue is to fix. ",
+      "id": "b0799df1-313d-4153-bd5c-2077fd0726d8",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the difference between severity and priority?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9473e"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "b99315a6-489c-40a2-b0fe-fd3262eb17ec",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Assertion is verification of the fact, that has only true/false state\nAssessment is opiniated judgement about the statement",
+      "id": "7416745d-529c-4bd8-8101-e2829da8e950",
+      "isCorrect": true
+    },
+    {
+      "text": "Assertion is opiniated judgement about the statement\nAssessment is verification of the fact, that has only true/false state",
+      "id": "621b610b-9b4d-4e75-bc0f-2ffdad42433d",
+      "isCorrect": false
+    },
+    {
+      "text": "There is no difference between Assertion and Assessment, those are synonims",
+      "id": "5cefb990-f70d-4860-8714-0d5684eaffda",
+      "isCorrect": false
+    },
+    {
+      "text": "Assertion is the process of verification\nAssessment is the process of validation",
+      "id": "1f5c3bcf-b6c5-45af-a2b7-1973c446b6e5",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the difference between Assertion and Assessment?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9473f"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "b441f0d9-84b2-43f0-80cf-2a56714ae800",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "1. Arrange Act Assert\n2. Given When Then",
+      "id": "d52ccfac-2629-4988-936c-78a6e9fc3bd5",
+      "isCorrect": true
+    },
+    {
+      "text": "1. Prepare Act Verify\n2. What, Where, When",
+      "id": "78e4c26e-d655-4df8-8d1b-72d2e7b199b5",
+      "isCorrect": false
+    },
+    {
+      "text": "1. Prepare Act Verify\n2. Given, When, Then",
+      "id": "128d8730-0778-4f0c-88df-184499748843",
+      "isCorrect": false
+    },
+    {
+      "text": "1. Arrange Act Assert\n2. What, Where, When",
+      "id": "96b2edd3-b234-4c7f-82f3-cc5a028a088a",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What patterns of writing test case are correct?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94740"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "af101832-2091-4cde-a550-3187533e65f8",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "the process of checking wheather the specification captures the customer's requirements",
+      "id": "9c0980f1-2b87-46e7-9f4b-0258a26ad3f6",
+      "isCorrect": true
+    },
+    {
+      "text": "opiniated judgement about the statement",
+      "id": "c47a385d-4c25-4a9b-9f95-2f82657d9f6b",
+      "isCorrect": false
+    },
+    {
+      "text": "verification of the fact, that has only true/false state",
+      "id": "a1df0de0-2a92-4cdb-8186-49b8af08dedd",
+      "isCorrect": false
+    },
+    {
+      "text": "the process of checking that the software meets specifications",
+      "id": "b675abb6-024e-4009-a325-039f1f450e2b",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is validation?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94741"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "11daa255-c64f-4639-b3e9-ab8d52835668",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "verification of the fact, that has only true/false state",
+      "id": "341ab1a2-f13c-4cc8-9656-e08a59e30fdb",
+      "isCorrect": true
+    },
+    {
+      "text": "opiniated judgement about the statement",
+      "id": "8e5ed198-fbff-41d7-8972-d92a46771318",
+      "isCorrect": false
+    },
+    {
+      "text": "the process of checking that the software meets specifications",
+      "id": "6e0d8ff5-553d-4ece-82bd-c2cb728db574",
+      "isCorrect": false
+    },
+    {
+      "text": "the process of checking wheather the specification captures the customer's requirements",
+      "id": "98248fd8-77b5-4def-abfc-7c66cdcce81c",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is assertion?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94742"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "4e5ef079-e947-49b7-942d-5fa6e2306536",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "the process of checking that the software meets specifications",
+      "id": "3d8e3972-f277-4427-b5c6-29b436e869de",
+      "isCorrect": true
+    },
+    {
+      "text": "opiniated judgement about the statement",
+      "id": "ec25cac8-aa32-43ca-8645-254ac5a2a797",
+      "isCorrect": false
+    },
+    {
+      "text": "verification of the fact, that has only true/false state",
+      "id": "8d2b59b9-ed3c-4467-ad99-2a7492cedcea",
+      "isCorrect": false
+    },
+    {
+      "text": "the process of checking wheather the specification captures the customer's requirements",
+      "id": "b1aabbdd-50d0-4d56-b47e-625b4d34248a",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is verification?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94743"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "f054af57-5569-4153-b94a-9cfab4191cf5",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "opiniated judgement about the statement",
+      "id": "f013943f-a0ee-4286-b369-3da96baf40ad",
+      "isCorrect": true
+    },
+    {
+      "text": "the process of checking that the software meets specifications",
+      "id": "b222a32a-25b0-4d9d-bc08-4df6aaaf0e6b",
+      "isCorrect": false
+    },
+    {
+      "text": "verification of the fact, that has only true/false state",
+      "id": "098ca62f-536e-4d95-91e1-5fa0c4f9c528",
+      "isCorrect": false
+    },
+    {
+      "text": "the process of checking wheather the specification captures the customer's requirements",
+      "id": "de72bb13-5a6c-4162-bd8c-a7bdeb61775d",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is assessment?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94744"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "d4916a7f-59f0-4844-81de-ec873b07fcb3",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Transparent box",
+      "id": "75bdb729-3673-4dd9-96c8-dabc00722382",
+      "isCorrect": true
+    },
+    {
+      "text": "Black box",
+      "id": "4a6c5c0d-f55c-44ee-8b76-c831de9acd73",
+      "isCorrect": false
+    },
+    {
+      "text": "Tiger box",
+      "id": "fc810226-11b5-4357-bfff-c2ab064f6bc4",
+      "isCorrect": false
+    },
+    {
+      "text": "White box",
+      "id": "a9eb22ab-2950-4e69-af7c-10e4575a337c",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What type of testing technique does not exist?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94745"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "247e80a2-93d4-4cc4-a700-ca637040f7b3",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Omega testing",
+      "id": "6fd4aa86-7bbc-4e06-aa38-2ac310ca6f7e",
+      "isCorrect": true
+    },
+    {
+      "text": "Alpha testing",
+      "id": "2ff1e7e1-4ff8-46fe-887b-8a72c2a88d3e",
+      "isCorrect": false
+    },
+    {
+      "text": "Beta testing",
+      "id": "79c27839-e4d3-4749-b14c-c467c490c14e",
+      "isCorrect": false
+    },
+    {
+      "text": "Gamma testing",
+      "id": "b885cacf-4304-439f-a4a8-1fe4321fdf65",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What type of acceptance testing does not exist?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94746"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "05d06cc4-ccf8-4f82-835f-e50bac32ae04",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Unit tests THEN Integration tests THEN System tests",
+      "id": "4053a319-0846-4e65-b180-1d3cdd8299ce",
+      "isCorrect": true
+    },
+    {
+      "text": "Integration tests THEN UI tests THEN Unit tests",
+      "id": "0f66d171-8cce-4b24-9a59-5122608e5881",
+      "isCorrect": false
+    },
+    {
+      "text": "UI tests THEN Integration tests THEN Unit tests",
+      "id": "c07c240a-fd09-4086-affe-5267781ee155",
+      "isCorrect": false
+    },
+    {
+      "text": "UI tests THEN Unit tests THEN Intagration tests",
+      "id": "f914a098-b146-4395-97e4-7598f56fe38f",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the correct priority of the testing levels?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94747"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "2130432d-66b1-41c1-8849-fc3902d37e3d",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "At all test levels.",
+      "id": "256317ee-bb46-439c-97da-cc82520d23af",
+      "isCorrect": true
+    },
+    {
+      "text": "At system and acceptance testing levels only.",
+      "id": "4f25806b-0651-4a97-a50c-327af7c535ee",
+      "isCorrect": false
+    },
+    {
+      "text": "At all levels above integration testing.",
+      "id": "357de94c-b9cb-4cf5-b589-ccff71a80308",
+      "isCorrect": false
+    },
+    {
+      "text": "At the acceptance testing level only.",
+      "id": "49c28859-fd16-4d34-9570-9464ef563e1c",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Where may functional testing be performed?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94748"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "5e36526e-b495-4d18-adf7-3efbd5c4fc8d",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Suggestions as to how to fix the problem.",
+      "id": "73165b4e-1c4b-4612-bf92-273e16d50b45",
+      "isCorrect": true
+    },
+    {
+      "text": "Version of the Software Under Test.",
+      "id": "9313d945-9a29-40d1-bf64-89bc0c63d1d8",
+      "isCorrect": false
+    },
+    {
+      "text": "The name and/or organisational position of the person raising the problem.",
+      "id": "4041cf32-2840-4c83-a5d3-170fbd9b56db",
+      "isCorrect": false
+    },
+    {
+      "text": "Actual and expected results.",
+      "id": "5040ea2a-7a41-4f1e-b189-68404de17ff1",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Which of the following would you NOT usually find on a software bug report?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94749"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "9adffaa8-8db0-4780-a614-25e615e62259",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Impact analysis assesses the effect of a change to the system to determine how much\nregression testing to do.",
+      "id": "c2cbce9f-da3c-4469-9dff-5e7cd2100160",
+      "isCorrect": true
+    },
+    {
+      "text": "Impact analysis assesses the effect of a new person joining the regression test team.",
+      "id": "0c690ac6-fab2-449a-b397-dd3ee4a5c820",
+      "isCorrect": false
+    },
+    {
+      "text": "Impact analysis assesses the effect on the system of a defect found in regression testing.",
+      "id": "46ecfee9-749e-4351-9f80-841e22ce4d6c",
+      "isCorrect": false
+    },
+    {
+      "text": "Impact analysis assesses whether or not a defect found in regression testing has been\nfixed correctly.",
+      "id": "72dd1bab-3ce2-4300-83df-7b0a82f2f366",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Which of the following is correct?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9474a"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "897c90ab-2901-436c-9fae-2642da6310a1",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Testing performed by potential customers at their own locations.",
+      "id": "2c75853c-09af-4e5d-bd3e-9fe05328e8ae",
+      "isCorrect": true
+    },
+    {
+      "text": "Testing performed by potential customers at the developers location.",
+      "id": "5a6715c4-6827-485f-a651-92e2e7b621fd",
+      "isCorrect": false
+    },
+    {
+      "text": "Testing performed by product developers at the customer's location.",
+      "id": "7330fe47-4a5c-47b8-9e76-70762719cfd4",
+      "isCorrect": false
+    },
+    {
+      "text": "Testing performed by product developers at their own locations.",
+      "id": "fef91a1b-f935-4cc0-8c3f-383a8cd8779c",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is beta testing?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9474b"
+  },
+  "category": "General",
+  "difficultyLevel": 3,
+  "id": "d25ff352-c17f-4d05-8a74-547e9de38e3f",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "15, 19 and 25.",
+      "id": "d4406c1d-938e-41e9-b8c3-b4cc99212f81",
+      "isCorrect": true
+    },
+    {
+      "text": "17, 18 and 19.",
+      "id": "4d868e0a-0988-4e69-97b4-9c2521e43a7f",
+      "isCorrect": false
+    },
+    {
+      "text": "18, 20 and 22.",
+      "id": "d7f08c44-0892-4ace-9b68-875cdb34fd5b",
+      "isCorrect": false
+    },
+    {
+      "text": "16, 26 and 32.",
+      "id": "5bc4e675-46c4-4b5d-8c50-ca1c74848477",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "A thermometer measures temperature in whole degrees only. If the temperature"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9474c"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "a84425d5-ae34-4175-b9b2-585cc59fb1f6",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Regression testing is used after fixes have been made\nRegression testing is often automated",
+      "id": "8b1ab7b1-9e4b-4e60-a742-0dd98ed8468b",
+      "isCorrect": true
+    },
+    {
+      "text": "Regression testing is run ONLY once\nRegression testing is used after fixes have been made\nRegression testing is often automated",
+      "id": "1b7ad466-bd45-48d7-90fe-72f3f3c13894",
+      "isCorrect": false
+    },
+    {
+      "text": "Regression testing is used after fixes have been made\nRegression testing is often automated\nRegression tests need not be maintained",
+      "id": "f71484ff-56f8-47d7-b4a8-abd2da42c870",
+      "isCorrect": false
+    },
+    {
+      "text": "Regression testing is often automated",
+      "id": "c56a8d3b-996f-46bd-a196-633d2d378699",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Which of the following are characteristic of regression testing ?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9474d"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "e1883cdc-cad1-4c0e-9b4d-65ac8692fae8",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Easy to access information about tests and testing.\nGreater consistency of tests.",
+      "id": "2179d53b-39a3-48b1-acbd-8d41406a85b8",
+      "isCorrect": true
+    },
+    {
+      "text": "Reduced maintenance of testware.\nGreater consistency of tests.",
+      "id": "eca2f3a5-6774-4cb2-b18a-29987a9a1892",
+      "isCorrect": false
+    },
+    {
+      "text": "Reduced maintenance of testware.\nEasy and cheap to implement.",
+      "id": "dda530cc-3ea0-4c0b-8bbd-b6908792d79a",
+      "isCorrect": false
+    },
+    {
+      "text": "Easy to access information about tests and testing.\nEasy and cheap to implement.",
+      "id": "a686b53a-b570-4f51-bbdb-94ac7b9bc873",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Which of the following benefits are MOST likely to be achieved by using test"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9474e"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "af72c689-f561-4f44-98e4-c46b4ad6430f",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Preventative tests are designed early; reactive tests are designed after the software has\nbeen produced.",
+      "id": "da609f85-2049-4261-997b-f85c0bd10795",
+      "isCorrect": true
+    },
+    {
+      "text": "Preventative tests and reactive tests are designed as early as possible.",
+      "id": "22da00e4-e0ed-4082-aa3f-327e616bf897",
+      "isCorrect": false
+    },
+    {
+      "text": "Preventative testing is always analytical; reactive testing is always heuristic.",
+      "id": "eb4af32e-680d-4635-ac10-a1c767aceb3f",
+      "isCorrect": false
+    },
+    {
+      "text": "Preventative tests are designed after the software has been produced; reactive tests are designed early in response to review comments.",
+      "id": "79e0af15-ac21-4062-a035-a4384fce3542",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the KEY difference between preventative and reactive approaches to"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9474f"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "b07c1488-0a15-4739-9dbd-116c910f23cd",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Black Box Techniques.",
+      "id": "e2f5362d-5f76-497a-9b14-81fe1dd236d1",
+      "isCorrect": true
+    },
+    {
+      "text": "White Box Techniques.",
+      "id": "ac7ec713-5503-4caa-98b8-52e03e298eb1",
+      "isCorrect": false
+    },
+    {
+      "text": "Glass Box Techniques.",
+      "id": "eaf1d06e-36e7-4d59-b990-9890d0c96590",
+      "isCorrect": false
+    },
+    {
+      "text": "Experience Based Techniques.",
+      "id": "d90d1e4d-c0a8-4c30-a7e5-77ef27663415",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Which type of test design techniques derives test cases based on the specification of a component?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94750"
+  },
+  "category": "General",
+  "difficultyLevel": 2,
+  "id": "c629fc6f-30da-4b0d-aca5-53b10896d19f",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Enforcement of coding standards.",
+      "id": "2225396b-2675-4eab-934d-708f88befa35",
+      "isCorrect": true
+    },
+    {
+      "text": "Supporting reviews.",
+      "id": "a87a39ee-a02a-4a32-b7f3-b054562248a5",
+      "isCorrect": false
+    },
+    {
+      "text": "Validating models of the software.",
+      "id": "b7f59b8c-1a7a-45dd-9ddf-5f6fe8ac5e36",
+      "isCorrect": false
+    },
+    {
+      "text": "Testing code executed in a special test harness.",
+      "id": "5c3423a9-13b7-488b-9649-85434d06ff73",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "For which of the following would a static analysis tool be MOST useful?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94751"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "d50c6ba7-f9e9-414a-93a3-ebb10939119e",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Debugging defects",
+      "id": "e75329c0-d49c-421c-b890-82f05b5c05a1",
+      "isCorrect": true
+    },
+    {
+      "text": "Finding defects",
+      "id": "d9647fba-aa45-4ea5-aae4-d015e2ff3698",
+      "isCorrect": false
+    },
+    {
+      "text": "Gaining confidence about the level of quality and providing information",
+      "id": "d3165675-0c91-46db-9205-469a26498a79",
+      "isCorrect": false
+    },
+    {
+      "text": "Preventing defects.",
+      "id": "a5073523-0b25-4a34-9bff-a01b710a4e12",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Which is not the testing objectives?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94752"
+  },
+  "category": "General",
+  "difficultyLevel": 3,
+  "id": "250f6191-debf-41bd-b3df-7e5522458824",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "0, 1, 99, 100",
+      "id": "9d0ba534-1fb9-401d-b1b8-7bc2d1da1822",
+      "isCorrect": true
+    },
+    {
+      "text": "0,1,2,99",
+      "id": "18ec9de0-2a59-41cc-93fe-b6ed631d9338",
+      "isCorrect": false
+    },
+    {
+      "text": "1, 99, 100, 98",
+      "id": "9adaf212-becf-409c-b9a6-7f713b2e809a",
+      "isCorrect": false
+    },
+    {
+      "text": "�1, 0, 1, 99",
+      "id": "1a2f707a-28f8-44e5-aec6-678983a195ca",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Input field �X� has given a data on a Person's age, which should be between 1 to 99. Using a Boundary Value Analysis, which is the appropriate one?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94753"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "7ecee4d0-fc25-4531-b245-a68fa6c60f53",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Exhaustive testing",
+      "id": "15b60901-6d90-4a81-a62d-508b3116a691",
+      "isCorrect": true
+    },
+    {
+      "text": "Early testing",
+      "id": "a191889b-9e3b-4b13-8f88-f5b12d78b62e",
+      "isCorrect": false
+    },
+    {
+      "text": "Defect clustering",
+      "id": "83b5f596-e658-4b53-90c7-c380338b4d61",
+      "isCorrect": false
+    },
+    {
+      "text": "Pesticide paradox",
+      "id": "efe14ec6-4e01-4505-8f12-bec444d84aae",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Which is not a testing principle"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94754"
+  },
+  "category": "General",
+  "difficultyLevel": 1,
+  "id": "c40353b4-053f-49d2-8e41-a37683afd789",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Business scenarios",
+      "id": "958e9166-8256-43ba-8371-4f6cea1799b9",
+      "isCorrect": true
+    },
+    {
+      "text": "Performance testing",
+      "id": "3375d966-e6fb-4da5-b29c-4148b9c6fd18",
+      "isCorrect": false
+    },
+    {
+      "text": "Unit testing",
+      "id": "ec8dd7cb-b3e3-497b-814c-617256dbc1a8",
+      "isCorrect": false
+    },
+    {
+      "text": "Static testing",
+      "id": "cee6e7b2-182e-456e-bd81-c004b6c0ee69",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Use cases can be performed to test"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94755"
+  },
+  "category": "General",
+  "difficultyLevel": 3,
+  "id": "7fbb7dea-3960-4fcd-9e56-28c59eb4e2fd",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "To identify, evaluate, and rank tools, and recommend tools to management",
+      "id": "5a9ded09-6461-43c1-8051-516cc631da08",
+      "isCorrect": true
+    },
+    {
+      "text": "To determine what kind of tool is needed, then find it and buy it",
+      "id": "34f11b7f-deec-4137-9005-06cfec69ceed",
+      "isCorrect": false
+    },
+    {
+      "text": "To initiate the tool search and present a case to management",
+      "id": "07f88cc6-1edc-446c-9623-6d3bcacb578f",
+      "isCorrect": false
+    },
+    {
+      "text": "To identify, evaluate and select the tools",
+      "id": "60097915-87a4-409c-9925-74222ceb8bc9",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "The software engineer's role in tool selection is ...?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94756"
+  },
+  "category": "General",
+  "difficultyLevel": 3,
+  "id": "089caaee-a0a8-424b-a21b-59ba55e597c1",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "The code",
+      "id": "b60ec74f-b4a2-498e-a6ea-803aab3163a7",
+      "isCorrect": true
+    },
+    {
+      "text": "The existing system (For a bench mark)",
+      "id": "24f4625c-dcb2-463a-b278-b2f56605f9ec",
+      "isCorrect": false
+    },
+    {
+      "text": "Individual�s knowledge",
+      "id": "be1b8938-625f-4955-acbe-44698d437f07",
+      "isCorrect": false
+    },
+    {
+      "text": "User manual",
+      "id": "48025e4a-717b-45d8-b969-cb860c77b62b",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Which is not a test Oracle"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94757"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 1,
+  "id": "d9f631dd-ef4f-4b71-b125-8a8c1b3515ee",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "1. Test Planning and control\n2. Analysis and Design\n3. Implementation & Execution\n4. Evaluating Exit Criteria & Reporting\n5. Test Closure Activities",
+      "id": "eebe3e0e-5fb8-4a94-8954-66dd1e5d38f9",
+      "isCorrect": true
+    },
+    {
+      "text": "1. Analysis and Design\n2. Test Planning and control\n3. Test Execution\n4. Test Reporting\n5. Test Closure Activities",
+      "id": "8b93806e-9ecc-4e32-a7bb-36e36e84ddfd",
+      "isCorrect": false
+    },
+    {
+      "text": "1. Analysis and Design\n2. Test Planning and Implementation\n3. Test Execution\n4. Evaluating Exit Criteria & Reporting\n5. Test Closure Activities",
+      "id": "55572a98-688c-4df3-a05f-f332f3b70880",
+      "isCorrect": false
+    },
+    {
+      "text": "1. Test Planning & Control\n2. Analysis & Evaluating Exit Criteria \n3. Test Design & Implementation\n4. Test Execution & Reporting\n5. Test Closure Activities",
+      "id": "66f82d24-f185-4e43-8a72-a46f7822d4c4",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What testing lifecycle is correct?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94758"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 1,
+  "id": "bdaebb0e-74a1-48f9-a5ae-78304b7fc919",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Identification, Analysis, Fix, Re-testing",
+      "id": "2073223d-283c-4c14-8c28-6cee079d3bf6",
+      "isCorrect": true
+    },
+    {
+      "text": "Analysis, Identification, Fix, Re-testing",
+      "id": "a12d8364-715d-4a21-8149-961cf60c5ba4",
+      "isCorrect": false
+    },
+    {
+      "text": "Analysis, Identification, Implementation, Re-testing",
+      "id": "5c33f49c-1fec-49bb-aaa9-e4b10d9433c2",
+      "isCorrect": false
+    },
+    {
+      "text": "Identification, Analysis, Implementation, Re-testing",
+      "id": "a4069538-5fe9-44c1-af40-3d4625287a4e",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the defect life cycle?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94759"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 2,
+  "id": "d076b641-5116-4734-8265-fb1333490de6",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Developers.",
+      "id": "f1d7f05a-0e2b-436a-81b0-4f0e25687bcc",
+      "isCorrect": true
+    },
+    {
+      "text": "Analysts.",
+      "id": "dd54735b-4d44-4760-8ecc-0dc5983bc425",
+      "isCorrect": false
+    },
+    {
+      "text": "Testers.",
+      "id": "dc880d9c-4f0d-485b-b787-252f88f7cc84",
+      "isCorrect": false
+    },
+    {
+      "text": "Incident Managers.",
+      "id": "4acb9185-1171-4c62-bbc8-a1708fb712cf",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Who would USUALLY perform debugging activities?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9475a"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 2,
+  "id": "e0c634b5-269f-4d95-b224-b1aa7101d57a",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Test planning.",
+      "id": "6f557e86-7bb6-4d84-a1fa-4936ea812e4d",
+      "isCorrect": true
+    },
+    {
+      "text": "Evaluating exit criteria and reporting.",
+      "id": "26f68985-2c2a-49b2-84c4-4fd98972f3a1",
+      "isCorrect": false
+    },
+    {
+      "text": "Test closure.",
+      "id": "15fca951-0a7c-4bc9-bfbe-e47c9d0426fb",
+      "isCorrect": false
+    },
+    {
+      "text": "Test control.",
+      "id": "bd368422-f8b6-467c-9c9d-708d0b25dc5c",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "As part of which test process do you define the criteria for testing completion?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9475b"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 2,
+  "id": "275fd9b5-691a-4ef9-9914-315d2e9b7aaa",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "It helps prevent defects from being introduced into the code.",
+      "id": "3f046a44-7a5f-4ca8-abf7-cfab827eba95",
+      "isCorrect": true
+    },
+    {
+      "text": "It is cheaper than designing tests during the test phases.",
+      "id": "5b969c1d-5529-4612-93cd-6ab1fd2c4040",
+      "isCorrect": false
+    },
+    {
+      "text": "Tests designed early are more effective than tests designed later.",
+      "id": "825c4326-35fc-472c-863e-22c72de62928",
+      "isCorrect": false
+    },
+    {
+      "text": "It saves time during the testing phases when testers are busy.",
+      "id": "d51f5c4d-4fff-4e92-9853-e0743499c38d",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the MAIN benefit of designing tests early in the life cycle?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9475c"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 2,
+  "id": "535e7663-6984-40df-814a-532a0cfcf229",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Error-prone software delivered",
+      "id": "5f6cd0aa-b355-4577-9a3c-53ce46e137a4",
+      "isCorrect": true
+    },
+    {
+      "text": "Supplier issues",
+      "id": "b76ebf95-1dad-46d4-a23c-27fdc382fbf2",
+      "isCorrect": false
+    },
+    {
+      "text": "Organization factors",
+      "id": "f4112304-3b85-4505-ac9a-2d83f12f9f05",
+      "isCorrect": false
+    },
+    {
+      "text": "Technical issues",
+      "id": "acacf2cf-6b3c-48f2-8f17-2b023aee07bf",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "Which is not the project risks?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9475d"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 3,
+  "id": "068e7ced-61dd-47fa-b4b1-de08cd834263",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Eliminate some of the requirements that have not yet been implemented.",
+      "id": "5f2cb5ba-07c7-4c9d-981f-d72251a1e609",
+      "isCorrect": true
+    },
+    {
+      "text": "Add more engineers to the project to make up for lost work.",
+      "id": "bf9d0b83-0a07-462b-88c5-1dd66e399e10",
+      "isCorrect": false
+    },
+    {
+      "text": "Ask the current developers to work overtime until the lost work is recovered.",
+      "id": "f8fc1696-3250-41f2-a702-d20536c57da7",
+      "isCorrect": false
+    },
+    {
+      "text": "Hire more software quality assurance personnel.",
+      "id": "7b902b6f-5b78-4553-9a63-02a1bf4fa042",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "A project that is in the implementation phase is six weeks behind schedule."
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9475e"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 2,
+  "id": "2097caca-3224-4281-81eb-37c5c0de9ecb",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Focus on people, rather than processes and tools\nA working piece of software is more important than detailed documentation\nOngoing collaboration with customers matters more than a fixed contract\nBe responsive to change, rather than sticking to a plan",
+      "id": "0fe2eb0f-31f1-43fb-8905-62b3cd89b3c3",
+      "isCorrect": true
+    },
+    {
+      "text": "Focus on people, rather than processes and tools\nNew piece of software must have detailed documentation\nDefining fixed contract is more important than ongoing collaboration with customers\nStick to the plan",
+      "id": "81f757d3-7293-4943-840a-49ec9f8f4131",
+      "isCorrect": false
+    },
+    {
+      "text": "Focus on processes and tools\nNew piece of software must have detailed documentation\nOngoing collaboration with customers matters more than a fixed contract\nBe responsive to change, rather than sticking to a plan",
+      "id": "e31e43ef-b608-4d91-ac3d-155792e4a49b",
+      "isCorrect": false
+    },
+    {
+      "text": "Focus on people, rather than processes and tools\nA working piece of software is more important than detailed documentation\nDefining fixed contract is more important than ongoing collaboration with customers\nStick to the plan",
+      "id": "998050c6-1ff6-439f-86dd-4f17ae6d1cb9",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What are the main principles of Agile software development?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9475f"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 3,
+  "id": "d4f575d0-dc00-4e32-b05f-072d435921c1",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "The amount of work to do\nThe complexity of the work\nAny risk or uncertainty in doing the work",
+      "id": "f8df78e8-8bf7-4dc1-8ef8-0ab5fdc3fb67",
+      "isCorrect": true
+    },
+    {
+      "text": "Amount of man/hours to complete work\nThe complexity of the work\nAny risk or uncertainty in doing the work",
+      "id": "28e25f5c-b5a1-4727-b963-7c15214cb6b3",
+      "isCorrect": false
+    },
+    {
+      "text": "The amount of work to do\nThe severity of the work\nAny risk or uncertainty in doing the work",
+      "id": "6b6e197e-0ccb-40bd-98f1-a4d85c22ca7b",
+      "isCorrect": false
+    },
+    {
+      "text": "Amount of man/hours to complete work\nThe severity of the work\nAny risk or uncertainty in doing the work",
+      "id": "791e05be-8662-42c2-9ee7-f7656b035526",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is story point in Agile?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94760"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 3,
+  "id": "a36f2f81-49c0-4223-8571-817ac6c12672",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "To discuss features granulate them into product backlog items, or smaller pieces and prepare them for implementation",
+      "id": "53ebc0bd-2f79-4d0b-ac2a-546e674c9bb8",
+      "isCorrect": true
+    },
+    {
+      "text": "To calculate complexity of product backlog items, risks and set story points accordingly",
+      "id": "371b30fc-047f-4ed4-9231-c91057b4bdc1",
+      "isCorrect": false
+    },
+    {
+      "text": "To commit team workload and define tasks for the next sprint",
+      "id": "36d48006-1454-4177-aa96-ed05b6016db0",
+      "isCorrect": false
+    },
+    {
+      "text": "To discuss what went well and how to improve their own process, tools, etc.",
+      "id": "c60e61e4-6cfd-4c3f-88a3-f00c2ee9eb93",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is Grooming session in Agile?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94761"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 2,
+  "id": "eb606991-1dbd-437e-bbf8-0ef5f70ab97d",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "To calculate complexity of product backlog items, risks and set story points accordingly",
+      "id": "21cac4e9-0ede-4aad-94f4-2bafcd2eb605",
+      "isCorrect": true
+    },
+    {
+      "text": "To commit team workload and define tasks for the next sprint",
+      "id": "cf60c657-851c-4aac-9c98-efc0039b9f45",
+      "isCorrect": false
+    },
+    {
+      "text": "To discuss features granulate them into product backlog items, or smaller pieces and prepare them for implementation",
+      "id": "436cf1c9-382c-473f-b08e-dae359bc8415",
+      "isCorrect": false
+    },
+    {
+      "text": "to estimate how many human/hours should take to complete the feature",
+      "id": "36084ca5-bf5b-4563-ab64-a846fe73f954",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the purpose of story estimation?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94762"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 1,
+  "id": "f7b25291-4bd9-4059-966f-8a0933046e89",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Short, repeatable phase to result in a draft, prototype, or workable version of the final deliverable.",
+      "id": "f3765dc7-4969-44bd-8bee-2a446b4842a9",
+      "isCorrect": true
+    },
+    {
+      "text": "Unit of measure for expressing an estimate of the overall effort that will be required to fully implement a product backlog item",
+      "id": "16ec22f0-8c84-4c86-bdcf-8e2750aec739",
+      "isCorrect": false
+    },
+    {
+      "text": "One of the agile ceremonies, where work is split into smaller chunks",
+      "id": "95c84283-67b6-478e-bc28-1d5c89f958bd",
+      "isCorrect": false
+    },
+    {
+      "text": "One of the agile ceremonies, where user stories are refined into smaller chunks features or product backlog items",
+      "id": "67a5b028-b28b-43ea-9552-f21366d952be",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is a sprint in Scrum?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94763"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 3,
+  "id": "cd463997-6270-4a13-b096-059311f27486",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Sprint planning\nDaily scrum\nSprint review\nSprint retrospective\nThe sprint",
+      "id": "9e223ca0-6db0-4884-9721-dd3fc671a166",
+      "isCorrect": true
+    },
+    {
+      "text": "Test estimation\nSprint Planning\nDaily status\nSprint demo\nSprint retrospective",
+      "id": "6bd206a2-52d3-4987-b621-69e90be549ce",
+      "isCorrect": false
+    },
+    {
+      "text": "Test estimation\nSprint planning\nWeekly status\nSprint overview\nSprint retrospective",
+      "id": "b452b7e5-3925-48e0-a021-9b3ed360527f",
+      "isCorrect": false
+    },
+    {
+      "text": "Sprint refinement\nSprint planning\nDaily status\nSprint review\nSprint retrospective",
+      "id": "687ba71b-bc97-4c1b-9b58-b5ea3c1cec3b",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What are the correct events in SCRUM? (update list from SCRUM guide)"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94764"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 2,
+  "id": "0dcffa7a-71e8-40c9-964d-0041064bb778",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "To commit team workload and define tasks for the next sprint",
+      "id": "57f3b54c-a14f-4b61-93a0-292693dfaacc",
+      "isCorrect": true
+    },
+    {
+      "text": "To share status of the current tasks within the team, to discuss blockers or dependencies.",
+      "id": "4d66760d-3707-4240-9d57-742193e2119a",
+      "isCorrect": false
+    },
+    {
+      "text": "To discuss features granulate them into product backlog items, or smaller pieces and prepare them for implementation",
+      "id": "4542bbbd-4b7b-4047-853b-8fead424592b",
+      "isCorrect": false
+    },
+    {
+      "text": "To calculate complexity of product backlog items, risks and set story points accordingly",
+      "id": "481487de-0d38-4583-acea-e53f29989e9a",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the purpose of Sprint planning in Scrum?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94765"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 1,
+  "id": "a315a695-bd24-45c3-81b8-01fe5d6fa6b8",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "To share status of the current tasks within the team, to discuss blockers or dependencies.",
+      "id": "3224c2da-725f-4bd1-8d34-5e7325238c54",
+      "isCorrect": true
+    },
+    {
+      "text": "To present completed work during the sprint to the customer",
+      "id": "cd057d75-500f-421d-bf0b-42f03ffec23d",
+      "isCorrect": false
+    },
+    {
+      "text": "To discuss what went well and how to improve team processes, tools, etc.",
+      "id": "ba0626a9-8484-4599-bd83-d176c45c3f20",
+      "isCorrect": false
+    },
+    {
+      "text": "To commit team workload and define tasks for the next sprint",
+      "id": "d7de0022-a5c0-4c4d-a95e-28181ee61b71",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the purpose of Daily scrum meeting?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94766"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 2,
+  "id": "faa9abaf-ed19-4f4b-bc6b-9480ac0c871a",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "To present completed work during the sprint to the customer",
+      "id": "4c1857be-1aa8-41c6-a133-3262a9fd9927",
+      "isCorrect": true
+    },
+    {
+      "text": "To discuss what went well and how to improve team processes, tools, etc.",
+      "id": "7fa4a83c-feb4-487e-9eb0-021b7a46c704",
+      "isCorrect": false
+    },
+    {
+      "text": "To commit team workload and define tasks for the next sprint",
+      "id": "7218d49e-0516-493f-9401-e48dd3520d1c",
+      "isCorrect": false
+    },
+    {
+      "text": "To share status of the current tasks within the team, to discuss blockers or dependencies.",
+      "id": "f34fb83a-32c7-4a40-b089-3faaf329a4c2",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the purpose of Sprint review in Scrum?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94767"
+  },
+  "category": "Work Process",
+  "difficultyLevel": 2,
+  "id": "e6e37703-f72f-4c49-af72-5e3dcfdeb478",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "To discuss what went well and how to improve their own process, tools, etc.",
+      "id": "8a8c170e-745b-424a-9752-4cdd75d50bf5",
+      "isCorrect": true
+    },
+    {
+      "text": "To present completed work during the sprint to the customer",
+      "id": "8e7dfb3b-0a2c-4160-a315-c24aecbf5ca5",
+      "isCorrect": false
+    },
+    {
+      "text": "To share status of the current tasks within the team, to discuss blockers or dependencies.",
+      "id": "5bfd6b07-69b1-4ae4-9d73-16a89c13587f",
+      "isCorrect": false
+    },
+    {
+      "text": "To discuss features granulate them into product backlog items, or smaller pieces and prepare them for implementation",
+      "id": "36aa9a60-a8c8-478c-b999-a3aef5df3011",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the purpose of Sprint retrospective in Scrum?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94768"
+  },
+  "category": "Technology stack",
+  "difficultyLevel": 1,
+  "id": "3644371e-6395-4819-862d-bf4302e4e1f0",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "INSERT",
+      "id": "efdc8c9d-b500-4ff6-853f-32de960ef25e",
+      "isCorrect": true
+    },
+    {
+      "text": "GET",
+      "id": "057f57d3-a430-4ea7-9004-2e412c7b153b",
+      "isCorrect": false
+    },
+    {
+      "text": "POST",
+      "id": "623c1750-2b3c-4ca7-9c6b-ab9e210519a4",
+      "isCorrect": false
+    },
+    {
+      "text": "PATCH",
+      "id": "146e2305-31b1-4efd-9c82-9f36cae528c5",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What type of HTTP request doesn't exist?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94769"
+  },
+  "category": "Technology stack",
+  "difficultyLevel": 2,
+  "id": "548dbd33-2834-473f-96d0-d9f838a6a85e",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "GET can have only url parameters, and POST can have both url and body parameters",
+      "id": "3d6c4567-788a-4940-b858-9aa0e52baf7a",
+      "isCorrect": true
+    },
+    {
+      "text": "GET doesn't have any length restrictions, but POST has restrictions to max length",
+      "id": "9ea1b490-dff3-4bf9-b432-b06b67b6df02",
+      "isCorrect": false
+    },
+    {
+      "text": "GET is used to insert/update remote data and POST is used to retrieve remote data,",
+      "id": "0ecd7554-fed5-4cd8-8640-39655bd9cc3f",
+      "isCorrect": false
+    },
+    {
+      "text": "GET can be used only with HTTP, but POST can be used both with HTTP and HTTPS",
+      "id": "e3fbe4c0-7904-44ef-80b7-48eaee416d75",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the difference between GET and POST requests?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9476a"
+  },
+  "category": "Technology stack",
+  "difficultyLevel": 3,
+  "id": "ccb3f621-e113-4996-b241-aa5435ec5e08",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "HTML: Closing tags are not necessarily needed.\nXML: Closing tags are used mandatorily.",
+      "id": "f5277d26-dbcb-4175-8a44-48a77b126890",
+      "isCorrect": true
+    },
+    {
+      "text": "HTML: structures, stores, and transfers information and describes what the data is.\nXML: describes a web page�s structure and displays information.",
+      "id": "8107cdde-5422-490e-b128-6a47e7d81049",
+      "isCorrect": false
+    },
+    {
+      "text": "HTML: Can have only predefined set of tags and attributes. \nXML: DOes not have any predefined set of tags and attributes.",
+      "id": "4a455655-9151-4036-a240-c4e35f4aa716",
+      "isCorrect": false
+    },
+    {
+      "text": "HTML: is case sensitive.\nXML: is not case sensitive.",
+      "id": "6f9bc2ec-e94f-4e47-8313-e601add2d63a",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the difference between HTML and XML?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9476b"
+  },
+  "category": "Technology stack",
+  "difficultyLevel": 3,
+  "id": "112b2b9d-85c4-4243-aae4-566ca313dca8",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "JSON does not provide namespace support.\nXML provides namespaces support.",
+      "id": "9216bb28-324b-4737-af81-733b34d6a53e",
+      "isCorrect": true
+    },
+    {
+      "text": "JSON data is typeless.\nXML object has a type.",
+      "id": "13b3f0e1-67a3-44ee-9754-b61b7dc3c36f",
+      "isCorrect": false
+    },
+    {
+      "text": "JSON supports various encoding formats.\nXML supports only UTF-8 encoding whereas.",
+      "id": "f0336e86-d995-4fbc-975b-459891f4c211",
+      "isCorrect": false
+    },
+    {
+      "text": "JSON supports comments.\nXML doesn�t supports comments.\t",
+      "id": "373da8ed-9b74-4a3b-82a5-7d2dab0a8613",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the difference between XML and JSON?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9476c"
+  },
+  "category": "Technology stack",
+  "difficultyLevel": 3,
+  "id": "9fa8d725-f335-41a7-8159-ff1f6b8419da",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Both support hierarchical structure",
+      "id": "9d508b74-46fd-40d8-ac39-08eebc3b90dc",
+      "isCorrect": true
+    },
+    {
+      "text": "Both support arrays",
+      "id": "ccd1353e-fd19-49dd-94c2-f171f44bdb6a",
+      "isCorrect": false
+    },
+    {
+      "text": "Both provides namespaces support",
+      "id": "bb335bd1-c13e-44dd-a879-ff4ed9ae7091",
+      "isCorrect": false
+    },
+    {
+      "text": "Both support comments",
+      "id": "a9b9a81c-d5ca-4046-8342-f862c0fb0910",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is common between XML and JSON?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9476d"
+  },
+  "category": "Technology stack",
+  "difficultyLevel": 2,
+  "id": "4603f644-7251-4db7-b6a4-0b75fa19fc8c",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "SELECT",
+      "id": "90000176-ca12-48ab-a763-87cf432e9408",
+      "isCorrect": true
+    },
+    {
+      "text": "GET",
+      "id": "a92c8cd2-9504-4f0b-b1c0-f9a43d8cb5ec",
+      "isCorrect": false
+    },
+    {
+      "text": "FETCH",
+      "id": "9431576c-8f2b-437d-96bc-addf1dbce46f",
+      "isCorrect": false
+    },
+    {
+      "text": "WHERE",
+      "id": "dc1551b3-b3b8-45b5-b89c-ab390b8f61f2",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What SQL operator is used to fetch data from database?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9476e"
+  },
+  "category": "Technology stack",
+  "difficultyLevel": 2,
+  "id": "0b55017a-4a9d-470d-9dee-dcf2f13a02ba",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "UPDATE",
+      "id": "ebd72265-3df7-41b7-a2ef-71b659bae6b6",
+      "isCorrect": true
+    },
+    {
+      "text": "POST",
+      "id": "4025db80-65ba-432d-a322-120f8932e324",
+      "isCorrect": false
+    },
+    {
+      "text": "PUT",
+      "id": "8f14cfe1-5771-4481-a5a3-bc26a9ea10d7",
+      "isCorrect": false
+    },
+    {
+      "text": "ADD",
+      "id": "67eb162c-814c-4909-ab72-7add05b18fb1",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What SQL operator is used to change data in table?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9476f"
+  },
+  "category": "Technology stack",
+  "difficultyLevel": 2,
+  "id": "a5afafbd-5f48-4a4e-ac42-62ea03f76c69",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "CREATE",
+      "id": "0cd2caf4-b348-4cb3-ad87-5fad9aae39a4",
+      "isCorrect": true
+    },
+    {
+      "text": "ADD",
+      "id": "f88d98cd-bc45-4ae6-bc78-69d7c93aac36",
+      "isCorrect": false
+    },
+    {
+      "text": "INSERT",
+      "id": "ec02ff45-0ac7-4035-a31f-e929d2668bc6",
+      "isCorrect": false
+    },
+    {
+      "text": "PUT",
+      "id": "d0e38385-550b-4156-9efd-c5f60b013007",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What SQL operator is used to add new table?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94770"
+  },
+  "category": "Technology stack",
+  "difficultyLevel": 2,
+  "id": "575e813e-51f3-475b-bcca-8c66c5af20e2",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "INSERT",
+      "id": "36bcd114-98b2-42bd-be2d-baf02c5070f6",
+      "isCorrect": true
+    },
+    {
+      "text": "ADD",
+      "id": "760d7729-f2b5-4143-be0f-a5cb129c3312",
+      "isCorrect": false
+    },
+    {
+      "text": "PUT",
+      "id": "a530b428-5e67-45da-8437-193c0018d75c",
+      "isCorrect": false
+    },
+    {
+      "text": "UPDATE",
+      "id": "6ba4f55f-f754-4612-997c-3f2ffc2d5e7b",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What SQL operator is used to add new record in table?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94771"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 1,
+  "id": "2fa58f8e-c0b5-4d52-8821-ddc200784bcf",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "a set of instructions for solving logical and mathematical problems, or for accomplishing some other task",
+      "id": "4971faf3-c7d3-4e35-9a7a-dce80f840fa9",
+      "isCorrect": true
+    },
+    {
+      "text": "a series of steps that your program repeats until an exit condition is reached.",
+      "id": "ef7cc890-6d7e-48e2-8fad-1e80ec263889",
+      "isCorrect": false
+    },
+    {
+      "text": "statements which evaluates further actions in the program based on boolean expression result",
+      "id": "c6a589a2-8ca1-4123-9d65-b75535dbb197",
+      "isCorrect": false
+    },
+    {
+      "text": "an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions",
+      "id": "44df4b57-8087-425a-aa9f-1a3ab407cda6",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is algorythm?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94772"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 1,
+  "id": "b839626c-e3e1-4b5a-a6c7-7b06cb5abb85",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "a series of steps that your program repeats until an exit condition is reached.",
+      "id": "095e7618-a596-4afc-a630-96aa649a23ab",
+      "isCorrect": true
+    },
+    {
+      "text": "function, or algorithm that calls itself in a step having a termination condition so that successive repetitions are processed up to the critical step where the condition is met",
+      "id": "cf95a7ae-79b8-46ed-bcc3-8aa47e8b11de",
+      "isCorrect": false
+    },
+    {
+      "text": "modules of code that accomplish a specific task",
+      "id": "ffb70e81-bd59-4cc6-8263-b4a56158e753",
+      "isCorrect": false
+    },
+    {
+      "text": "a set of instructions for solving logical and mathematical problems, or for accomplishing some other task",
+      "id": "eb0c63db-6437-4881-a1cf-3c3ba5bd3a17",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is Loop structure in programming?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94773"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "7b83951a-bbbb-4cd1-bf85-b32aef7db898",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "statement which evaluates further actions in the program based on boolean expression result",
+      "id": "92e6b00d-daf8-4e18-b3c2-b6f2fb8a69e8",
+      "isCorrect": true
+    },
+    {
+      "text": "is a syntactic entity in a programming language that may be evaluated to determine its value",
+      "id": "4bc7c916-1552-4169-8c50-5992b3860c65",
+      "isCorrect": false
+    },
+    {
+      "text": "modules of code that accomplish a specific task",
+      "id": "469a5fba-f7e2-4445-b418-9715595119fa",
+      "isCorrect": false
+    },
+    {
+      "text": "a set of instructions for solving logical and mathematical problems, or for accomplishing some other task",
+      "id": "8a8601e1-5bb6-498a-a652-99867c4a00d4",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is condition in programming?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94774"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 3,
+  "id": "b4bd9b0f-590a-4f73-896c-2b9f1bfe10e6",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "function, or algorithm that calls itself in a step having a termination condition so that successive repetitions are processed up to the critical step where the condition is met",
+      "id": "f0f6c3fe-7a43-4aa3-bfc0-3286863c1fa1",
+      "isCorrect": true
+    },
+    {
+      "text": "a set of instructions for solving logical and mathematical problems, or for accomplishing some other task",
+      "id": "d31c7a21-ca5e-4bd9-bc44-1ae4d33632f7",
+      "isCorrect": false
+    },
+    {
+      "text": "the routines in a program that respond to abnormal input or conditions",
+      "id": "cbbe4b76-8536-4337-8780-e97c1185db10",
+      "isCorrect": false
+    },
+    {
+      "text": "an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions",
+      "id": "d80ef176-5b1e-4ea8-81cc-11522f0d3e15",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is recursion iin programming?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94775"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "33a873ef-d71f-4327-a590-3d7965cb326e",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "the routines in a program that respond to abnormal input or conditions",
+      "id": "97394188-af8a-49f8-847d-8b5f3e6066e7",
+      "isCorrect": true
+    },
+    {
+      "text": "an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions",
+      "id": "b76a3387-b360-4d1c-9997-998405f97657",
+      "isCorrect": false
+    },
+    {
+      "text": "an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions",
+      "id": "2a24562f-fea5-424d-95f7-0bccee1e2052",
+      "isCorrect": false
+    },
+    {
+      "text": "statement which evaluates further actions in the program based on boolean expression result",
+      "id": "9c68b1b7-7248-4f61-a4ac-a08bfcc9754d",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is error handling in programming?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94776"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "6364dcd2-1f28-4683-b8af-f65de40efa63",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions",
+      "id": "266dfa51-5280-4a79-8a37-9bd0ead70a02",
+      "isCorrect": true
+    },
+    {
+      "text": "the routines in a program that respond to abnormal input or conditions",
+      "id": "5644223d-0e55-4705-b8c9-f6bcf3f6de63",
+      "isCorrect": false
+    },
+    {
+      "text": "is a syntactic entity in a programming language that may be evaluated to determine its value",
+      "id": "4327ba4a-61a8-48ca-b253-2932036066b7",
+      "isCorrect": false
+    },
+    {
+      "text": "module of code that accomplish a specific task",
+      "id": "f447805e-d4e7-4722-8770-ad8645a520c5",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is exception in programming?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94777"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "53992a34-5c7a-49ef-8228-ace2b34dc79e",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "\"self-contained\" modules of code that accomplish a specific task",
+      "id": "a0eee4b6-75ba-4ea2-9f0e-1c339c3f8800",
+      "isCorrect": true
+    },
+    {
+      "text": "a series of steps that your program repeats until an exit condition is reached.",
+      "id": "50645f27-a2be-40e7-993c-c4f2fde79f24",
+      "isCorrect": false
+    },
+    {
+      "text": "the routines in a program that respond to abnormal input or conditions",
+      "id": "2ed052a0-858c-4963-bd6d-5b65c1a72b25",
+      "isCorrect": false
+    },
+    {
+      "text": "statement which evaluates further actions in the program based on boolean expression result",
+      "id": "b73ac608-8f41-41dd-9337-12933f69fa19",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is function in programming?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94778"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "d067bd8f-0b43-4aa5-abb4-6e10b1b47d9a",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "is a syntactic entity in a programming language that may be evaluated to determine its value",
+      "id": "2d80e776-7d3d-49f6-9791-7e54cbe0dc0f",
+      "isCorrect": true
+    },
+    {
+      "text": "a series of steps that your program repeats until an exit condition is reached.",
+      "id": "24814ded-eafa-4dc8-abf8-6aef90f19053",
+      "isCorrect": false
+    },
+    {
+      "text": "a set of instructions for solving logical and mathematical problems, or for accomplishing some other task",
+      "id": "91ece04a-b10b-4520-82b2-9e5cc40ce315",
+      "isCorrect": false
+    },
+    {
+      "text": "statements which evaluates further actions in the program based on boolean expression result",
+      "id": "6405a5b8-1a8f-4589-83bd-9d9d0419f869",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is expression in programming?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94779"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 1,
+  "id": "499a6f7d-243a-4e86-afca-ed881ece9d05",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "is a computer programming model that organizes software design around data, or objects, rather than functions and logic",
+      "id": "acca8b6a-de4f-4960-b347-055ef1ea20fc",
+      "isCorrect": true
+    },
+    {
+      "text": "is a computer programming model that organizes software design around functions, or logic, rather than data and objects",
+      "id": "6869e269-dbf4-4411-9259-812cc290bfaa",
+      "isCorrect": false
+    },
+    {
+      "text": "is an acronym that stands for organize-observe-plan related to how development process should be organized",
+      "id": "97dd0c1d-f445-4046-a245-3378b12196f9",
+      "isCorrect": false
+    },
+    {
+      "text": "is an acronym that stands for offer-optimize-participate related to how development process should be organized",
+      "id": "2fb36477-5829-4cc1-bc78-814705d1f505",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is Object-Oriented Programming?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9477a"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "801f00bb-8aaf-4708-97d2-bb2b867af45e",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "is mechanism to present the same interface for several different underlying data types",
+      "id": "6cca8c69-f1b7-4da6-80b9-af664f55d7c7",
+      "isCorrect": true
+    },
+    {
+      "text": "is mechanism of restricting the direct access to some components of an object, such that users cannot access state values",
+      "id": "66384ecc-5243-433a-be87-2dd90b6c2096",
+      "isCorrect": false
+    },
+    {
+      "text": "is the process of taking away or removing characteristics from something in order to reduce it to a set of essential characteristics",
+      "id": "5bf80574-bbe3-4c16-bd9c-91f11dd9f5f2",
+      "isCorrect": false
+    },
+    {
+      "text": "is mechanism of basing an object or class upon another object or class, retaining similar implementation.",
+      "id": "f3d50514-b2af-4c7b-9bf1-a8afb0b4cdf2",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is Polymorphism?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9477b"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "271608c9-e197-463d-8a38-615902502bd4",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "is the process of taking away or removing characteristics from something in order to reduce it to a set of essential characteristics",
+      "id": "5d4e4f42-7ba7-418a-a74f-fc8aee05ea28",
+      "isCorrect": true
+    },
+    {
+      "text": "is mechanism to present the same interface for several different underlying data types",
+      "id": "6818bb36-683b-471e-8efb-b4d8d012af1e",
+      "isCorrect": false
+    },
+    {
+      "text": "is mechanism of restricting the direct access to some components of an object, such that users cannot access state values",
+      "id": "127be7d6-d427-4136-8d6b-0bd8494466fe",
+      "isCorrect": false
+    },
+    {
+      "text": "is mechanism of basing an object or class upon another object or class, retaining similar implementation.",
+      "id": "b94eb50f-19e6-4eb9-bf61-74d23e4f07d0",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is Abstraction?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9477c"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "9a0c93db-2656-4d68-b6db-d89535a3ccb2",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "is mechanism of basing an object or class upon another object or class, retaining similar implementation.",
+      "id": "1f795480-11d5-4f4e-bd02-65386210cc03",
+      "isCorrect": true
+    },
+    {
+      "text": "is mechanism to present the same interface for several different underlying data types",
+      "id": "0d0cb87e-7638-4358-9ed2-88660eed6c23",
+      "isCorrect": false
+    },
+    {
+      "text": "is the process of taking away or removing characteristics from something in order to reduce it to a set of essential characteristics",
+      "id": "1251a641-35b9-40c1-a722-11ee63b9101b",
+      "isCorrect": false
+    },
+    {
+      "text": "is mechanism of restricting the direct access to some components of an object, such that users cannot access state values",
+      "id": "4aa9c096-6d5a-4ed7-9de8-3e772a9ce11d",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is Inheritance?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9477d"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "ffce1d7b-16c0-4f49-888f-183ff7e2872c",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "is mechanism of restricting the direct access to some components of an object, such that users cannot access state values",
+      "id": "48bf29ae-cc9b-4454-8ea3-5a6697cf3c2d",
+      "isCorrect": true
+    },
+    {
+      "text": "is mechanism to present the same interface for several different underlying data types",
+      "id": "ca79590b-f427-49e0-b3f1-724328e35c32",
+      "isCorrect": false
+    },
+    {
+      "text": "is the process of taking away or removing characteristics from something in order to reduce it to a set of essential characteristics",
+      "id": "4cb0aa1f-fb80-4810-a49f-354068a49c6f",
+      "isCorrect": false
+    },
+    {
+      "text": "is mechanism of basing an object or class upon another object or class, retaining similar implementation.",
+      "id": "d665a141-6904-4770-9588-ddaedc19c6a4",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is Encapsulation?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9477e"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "0e9a6cab-5bcb-4584-9072-4adbfd232ade",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "a set of guidelines for a specific programming language that recommend programming style, practices, and methods for each aspect of a program written in that language",
+      "id": "9b37e4a1-ab76-405e-b828-c9e533a797f4",
+      "isCorrect": true
+    },
+    {
+      "text": "a set of guidelines, that recommend how code should be organized, designed and performed.",
+      "id": "a80d69f2-1e35-4f7e-8f09-2e2ec6a1c896",
+      "isCorrect": false
+    },
+    {
+      "text": "a set of software intermediary that allow different applications to communicate to each other.",
+      "id": "805928a4-890e-4256-b9f0-1ece50cc557d",
+      "isCorrect": false
+    },
+    {
+      "text": "a set of instructions for solving logical and mathematical problems, or for accomplishing some other task",
+      "id": "47361e27-22ea-4408-a0c4-d060291fc472",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What are coding conventions?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b9477f"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 3,
+  "id": "159df238-bdea-4ce3-b07d-b07781f62165",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "is a programming practice that instructs developers to write new code only if an automated test has failed",
+      "id": "1e81c7cb-449f-4d72-92a4-3aaa6a0bd6e5",
+      "isCorrect": true
+    },
+    {
+      "text": "is a software development methodology where an application is documented and designed around the behavior a user expects to experience when interacting with it.",
+      "id": "10121afc-a7cd-485f-bb58-0bf8df15d25c",
+      "isCorrect": false
+    },
+    {
+      "text": "a set of guidelines for a specific programming language that recommend programming style, practices, and methods for each aspect of a program written in that language",
+      "id": "f718b072-38ca-40cb-ace4-b7addc4b9055",
+      "isCorrect": false
+    },
+    {
+      "text": "is a computer programming model that organizes software design around data, or objects, rather than functions and logic",
+      "id": "0ebcfb5f-8d97-4854-b11c-d3d31b74f61c",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is Test Driven Development?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94780"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 3,
+  "id": "1a94bf18-e6e0-435b-a661-0d649721df18",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Fatal\nError\nWarning\nInfo\nDebug\nTrace",
+      "id": "1404407d-12e3-4c8a-bcb2-2256d4ce9614",
+      "isCorrect": true
+    },
+    {
+      "text": "Fatal\nError\nWarning\nInfo\nTrace\nDebug",
+      "id": "41b04e45-2280-41b6-b5ac-f536ec7c454d",
+      "isCorrect": false
+    },
+    {
+      "text": "Fatal\nError\nDebug\nInfo\nWarning\nTrace",
+      "id": "62b404b2-93dd-4f13-bc53-894fc8705dd4",
+      "isCorrect": false
+    },
+    {
+      "text": "Fatal\nError\nDebug\nWarning\nTrace\nInfo",
+      "id": "f47496b2-1e3a-4c90-8833-f502de12a6aa",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is the correct list of logging levels (sorted from most critical to least critical)?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94781"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "b29a8ab0-6300-417c-8f06-e5b6273219e2",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "Warning or info",
+      "id": "92412468-294b-4745-bcec-0545edad944c",
+      "isCorrect": true
+    },
+    {
+      "text": "Error or warning",
+      "id": "fedd93e0-72af-46d5-8393-c96bdf3fe0f1",
+      "isCorrect": false
+    },
+    {
+      "text": "Fatal or error",
+      "id": "9d042922-a09f-4175-b7cd-d4993a50a23c",
+      "isCorrect": false
+    },
+    {
+      "text": "Debug or trace",
+      "id": "afb9ea9b-426d-4d25-a21d-ed13abdb0e16",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is recommended logging level to be set in production?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94782"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 2,
+  "id": "f4b50e7c-06cb-46ee-a2f3-5f6e6bda8efa",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "system used to manage changes in repository",
+      "id": "370e1bf1-6567-4324-90f8-b4f27ff795a0",
+      "isCorrect": true
+    },
+    {
+      "text": "process of repository version management",
+      "id": "25ec863e-0cf3-4c7d-8fbf-6d9892f5e7e6",
+      "isCorrect": false
+    },
+    {
+      "text": "tool that allows to work team members in parallel",
+      "id": "76241d7b-df43-428d-8f19-b24f061a3ae2",
+      "isCorrect": false
+    },
+    {
+      "text": "framework that describes, how team members should work",
+      "id": "ddc8238c-069f-4ee2-abca-eae91de9b028",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What is version control ( also known as revision control, source control, or source code management)?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94783"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 3,
+  "id": "4c1ccbd3-1db0-489d-bdf2-c6c5fbf7e0b6",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "tortoise git flow",
+      "id": "73dae500-5872-46bb-8862-71caa16761b3",
+      "isCorrect": true
+    },
+    {
+      "text": "gitHub flow",
+      "id": "51061c42-042c-448f-aa23-77b27abaf141",
+      "isCorrect": false
+    },
+    {
+      "text": "gitLab flow",
+      "id": "a613c343-507a-4603-b57e-7a90330f9c31",
+      "isCorrect": false
+    },
+    {
+      "text": "git flow",
+      "id": "43e1a81c-341b-4014-8904-e4284a5f2d0e",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What version control flow doesn't exist?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94784"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 3,
+  "id": "144f785a-c7a4-4daa-9f2f-d70b043efa25",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "pull",
+      "id": "0e0148ed-4601-405c-88c9-c0e0e4379f67",
+      "isCorrect": true
+    },
+    {
+      "text": "push",
+      "id": "62f2d75f-a06c-4d29-a29d-c14593282088",
+      "isCorrect": false
+    },
+    {
+      "text": "commit",
+      "id": "9d625b9a-5b05-4784-9894-49ff69dce3c3",
+      "isCorrect": false
+    },
+    {
+      "text": "checkout",
+      "id": "c816eb00-2241-4a94-a6f0-1d3649634d48",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What command is used to get latest app version from remote repository to local?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94785"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 3,
+  "id": "19b0e130-6fc8-49ef-bf27-2ddc67d82e92",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "commit",
+      "id": "ab285a3d-b28c-4c6e-ba46-fd8259dcbe4f",
+      "isCorrect": true
+    },
+    {
+      "text": "merge",
+      "id": "2bd49b48-5832-416d-a760-9f3a4c7f9d8c",
+      "isCorrect": false
+    },
+    {
+      "text": "push",
+      "id": "b01fa1e1-1b0b-478a-9003-eb55fb6d30c8",
+      "isCorrect": false
+    },
+    {
+      "text": "checkout",
+      "id": "bb18ee06-a2d9-46fe-8d4c-5c2aa11a4a08",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What git command is used to submit local changes to local repository?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94786"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 3,
+  "id": "1de16f8d-a42a-4fe5-adc6-1d4e9afaaf33",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "push",
+      "id": "98144b59-473c-42ab-be61-c62aa11f06c8",
+      "isCorrect": true
+    },
+    {
+      "text": "pull",
+      "id": "0739acaf-9887-4120-bb5d-9221502daeda",
+      "isCorrect": false
+    },
+    {
+      "text": "commit",
+      "id": "c7ce51b3-3714-4373-abe2-bf3a0c2b0c69",
+      "isCorrect": false
+    },
+    {
+      "text": "merge",
+      "id": "55a8c94f-0924-4400-855b-4fc21e04685d",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What git command is used to submit changes from local repository to remote?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94787"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 3,
+  "id": "919fd635-2baf-483a-8b7e-e970ca30f2cb",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "merge or rebase",
+      "id": "a6bd8484-1086-49d3-8045-9322a7f454e8",
+      "isCorrect": true
+    },
+    {
+      "text": "push or branch",
+      "id": "bb7dd763-9e9d-4b2a-8f18-25b6cf128e15",
+      "isCorrect": false
+    },
+    {
+      "text": "branch or merge",
+      "id": "574ee80e-f4d4-4d45-8b54-78c79d2e485a",
+      "isCorrect": false
+    },
+    {
+      "text": "checkout or rebase",
+      "id": "e0b7dca6-a873-4004-ac3f-fb481f8a08d2",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What git command is used to integrate changes from one branch to another?"
+},{
+  "_id": {
+    "$oid": "6206824a3e2385d8c0b94788"
+  },
+  "category": "Test automation and coding",
+  "difficultyLevel": 3,
+  "id": "8cd94379-3e01-453b-94b3-e31acbcafcb4",
+  "taskType": "Quiz",
+  "courseName": "QA",
+  "options": [
+    {
+      "text": "checkout",
+      "id": "41ee5c0f-a43b-47d7-a310-ccd617ede8f2",
+      "isCorrect": true
+    },
+    {
+      "text": "pull",
+      "id": "5026aade-0124-45d5-b8ff-5269c22b04f1",
+      "isCorrect": false
+    },
+    {
+      "text": "branch",
+      "id": "f7b5960c-ead1-4c8e-bf60-5db2aa6ebe98",
+      "isCorrect": false
+    },
+    {
+      "text": "rebase",
+      "id": "bf905286-0c8d-4591-9f2d-ca3e69c2071a",
+      "isCorrect": false
+    }
+  ],
+  "questionText": "What git command is used to create local version of repository?"
 }]

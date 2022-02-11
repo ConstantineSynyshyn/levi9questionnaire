@@ -2,30 +2,28 @@ export const DEFAULT_TIME_TO_RESPOND = 45;
 export const DEFAULT_OPEN_QUESTION_TIME_TO_RESPOND = 180;
 
 export enum CourseName {
-  FE = 'FE',
-  QA = 'QA',
+  FE = "FE",
+  QA = "QA",
 }
 
 export const CURRENT_COURSE = CourseName.QA;
 
 // to be able to split quiz according to different categories
 export enum FEQuestionCategory {
-  JAVASCRIPT = 'JavaScript',
-  HTML = 'HTML',
-  CSS = 'CSS',
-  GIT = 'GIT',
-  COMMON = 'COMMON',
-  ENGLISH = 'ENGLISH',
+  JAVASCRIPT = "JavaScript",
+  HTML = "HTML",
+  CSS = "CSS",
+  GIT = "GIT",
+  COMMON = "COMMON",
+  ENGLISH = "ENGLISH",
 }
 
 // to be able to split quiz according to different categories
 export enum QAQuestionCategory {
-  JAVASCRIPT = 'JavaScript',
-  HTML = 'HTML',
-  CSS = 'CSS',
-  GIT = 'GIT',
-  COMMON = 'COMMON',
-  ENGLISH = 'ENGLISH',
+  TECH_STACK = "Technology stack",
+  GENERAL = "General",
+  WORK_PROCESS = "Work Process",
+  AUTOMATION = "Test automation and coding",
 }
 
 /**
@@ -42,10 +40,10 @@ export const QUESTION_AMOUNT_PER_FE_CATEGORY = {
 };
 
 export const QUESTION_AMOUNT_PER_QA_CATEGORY = {
-  [QAQuestionCategory.JAVASCRIPT]: 20,
-  [QAQuestionCategory.HTML]: 10,
-  [QAQuestionCategory.CSS]: 7,
-  [QAQuestionCategory.GIT]: 3,
+  [QAQuestionCategory.GENERAL]: 25,
+  [QAQuestionCategory.WORK_PROCESS]: 5,
+  [QAQuestionCategory.TECH_STACK]: 3,
+  [QAQuestionCategory.AUTOMATION]: 7,
 };
 
 /**
@@ -61,26 +59,36 @@ export const QUESTION_AMOUNT_PER_CATEGORY = QUESTION_AMOUNT_PER_QA_CATEGORY;
  */
 export const COURSE_QUESTIONS_CONFIG = {
   [CourseName.FE]: {
-    categories: [FEQuestionCategory.JAVASCRIPT, FEQuestionCategory.CSS, FEQuestionCategory.HTML, FEQuestionCategory.GIT],
+    categories: [
+      FEQuestionCategory.JAVASCRIPT,
+      FEQuestionCategory.CSS,
+      FEQuestionCategory.HTML,
+      FEQuestionCategory.GIT,
+    ],
     questionsAmountConfig: QUESTION_AMOUNT_PER_FE_CATEGORY,
   },
   [CourseName.QA]: {
-    categories: [QAQuestionCategory.JAVASCRIPT, QAQuestionCategory.CSS, QAQuestionCategory.HTML, QAQuestionCategory.GIT],
+    categories: [
+      QAQuestionCategory.GENERAL,
+      QAQuestionCategory.WORK_PROCESS,
+      QAQuestionCategory.TECH_STACK,
+      QAQuestionCategory.AUTOMATION,
+    ],
     questionsAmountConfig: QUESTION_AMOUNT_PER_QA_CATEGORY,
-  }
+  },
 };
 
 // to be able to split task just for quiz or as a coding task(at least for now)
 export enum TaskCategory {
-  QUIZ = 'Quiz',
-  CODING = 'Coding',
-};
+  QUIZ = "Quiz",
+  CODING = "Coding",
+}
 
-export const BASE_APP_URL = process.env.PLATFORM_BASE_URL || '';
+export const BASE_APP_URL = process.env.PLATFORM_BASE_URL || "";
 
 export const MAX_SCORE_VALUE = 3;
 
 export enum OrderDirection {
-  ASC = 'asc',
-  DESC = 'desc',
+  ASC = "asc",
+  DESC = "desc",
 }
