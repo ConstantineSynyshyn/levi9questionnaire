@@ -1,4 +1,4 @@
-import { QuestionCategory } from "../../../constants/configuration"
+import { QuestionCategory, CURRENT_COURSE } from "../../../constants/configuration"
 import { QuestionWithOptionsList } from "../../../types/question"
 import { ImportQuestionTypeFile } from "./types"
 import { mapImportFileWithQuestionScheme } from "./utils"
@@ -35,9 +35,10 @@ const loadRandomQuestionByCategory = async (
   size = 0
 ): Promise<QuestionWithOptionsList | never> => {
   const { db } = await connectToDatabase()
+  const courseName = CURRENT_COURSE;
   const data = await db
     .collection("questions")
-    .aggregate([{ $match: { category } }, { $sample: { size } }])
+    .aggregate([{ $match: { category, courseName } }, { $sample: { size } }])
     .project({
       questionText: 1,
       id: 1,

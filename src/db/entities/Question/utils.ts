@@ -1,6 +1,11 @@
 import { v4 } from "uuid";
 
-import { QuestionCategory, TaskCategory, MAX_SCORE_VALUE, CURRENT_COURSE } from "@constants/configuration";
+import {
+  TaskCategory,
+  COURSE_QUESTIONS_CONFIG,
+  MAX_SCORE_VALUE,
+  CURRENT_COURSE,
+} from "@constants/configuration";
 import {
   QuestionWithOptions,
   QuestionWithOptionsList,
@@ -9,18 +14,20 @@ import { ImportQuestionType, ImportQuestionTypeFile } from "./types";
 
 export const mapImportFileWithQuestionScheme = (
   content: ImportQuestionTypeFile
-): QuestionWithOptionsList =>
-  [...content]
+): QuestionWithOptionsList => {
+  const defaultCategory =
+    COURSE_QUESTIONS_CONFIG[CURRENT_COURSE]?.categories?.[0] || "Unknown";
+  return [...content]
     .filter(
       (initialQuestion: ImportQuestionType) =>
         initialQuestion.difficultyLevel === undefined ||
-        initialQuestion.difficultyLevel <= MAX_SCORE_VALUE,
+        initialQuestion.difficultyLevel <= MAX_SCORE_VALUE
     )
     .map((initialQuestion: ImportQuestionType) => {
       const {
         text,
         options,
-        category = QuestionCategory.JAVASCRIPT,
+        category = defaultCategory,
         difficultyLevel = 0,
         data = "",
         taskType = TaskCategory.QUIZ,
@@ -39,7 +46,10 @@ export const mapImportFileWithQuestionScheme = (
       }
       return {
         category,
-        difficultyLevel,
+        difficultyLevel:
+          typeof difficultyLevel === "string"
+            ? parseInt(difficultyLevel)
+            : difficultyLevel,
         id: v4(),
         taskType,
         courseName,
@@ -47,6 +57,7 @@ export const mapImportFileWithQuestionScheme = (
         ...questionRelatedProps,
       };
     });
+};
 
 export const convertPlainOptionsToObject = (
   options: ImportQuestionType["options"]

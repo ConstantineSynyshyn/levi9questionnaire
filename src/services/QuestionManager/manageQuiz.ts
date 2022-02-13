@@ -2,6 +2,9 @@ import {
   QUESTION_AMOUNT_PER_CATEGORY,
   QuestionCategory,
   TaskCategory,
+  COURSE_QUESTIONS_CONFIG,
+  MAX_SCORE_VALUE,
+  CURRENT_COURSE,
 } from "@constants/configuration";
 import { loadRandomQuestionByCategory } from "@db/entities/Question";
 import { getUserByEmail, storeUserQuestions } from "@db/entities/User";
@@ -47,14 +50,21 @@ export const initializeQuiz = async (userEmail: string) => {
  * };
  * The main category(as a fallback) we use JAVASCRIPT. We need it for cases
  * if there are no enough questions for other categories, we just fill all remains amount with JS question
+ *
+ * @TODO as far as now we start supporting different courses, we should pick QUESTION_AMOUNT_PER_CATEGORY info
+ *        from COURSE_QUESTIONS_CONFIG based on CURRENT_COURSE value
  */
 export const getQuestions = async (): Promise<QuestionWithOptionsList> => {
   const amountsMap = Object.entries(QUESTION_AMOUNT_PER_CATEGORY);
   const totalAmount = amountsMap.reduce((sum, [_, amount]) => sum + amount, 0);
   let specificQuestionList: QuestionWithOptionsList = [];
+  const defaultCategory = COURSE_QUESTIONS_CONFIG[CURRENT_COURSE].categories[0];
+  if (!defaultCategory) {
+    console.error(`Please configure course config correctly for ${CURRENT_COURSE}`)
+  }
   for (const item of amountsMap) {
     const [category, amount] = item;
-    if (category === QuestionCategory.JAVASCRIPT) {
+    if (category === defaultCategory) {
       continue;
     }
     const categoryQuestions = await loadRandomQuestionByCategory(
@@ -64,7 +74,7 @@ export const getQuestions = async (): Promise<QuestionWithOptionsList> => {
     specificQuestionList = [...specificQuestionList, ...categoryQuestions];
   }
   const jsQuestions = await loadRandomQuestionByCategory(
-    QuestionCategory.JAVASCRIPT,
+    defaultCategory,
     totalAmount - specificQuestionList.length
   );
   const list = [...specificQuestionList, ...jsQuestions];
